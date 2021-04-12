@@ -1,0 +1,237 @@
+@import "init";
+@import "variable";
+@import "header";
+@import "footer";
+@import "body";
+
+.main {
+  margin-top: $headerHeight + 10px;
+
+  .main-wrapper {
+    width: $mainWrapperWidth;
+    margin: 0 auto;
+
+    .carousel-map {
+      overflow: hidden;
+      height: $headerSecHeight;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+
+      .carousel-img {
+        height: $carouselImgHeight;
+        margin: 0 auto;
+        position: absolute;
+
+        li {
+          float: left;
+          list-style: none;
+
+          a {
+            text-decoration: none;
+
+            img {
+              width: $carouselImgWidth;
+              height: $carouselImgHeight;
+            }
+          }
+        }
+      }
+
+      .arrow {
+        font-family: "Helvetica,Helvetica Neue,Arial,sans-serif";
+        font-size: 80px;
+        color: #ffffff;
+        //  将其设置为绝对定位，相对于bannerGroup，就可以显示出箭头
+        position: absolute;
+        overflow: hidden;
+        cursor: pointer;
+        //  默认情况下，不显示
+        display: none;
+      }
+
+      .left-arrow {
+        top: 35%;
+        margin-left: 35px;
+      }
+
+      .right-arrow {
+        top: 35%;
+        margin-left: 1220px;
+      }
+
+      .page-control-group {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 20px;
+
+        .page-control {
+          height: 15 + 2px;
+          margin: 0 auto;
+
+          li {
+            // 指定长宽，即为指定小点点的大小
+            width: 15px;
+            height: 15px;
+            margin: 12px;
+            // box-sizing为border-box时，边框就在元素的外部，为content-box时就在元素的内部
+            box-sizing: border-box;
+            border: 1px solid #ffffff;
+            border-radius: 50%;
+            float: left;
+            // li标签中去掉前面的小点点
+            list-style: none;
+
+            &.active {
+              background: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.main {
+
+  .main-wrapper {
+
+    .list-outer-group {
+      margin-top: 10px;
+      width: 100%;
+      height: 64px;
+      background: white;
+      border: 2px solid #eeeeee;
+      border-left: none;
+      border-right: none;
+
+      li {
+        margin-top: 20px;
+        overflow: hidden;
+        list-style: none;
+        float: left;
+        padding: 0 10px;
+
+        &:first-of-type a {
+          padding-left: 10px;
+          border-left: 5px solid cornflowerblue;
+        }
+
+        &:first-of-type {
+          padding-left: unset;
+        }
+
+        &.active {
+
+          a {
+            font-weight: 600;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          color: deeppink;
+        }
+      }
+    }
+  }
+}
+
+.main {
+
+  .cloth-group {
+    margin-top: 10px;
+    width: $mainWrapperWidth;
+
+    .list {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-content: flex-start;
+      justify-content: space-between;
+
+
+      li {
+        margin-bottom: 10px;
+        background: #fff;
+        float: left;
+        width: 204px;
+        height: 358px;
+        list-style: none;
+        position: relative;
+        &:hover {
+          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+        }
+
+        a {
+          text-decoration: none;
+          color: coral;
+
+          .thumbnail-group {
+            img {
+              width: 184px;
+              height: 230px;
+              margin-top: 10px;
+              margin-left: 10px;
+            }
+
+            .thumbnail {
+
+            }
+          }
+        }
+      }
+
+      .cloth-info {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        overflow: hidden;
+
+        .title {
+          float: left;
+          margin-bottom: 10px;
+
+        }
+
+        .cloth-detail {
+          float: left;
+          margin-right: 5px;
+          height: 30px;
+          background: coral;
+          border-radius: 10%;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 10px;
+        }
+
+        .cloth-fitting {
+          float: left;
+          margin-right: 10px;
+          height: 30px;
+          background: coral;
+          border-radius: 10%;
+          border: none;
+          cursor: pointer;
+          outline: none;
+          font-size: 10px;
+        }
+
+        .price-group {
+          float: right;
+
+          .price {
+            position: absolute;
+            bottom: 15px;
+            right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+

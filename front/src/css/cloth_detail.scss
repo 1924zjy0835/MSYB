@@ -1,0 +1,214 @@
+@import "init";
+@import "header";
+@import "body";
+@import "footer";
+@import "variable";
+
+.main {
+
+  .main-wrapper {
+    width: $mainWrapperWidth;
+    margin: 0 auto;
+
+    .cloth-wrapper {
+      margin-top: 74px;
+      width: 100%;
+      padding: 10px;
+      background: #ffffff;
+      box-sizing: border-box;
+
+      .cloth-title {
+        margin-bottom: 10px;
+        color: #ff00de;
+      }
+
+      .cloth-more {
+        overflow: hidden;
+
+        .share-more {
+          float: left;
+          font-size: 14px;
+
+          p {
+            color: grey;
+          }
+        }
+
+        .price-group {
+          float: right;
+          overflow: hidden;
+
+          .price {
+            float: left;
+            color: coral;
+            font-size: 14px;
+
+          }
+
+          .buy-btn {
+            margin-bottom: 10px;
+            font-size: 14px;
+            margin-left: 20px;
+            width: 70px;
+            height: 24px;
+            float: right;
+            background: coral;
+            color: #ffffff;
+            // 设置盒子的圆滑度为5px
+            border-radius: 5px;
+            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+            display: inline-block;
+            // 文字横向居中显示
+            text-align: center;
+            // 设定行高为盒子的高度，则文字会竖向居中显示
+            line-height: 24px;
+            // 去掉a标签的下划线
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    .cloth-info-group {
+      margin-top: 10px;
+      overflow: hidden;
+      background: #ffffff;
+
+      .cloth-img {
+        float: left;
+        width: $clothImgWidth;
+        height: $clothImgHeight;
+        background: url("../../dist/images/cloth_detail01.min.jpg");
+        background-repeat: no-repeat;
+      }
+
+      .cloth-info {
+        float: right;
+        margin-left: 10px;
+        width: $clothInfoWidth;
+
+        .attributes-group {
+          width: 100%;
+          height: 30px;
+
+          .commerical-group {
+            margin-top: 10px;
+
+            .commerical {
+              font-size: 24px;
+              color: #ff00de;
+            }
+          }
+        }
+
+        .attribute-title {
+          height: 40px;
+          line-height: 40px;
+          margin-top: 20px;
+          margin-right: 20px;
+          //border: 1px solid #eeeeee;
+          //border-left: none;
+          //border-right: none;
+          background: #eeeeee;
+
+          .attribute {
+            color: $payCorlor;
+          }
+        }
+
+        .attributes-list {
+          margin-top: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          align-content: flex-start;
+          justify-content: space-between;
+
+          li {
+            margin-top: 8px;
+            float: left;
+            margin-right: 20px;
+            list-style: none;
+
+            a {
+              color: $payCorlor;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .performance-pledge {
+          margin-top: 20px;
+          overflow: hidden;
+
+          .service {
+            float: left;
+            color: grey;
+            font-size: 14px;
+          }
+
+          .pledge-list {
+            float: left;
+            margin-left: 20px;
+
+            li {
+              font-size: 14px;
+              margin-right: 20px;
+              float: left;
+              list-style: none;
+            }
+
+            a {
+              color: #000;
+              text-decoration: none;
+            }
+          }
+        }
+
+        .btn-group {
+          margin-top: 20px;
+
+          .shopping-cart-btn {
+            margin-right: 20px;
+            margin-left: 20px;
+            width: 100px;
+            height: 30px;
+            float: right;
+            background: coral;
+            color: #ffffff;
+            // 设置盒子的圆滑度为5px
+            border-radius: 5px;
+            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+            display: inline-block;
+            // 文字横向居中显示
+            text-align: center;
+            // 设定行高为盒子的高度，则文字会竖向居中显示
+            line-height: 30px;
+            // 去掉a标签的下划线
+            text-decoration: none;
+          }
+
+          .fitting-room-btn {
+            margin-left: 20px;
+            width: 100px;
+            height: 30px;
+            float: right;
+            background: coral;
+            color: #ffffff;
+            // 设置盒子的圆滑度为5px
+            border-radius: 5px;
+            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+            display: inline-block;
+            // 文字横向居中显示
+            text-align: center;
+            // 设定行高为盒子的高度，则文字会竖向居中显示
+            line-height: 30px;
+            // 去掉a标签的下划线
+            text-decoration: none;
+          }
+
+        }
+      }
+    }
+  }
+}

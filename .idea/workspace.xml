@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../../AI/20200908/.idea/20200908.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/20200908/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/20200908/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../AI/20200908/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/dist/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/init.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/src/images/news03.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/MSYB.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/dist/css/index.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/dist/css/init.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/dist/css/variable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/body.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/header.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/init.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/js/jquery-3.3.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/url_name_demo01.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/book/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/cms/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/db.sqlite3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/front/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/manage.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/url_name_demo01/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/url_name_demo01/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/url_name_demo01/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/url_name_demo01/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/url_name_demo01/wsgi.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.42399344">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/templates/index/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="646">
+                  <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+                  <folding>
+                    <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="209">
+                  <caret line="11" selection-start-line="11" selection-end-line="30" selection-end-column="9" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/css/index.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2831">
+                  <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="153" selection-end-column="37" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/css/cloth_detail.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="146">
+                  <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#1512#1713#0" />
+                    <element signature="e#1843#2076#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/front/templates/clothes/fitting_room.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="359">
+                  <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+                  <folding>
+                    <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/css/fitting_room.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="57">
+                  <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/css/header.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" selection-start-line="2" selection-end-line="2" />
+                  <folding>
+                    <element signature="e#1352#1391#0" />
+                    <element signature="e#1403#1497#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/js/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1995">
+                  <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/css/variable.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="16" selection-start-line="16" selection-end-line="16" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/front/package.json" />
+        <option value="$PROJECT_DIR$/front/src/css/init.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/body.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/clothes/cloth_detail.scss.css" />
+        <option value="$PROJECT_DIR$/front/src/css/clothes/cloth_fitting.scss.css" />
+        <option value="$PROJECT_DIR$/front/src/css/clothes/cloth_fitting.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/clothes/cloth_detail.scss" />
+        <option value="$PROJECT_DIR$/front/gulpfile.js" />
+        <option value="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" />
+        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" />
+        <option value="$PROJECT_DIR$/front/src/css/footer.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/index.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/variable.scss" />
+        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" />
+        <option value="$PROJECT_DIR$/front/templates/index/index.html" />
+        <option value="$PROJECT_DIR$/front/src/css/header.scss" />
+        <option value="$PROJECT_DIR$/front/src/js/index.js" />
+        <option value="$PROJECT_DIR$/front/src/css/cloth_detail.scss" />
+        <option value="$PROJECT_DIR$/front/src/css/fitting_room.scss" />
+        <option value="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="141" />
+    <option name="y" value="405" />
+    <option name="width" value="1695" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="clothes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/src/js" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\src\css" />
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\dist\css" />
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\dist\css\entire" />
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\dist\css\index" />
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\src\css\index" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Git02\Git01\DSFN\MSYB\front\src\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="MSYB" type="Python.DjangoServer" factoryName="Django server">
+      <module name="MSYB" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="" />
+      <created>1615435013128</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615435013128</updated>
+      <workItem from="1615435066592" duration="5057000" />
+      <workItem from="1615509035090" duration="6160000" />
+      <workItem from="1615770079520" duration="9463000" />
+      <workItem from="1615865172614" duration="2945000" />
+      <workItem from="1615948648457" duration="9566000" />
+      <workItem from="1617505892129" duration="1196000" />
+      <workItem from="1617537704421" duration="2421000" />
+      <workItem from="1617681523598" duration="2252000" />
+      <workItem from="1617692140369" duration="3778000" />
+      <workItem from="1617702013067" duration="6170000" />
+      <workItem from="1617775123804" duration="3646000" />
+      <workItem from="1617780610697" duration="18000" />
+      <workItem from="1617943095877" duration="5063000" />
+      <workItem from="1617964923669" duration="10615000" />
+      <workItem from="1618022178952" duration="11366000" />
+      <workItem from="1618102245436" duration="5246000" />
+      <workItem from="1618120158037" duration="10191000" />
+      <workItem from="1618147468529" duration="3221000" />
+      <workItem from="1618186991837" duration="520000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="98894000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="118" y="51" width="1356" height="800" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.045454547" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32988167" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50087875" side_tool="true" weight="0.19966443" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49912128" visible="true" weight="0.3023952" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32692307" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32840237" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06414763" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.19966443" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32873562" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" column="36" lean-forward="true" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/npm-debug.log" />
+    <entry file="file://$PROJECT_DIR$/front/src/css/init.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="475">
+          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/jquery-3.3.1.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/python37/Django 2.1.7/build/lib/django/contrib/admin/static/admin/js/vendor/jquery/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="6666" column="40" lean-forward="true" selection-start-line="6666" selection-start-column="40" selection-end-line="6666" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/dist/css/index.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="25" selection-start-column="25" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/body.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/footer.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="50" selection-start-line="5" selection-start-column="50" selection-end-line="5" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/cloth_fitting.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2831">
+          <caret line="149" column="6" selection-start-line="149" selection-start-column="6" selection-end-line="153" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/header.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#1352#1391#0" />
+            <element signature="e#1403#1497#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1995">
+          <caret line="105" column="22" selection-start-line="105" selection-start-column="22" selection-end-line="105" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/variable.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/cloth_detail.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="109" column="16" selection-start-line="109" selection-start-column="16" selection-end-line="109" selection-end-column="16" />
+          <folding>
+            <element signature="e#1512#1713#0" />
+            <element signature="e#1843#2076#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/fitting_room.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="30" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/clothes/fitting_room.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="39" column="18" selection-start-line="39" selection-start-column="18" selection-end-line="39" selection-end-column="18" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

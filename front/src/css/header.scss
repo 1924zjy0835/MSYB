@@ -1,0 +1,95 @@
+@import "variable";
+@import "init";
+
+.header {
+  //background: pink;
+  background: url("../../dist/images/footer_background01.min.gif");
+  height: $headerHeight;
+  width: 100%;
+  //里面的盒子都浮动起来了，这样的话，外面的盒子就获取不到里面盒子的大小，
+  // 因此必须将外面的盒子浮动起来
+  overflow: hidden;
+  // 设置头部为固定定位，不会随着下面的页面滚动
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 10px 5px rgba(0,0,0,0.2);
+
+  .main-header {
+    height: 100%;
+    width: $mainHeaderWidth;
+    margin: 0 auto;
+
+    .log-box {
+      float: left;
+      width: $logoBoxWidth;
+      height: $headerHeight;
+      line-height: $headerHeight;
+
+      i {
+        font-size: 60px;
+        color: white;
+      }
+
+      a {
+        font-size: 40px;
+        // 去掉a标签的下划线
+        text-decoration: none;
+        color: white;
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+        font-family: "Arial";
+
+        strong {
+          margin-left: 10px;
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    .nav {
+      float: left;
+      height: $headerHeight;
+
+      li {
+        // 浮动起来可以将li标签浮动至一行
+        float: left;
+        margin-right: 40px;
+        // 去掉li标签前面的小点点
+        list-style: none;
+        height: $headerHeight;
+        line-height: $headerHeight;
+
+        &.active {
+          font-weight: 700;
+        }
+
+        a {
+          font-size: 20px;
+          // 去掉li标签的下划线
+          text-decoration: none
+        }
+      }
+    }
+
+    .auth-box {
+      float: right;
+      color: white;
+      font-size: 20px;
+      height: $headerHeight;
+      line-height: $headerHeight;
+
+      i {
+        font-size: 30px;
+        margin-right: 5px;
+      }
+
+      a {
+        color: white;
+        font-size: 20px;
+        text-decoration: none;
+      }
+    }
+  }
+}
