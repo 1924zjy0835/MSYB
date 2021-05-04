@@ -2,3 +2,380 @@
 @import "body";
 @import "header";
 @import "variable";
+@import "footer";
+
+.main {
+  background: url("../images/room-run01.min.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: alpha(0.9);
+  //opacity: 0.1;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  overflow-y: scroll;
+
+
+  .closet-room {
+    float: left;
+    margin: 10px 10px;
+    width: 400px;
+    //height: 100%;
+    background-color: rgb(255, 255, 255);
+    // 设置背景透明度
+    background: rgba(255, 255, 255, 0.2);
+    // 文字不透明
+    filter: alpha(0.9);
+
+    .clothes-list {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+
+      li {
+        list-style: none;
+        margin-bottom: 10px;
+        width: 380px;
+        height: 300px;
+        overflow: hidden;
+
+        img {
+          float: left;
+          width: 240px;
+          height: 300px;
+          margin-right: 8px;
+        }
+
+        .clothes-info {
+          width: 400 - 240 - 30 px;
+
+          a {
+            text-decoration: none;
+            color: #38c6ae;
+          }
+
+          .closet-btn {
+            margin-top: 10px;
+            font-size: 16px;
+            width: 130px;
+            height: 30px;
+            background: grey;
+            color: yellow;
+            // 设置盒子的圆滑度为5px
+            border-radius: 5px;
+            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+            display: inline-block;
+            // 文字横向居中显示
+            text-align: center;
+            // 设定行高为盒子的高度，则文字会竖向居中显示
+            line-height: 30px;
+            // 去掉a标签的下划线
+            text-decoration: none;
+          }
+
+          .cloth-model-btn {
+            font-size: 16px;
+            width: 130px;
+            height: 30px;
+            background: grey;
+            color: yellow;
+            // 设置盒子的圆滑度为5px
+            border-radius: 5px;
+            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+            display: inline-block;
+            // 文字横向居中显示
+            text-align: center;
+            // 设定行高为盒子的高度，则文字会竖向居中显示
+            line-height: 30px;
+            // 去掉a标签的下划线
+            text-decoration: none;
+          }
+        }
+      }
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 320px;
+      height: 50px;
+      margin: 20px auto;
+    }
+
+    .box {
+      perspective: 800px;
+      position: relative;
+    }
+
+    .content {
+      width: 320px;
+      height: 50px;
+      transform-style: preserve-3d;
+      animation: run 10s infinite;
+    }
+
+    .content div {
+      width: 320px;
+      height: 50px;
+      position: absolute;
+      text-align: center;
+      line-height: 50px;
+      font-size: 32px;
+      color: yellow;
+    }
+
+    .front {
+      transform: translateZ(100px);
+      background-color: rgba(255, 15, 75, 0.8);
+    }
+
+    .back {
+      transform: translateZ(-100px) rotateY(180deg);
+      background-color: rgba(36, 255, 220, 0.8);
+    }
+
+    .left {
+      left: -100px;
+      transform: rotateY(-90deg);
+      background-color: rgba(225, 12, 175, 0.8);
+    }
+
+    .right {
+      left: 100px;
+      transform: rotateY(90deg);
+      background-color: rgba(25, 162, 75, 0.8);
+    }
+
+    @keyframes run {
+      0% {
+        transform: rotateY(0);
+      }
+      10% {
+        transform: rotateY(180deg);
+      }
+      20% {
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .model-fitting-room {
+    float: left;
+    margin-top: 10px;
+    width: 660px;
+    //height: 100%;
+    background-color: rgb(255, 255, 255);
+    // 设置背景透明度
+    background: rgba(255, 255, 255, 0.0);
+    // 文字不透明
+    filter: alpha(0.9);
+
+    .fitting-tips {
+      width: 100%;
+      height: 64px;
+      overflow: hidden;
+      opacity: unset;
+
+      .tips-title {
+        line-height: 64px;
+        float: left;
+
+        .tip {
+          color: yellow;
+          font-size: 13px;
+        }
+      }
+
+      .tips {
+        float: right;
+        color: greenyellow;
+        font-size: 10px;
+
+        li {
+          list-style: none;
+        }
+      }
+    }
+
+    .model-fitting {
+
+    }
+
+    .model-fitting-btn {
+      position: fixed;
+      margin-top: 430px;
+      width: 100%;
+      height: 40px;
+
+      .fitting-btn {
+        width: 100px;
+        height: 40px;
+        margin-left: 300px;
+        font-size: 18px;
+        background: #ffb515;
+        color: #fff;
+        // 设置盒子的圆滑度为5px
+        border-radius: 5px;
+        // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+        display: inline-block;
+        // 文字横向居中显示
+        text-align: center;
+        // 设定行高为盒子的高度，则文字会竖向居中显示
+        line-height: 40px;
+        // 去掉a标签的下划线
+        text-decoration: none;
+      }
+    }
+  }
+
+  .model-room {
+    float: right;
+    margin: 10px 10px;
+    width: 400px;
+    //height: 100%;
+    background-color: rgb(255, 255, 255);
+    // 设置背景透明度
+    background: rgba(255, 255, 255, 0.2);
+    // 文字不透明
+    filter: alpha(0.9);
+
+    * {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    .container {
+      width: 320px;
+      height: 50px;
+      margin: 20px auto;
+    }
+
+    .box {
+      perspective: 800px;
+      position: relative;
+    }
+
+    .content {
+      width: 320px;
+      height: 50px;
+      transform-style: preserve-3d;
+      animation: run 10s infinite;
+    }
+
+    .content div {
+      width: 320px;
+      height: 50px;
+      position: absolute;
+      text-align: center;
+      line-height: 50px;
+      font-size: 32px;
+      color: yellow;
+    }
+
+    .front {
+      transform: translateZ(100px);
+      background-color: rgba(250, 185, 175, 0.8);
+    }
+
+    .back {
+      transform: translateZ(-100px) rotateY(180deg);
+      background-color: rgba(36, 255, 1, 0.8);
+    }
+
+    .left {
+      left: -100px;
+      transform: rotateY(-90deg);
+      background-color: rgba(125, 12, 175, 0.8);
+    }
+
+    .right {
+      left: 100px;
+      transform: rotateY(90deg);
+      background-color: rgba(25, 62, 75, 0.8);
+    }
+
+    @keyframes run {
+      0% {
+        transform: rotateY(0);
+      }
+      10% {
+        transform: rotateY(180deg);
+      }
+      20% {
+        transform: rotateX(180deg);
+        transform: rotateY(180deg);
+      }
+    }
+
+    .model-list {
+      float: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 20px;
+
+        img {
+        float: left;
+        width: 240px;
+        height: 300px;
+          margin-bottom: 10px;
+      }
+
+      .model-btn-group {
+        width: 400 - 240 - 30 px;
+        //float: right;
+        margin-left: 10px;
+        font-size: 20px;
+        margin-top: 10px;
+
+        .model-btn {
+          margin-top: 10px;
+          margin-left: 10px;
+          font-size: 16px;
+          width: 130px;
+          height: 30px;
+          background: grey;
+          color: yellow;
+          // 设置盒子的圆滑度为5px
+          border-radius: 5px;
+          // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
+          display: inline-block;
+          // 文字横向居中显示
+          text-align: center;
+          // 设定行高为盒子的高度，则文字会竖向居中显示
+          line-height: 30px;
+          // 去掉a标签的下划线
+          text-decoration: none;
+        }
+      }
+
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+  }
+}
+
+
+.footer {
+  position: absolute;
+  top: 600px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  //display: none;
+}
+
+
+

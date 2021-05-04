@@ -1,0 +1,51 @@
+{% extends "cms/base.html" %}
+
+{% block title %}
+    添加店铺
+{% endblock %}
+
+{% block head %}
+    <script src="{% static 'js/add_shop.min.js' %}"></script>
+
+{% endblock %}
+
+{% block content-header %}
+    <h1>添加店铺</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-success">
+                <div class="box-header">
+                    <button id="add-shop-btn" class="btn btn-success pull-right">添加店铺</button>
+                </div>
+                <div class="box-body">
+                    <!-- 在Django中使用bootstrap中自定义的表格就需要给table指定一个类为table，如果想要使用有边框的表格的话就需要再指定一个类为table-bordered -->
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>店铺名称</th>
+                            <th class="shopkeeper">店主昵称</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for shop in shops %}
+                            <tr data-id="{{ shop.pk }}" data-name="{{ shop.name }}">
+                                <td>{{ shop.name }}</td>
+                                <td>{{ shop.shopkeeper }}</td>
+                                <td>
+                                    <button class="btn btn-success btn-xs shop-edit-btn">编辑</button>
+                                    <button class="btn btn-danger btn-xs shop-delete-btn">删除</button>
+                                </td>
+                            </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

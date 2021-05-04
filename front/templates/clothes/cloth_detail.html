@@ -1,121 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>蒂斯芙尼衣吧</title>
-    <link rel="stylesheet" href="../../dist/css/cloth_detail.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_2xqetz1l455.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_pqmelmp3qd.css">
-    <script src="../../dist/js/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-<header class="header">
-    <div class="main-header">
-        <div class="log-box">
-            <i class="iconfont icon-mote-"></i>
-            <a href="#" style="margin-right: 20px">蒂芙<strong>衣吧</strong></a>
-        </div>
-        <ul class="nav">
-            <li class="active"><a href="#" style="color: blue">首页新品</a></li>
-            <li><a href="#" style="color: red">女装新宠</a></li>
-            <li><a href="#" style="color: deeppink">潮流男装</a></li>
-            <li><a href="#" style="color: blueviolet">搜索</a></li>
-        </ul>
-        <div class="auth-box">
-            <i class="iconfont icon-icon"></i>
-            <a href="#">登录</a> /
-            <a href="#">注册</a>
+{% extends 'base/front_base.html' %}
 
-        </div>
-    </div>
-</header>
-<div class="main">
-    <div class="main-wrapper">
-        <div class="cloth-wrapper">
-            <div class="cloth-title">
-                2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉
-            </div>
-            <div class="cloth-more">
-                <div class="share-more">
-                    <p>分享至：</p>
+
+{% block title %}
+    商品详情
+{% endblock %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
+    <link rel="stylesheet" href="{% static 'css/cloth_detail.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="main-wrapper">
+            {% for cloth in clothes %}
+                <div class="cloth-wrapper">
+                    <div class="cloth-title">
+                        {{ cloth.title }}
+                    </div>
+                    <div class="cloth-more">
+                        <div class="shop-group">
+                            <i class="iconfont icon-shop" style="color: coral"></i>
+                            <p class="shop" style="margin-top: 5px;">{{ cloth.shop }}</p>
+                        </div>
+                        <div class="price-group">
+                            <span class="price">￥{{ cloth.price }}</span>
+                            <a href="{% url 'clothes:cloth_order' %}" class="buy-btn">立即购买</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="price-group">
-                    <span class="price">￥54.0</span>
-                    <a href="#" class="buy-btn">立即购买</a>
-                </div>
-            </div>
-        </div>
-        <div class="cloth-info-group">
-            <div class="cloth-img">
-            </div>
-            <div class="cloth-info">
-                <div class="attributes-group">
-                    <div class="commerical-group">
+                <div class="cloth-info-group">
+                    <div class="cloth-img">
+                        <img src="{{ cloth.thumbnail }}" alt="">
+                    </div>
+                    <div class="cloth-info">
+                        <div class="attributes-group">
+                            <div class="commerical-group">
                         <span class="commerical">
-                            颜值新宠 时尚显瘦 高腰不起球 百搭西装裙
+                            {{ cloth.desc }}
                         </span>
-                    </div>
-                    <div class="attribute-title">
-                        <span class="attribute">商品属性：</span>
-                    </div>
-                    <ul class="attributes-list">
-                        <li><a href="#">品牌名称：范茜玟</a></li>
-                        <li><a href="#">适用年龄：25-29岁</a></li>
-                        <li><a href="#">面料：其他</a></li>
-                        <li><a href="#">图案：格子</a></li>
-                        <li><a href="#">风格：通勤</a></li>
-                        <li><a href="#">货号：F1758</a></li>
-                        <li><a href="#">腰型：高腰</a></li>
-                        <li><a href="#">廓形：A型</a></li>
-                        <li><a href="#">材质成分：粘胶纤维（65%）</a></li>
-                        <li><a href="#">年份季节：2021年夏季</a></li>
-                        <li><a href="#">流行元素/工艺：纽扣 拉链</a></li>
-                    </ul>
-                    <div class="performance-pledge">
-                        <span class="service">服务承诺</span>
-                        <ul class="pledge-list">
-                            <li><a href="#">正品保证</a></li>
-                            <li><a href="#">极速退款</a></li>
-                            <li><a href="#">退货运费险</a></li>
-                            <li><a href="#">七天无理由退款</a></li>
-                        </ul>
-                    </div>
-                    <div class="btn-group">
-                        <a href="#" class="shopping-cart-btn">加入购物车</a>
-                        <a href="#" class="fitting-room-btn">加入试衣间</a>
+                            </div>
+                            <div class="attribute-title">
+                                <span class="attribute">商品属性：</span>
+                            </div>
+                            <ul class="attributes-list">
+                                <li><a href="#">{{ cloth.content }}</a></li>
+                            </ul>
+                            <div class="performance-pledge">
+                                <span class="service">服务承诺</span>
+                                <ul class="pledge-list">
+                                    <li><a href="#">正品保证</a></li>
+                                    <li><a href="#">极速退款</a></li>
+                                    <li><a href="#">退货运费险</a></li>
+                                    <li><a href="#">七天无理由退款</a></li>
+                                </ul>
+                            </div>
+                            <div class="btn-group">
+                                <a href="#" class="fitting-room-btn">加入试衣间</a>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-
-            </div>
+            {% endfor %}
         </div>
     </div>
-</div>
-<footer class="footer">
-    <div class="top-group">
-        <div class="inner-group">
-            <div class="detail-group">
-                <div class="line1">
-                    <div class="links-group">
-                        <ul class="links">
-                            <li><a href="#">关于集团</a></li>
-                            <li><a href="#">试衣课堂</a></li>
-                            <li><a href="#">寻求帮助</a></li>
-                            <li><a href="#">买家大礼包</a></li>
-                        </ul>
-                        <div class="about-us">联系我们：</div>
-                    </div>
-
-                </div>
-                <div class="line2">
-                    <div class="address">地址：浙江省杭州市江干区6543号024室</div>
-                    <div class="concat">联系我们：410-778-4850（工作时间：8:00-23:00）</div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="bottom-group">
-        ©2020-2021 蒂芙集团潮流服饰有限公司版权所有 浙B2-20210191-18 备案管理系统网站
-    </div>
-</footer>
-</body>
-</html>
+{% endblock %}

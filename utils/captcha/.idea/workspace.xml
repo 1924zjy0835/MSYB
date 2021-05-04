@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2205eef2-3bd9-404d-9a5d-a3bbdd594b9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../Django后端开发工作" beforeDir="false" afterPath="$PROJECT_DIR$/../../Django后端开发工作" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/antAuth/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/antAuth/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/antAuth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/antAuth/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/antAuth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/antAuth/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/antAuth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/antAuth/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/cms/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/course/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/course/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/course/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/course/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/news/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/news/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/payinfo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/payinfo/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../apps/payinfo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../apps/payinfo/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/dist/adminlte/bower_components/bootstrap/js/tab.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/dist/adminlte/bower_components/bootstrap/js/tab.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/dist/adminlte/bower_components/jquery/dist/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/dist/adminlte/bower_components/jquery/dist/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/common/auth.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/common/auth.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/common/auth1.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/common/auth1.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/common/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/common/body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/common/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/common/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/common/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/common/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/course/course_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/course/course_detail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/course/course_index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/course/course_index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/course/course_nav.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/course/course_nav.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/news/news_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/news/news_detail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/payinfo/payinfo.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/payinfo/payinfo.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/css/search/search.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/css/search/search.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/js/FrontBaseHeader.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/js/FrontBaseHeader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/js/antajax.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/js/antajax.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/src/js/message.js" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/src/js/message.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/base/front_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/base/front_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/cms/login/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/cms/login/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/common/auth.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/common/auth.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/common/sidebar.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/common/sidebar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/course/course_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/course/course_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/course/course_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/course/course_index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/news/news_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/news/news_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/payinfo/payinfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/payinfo/payinfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../front/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../front/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AntCaptcha.py" beforeDir="false" afterPath="$PROJECT_DIR$/AntCaptcha.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../restful.py" beforeDir="false" afterPath="$PROJECT_DIR$/../restful.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../smssender.py" beforeDir="false" afterPath="$PROJECT_DIR$/../smssender.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="620" />
+    <option name="y" value="152" />
+    <option name="width" value="1564" />
+    <option name="height" value="943" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="captcha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="captcha" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="D:/知了课堂Django/Django项目xfz实战代码/xfz" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2205eef2-3bd9-404d-9a5d-a3bbdd594b9b" name="Default Changelist" comment="" />
+      <created>1585385422309</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585385422309</updated>
+      <workItem from="1585385423882" duration="57000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="57000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="496" y="122" width="1251" height="754" extended-state="0" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24979044" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Python Console" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

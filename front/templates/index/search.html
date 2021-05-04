@@ -1,0 +1,184 @@
+{% extends "base/front_base.html" %}
+
+{% block title %}
+    搜索
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/search.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.min.css' %}">
+    <script src="{% static 'js/index.min.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+        <div class="main">
+        <div class="main-wrapper">
+            <div class="list-outer-group">
+                <ul class="list-tab">
+                    <li class="active"><a href="#">最新潮流</a></li>
+                    <li><a href="#">热卖</a></li>
+                    <li><a href="#">干货分享</a></li>
+                    <li><a href="#">买家说</a></li>
+                    <li><a href="#">其它</a></li>
+                </ul>
+            </div>
+            <div class="cloth-group">
+                <ul class="list">
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+
+
+                        </div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="thumbnail-group"><img
+                                src="{% static 'images/clothes01.min.jpg' %}"
+                                alt="" class="thumbnail"></div>
+                        <div class="cloth-info">
+                            <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
+                            <button class="cloth-detail"
+                                    onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' %}'">商品详情
+                            </button>
+                            <button class="cloth-fitting"
+                                    onclick="javascript:window.location.href='{% url 'clothes:fitting_room' %}'">加入试衣间
+                            </button>
+                            <p class="price-group">
+                                <span class="price">￥:54</span>
+                            </p>
+                        </div>
+                    </a></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}

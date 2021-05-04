@@ -143,6 +143,7 @@
   .cloth-group {
     margin-top: 10px;
     width: $mainWrapperWidth;
+    margin-bottom: 200px;
 
     .list {
       width: 100%;
@@ -158,21 +159,23 @@
         margin-bottom: 10px;
         background: #fff;
         float: left;
-        width: 204px;
+        width: 244px;
         height: 358px;
         list-style: none;
         position: relative;
+
         &:hover {
-          box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         a {
+          font-size: 14px;
           text-decoration: none;
-          color: coral;
+          //color: coral;
 
           .thumbnail-group {
             img {
-              width: 184px;
+              width: 224px;
               height: 230px;
               margin-top: 10px;
               margin-left: 10px;
@@ -194,43 +197,75 @@
         .title {
           float: left;
           margin-bottom: 10px;
-
         }
 
-        .cloth-detail {
+        .shop-group {
           float: left;
-          margin-right: 5px;
-          height: 30px;
-          background: coral;
-          border-radius: 10%;
-          border: none;
-          cursor: pointer;
-          outline: none;
-          font-size: 10px;
-        }
+          margin-top: 4px;
+          color: #ff00de;
 
-        .cloth-fitting {
-          float: left;
-          margin-right: 10px;
-          height: 30px;
-          background: coral;
-          border-radius: 10%;
-          border: none;
-          cursor: pointer;
-          outline: none;
-          font-size: 10px;
+          i {
+            width: 10px;
+            height: 10px;
+            //color: deeppink;
+          }
         }
 
         .price-group {
           float: right;
+          margin-top: 4px;
 
-          .price {
+          .cloth-price {
+            font-size: 20px;
             position: absolute;
             bottom: 15px;
             right: 10px;
+            color: red;
+          }
+        }
+
+        .cloth-more {
+          margin-top: 30px;
+
+          .cloth-detail {
+            float: left;
+            height: 30px;
+            background: coral;
+            border-radius: 10%;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-size: 10px;
+          }
+
+          .cloth-fitting {
+            float: left;
+            margin-left: 20px;
+            height: 30px;
+            background: coral;
+            border-radius: 10%;
+            border: none;
+            cursor: pointer;
+            outline: none;
+            font-size: 10px;
           }
         }
       }
+    }
+  }
+
+  .load-more-group {
+    padding: 20px 0;
+    text-align: center;
+
+    .load-more {
+      width: 900px;
+      height: 40px;
+      background: #d2dcea;
+      color: #6d85ac;
+      border: none;
+      outline: none;
+      cursor: pointer;
     }
   }
 }

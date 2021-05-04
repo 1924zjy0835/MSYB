@@ -1,220 +1,114 @@
-<!--
-  * @Description: index.html
-  * @Author: 孤烟逐云zjy
-  * @Date: 2021/3/11 12:00
-  * @SoftWare: PyCharm
-  * @CSDN: https://blog.csdn.net/zjy123078_zjy
-  * @博客园: https://www.cnblogs.com/guyan-2020/
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>蒂斯芙尼衣吧</title>
-    <link rel="stylesheet" href="../../dist/css/index.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_2xqetz1l455.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_pqmelmp3qd.css">
-    <script src="../../dist/js/jquery-3.3.1.min.js"></script>
-    <script src="../../dist/js/index.min.js"></script>
-</head>
-<body>
-<header class="header">
+{% extends  "base/front_base.html" %}
+{% block title %}
+    首页
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/index.min.css' %}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
+    <script src="{% static 'js/index.min.js' %}"></script>
+    <script src="{% static 'js/closet_room.min.js' %}"></script>
+    <script src="{% static 'js/cloth_detail.min.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+    <header class="header">
     <div class="main-header">
         <div class="log-box">
             <i class="iconfont icon-mote-"></i>
-            <a href="#" style="margin-right: 20px">蒂芙<strong>衣吧</strong></a>
+            <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
         </div>
         <ul class="nav">
-            <li class="active"><a href="#" style="color: blue">首页新品</a>
+            {% for clothcategory in clothcategorys %}
+                <li><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}" style="color: deeppink">{{ clothcategory.name }}</a>
             </li>
-            <li><a href="#" style="color: red">女装新宠</a>
-            </li>
-            <li><a href="#" style="color: deeppink">潮流男装</a>
-            </li>
+            {% endfor %}
             <li><a href="#" style="color: blueviolet">搜索</a></li>
         </ul>
         <div class="auth-box">
             <i class="iconfont icon-icon"></i>
-            <a href="#">登录</a> /
-            <a href="#">注册</a>
-
+        <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
+        <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
+            {% if user.is_authenticated %}
+                <!-- 如果用户没有登录，user就是一个匿名的用户 -->
+                <a href="#" class="authenticated-box">{{ user.username }}</a>
+                <div class="user-more-box">
+                    <i class="triangle"></i>
+                    {% if user.is_staff %}
+                        <a href="{% url 'cms:index' %}">管理系统</a>
+                    {% endif %}
+                    <a href="{% url 'msybauth:logout' %}">退出登录</a>
+                </div>
+            {% else %}
+                <a href="#" class="Signin-btn">登录</a> /
+                <a href="#" class="Signup-btn">注册</a>
+            {% endif %}
         </div>
     </div>
 </header>
-<div class="main">
-    <div class="main-wrapper">
-        <div class="carousel-map" id="banner-group">
-            <ul class="carousel-img" id="banner-ul">
-                <li><a href="#"><img src="./../../dist/images/news.min.jpg" alt=""></a></li>
-                <li><a href="#"><img src="./../../dist/images/news01.min.jpg" alt=""></a></li>
-                <li><a href="#"><img src="./../../dist/images/news02.min.jpg" alt=""></a></li>
-                <li><a href="#"><img src="./../../dist/images/news03.min.jpg" alt=""></a></li>
-            </ul>
-            <span class="arrow left-arrow"><</span>
-            <span class="arrow right-arrow">></span>
-            <div class="page-control-group">
-                <ul class="page-control">
+    <div class="main">
+        <div class="main-wrapper">
+            <div class="carousel-map" id="banner-group">
+                <ul class="carousel-img" id="banner-ul">
+                    <li><a href="#"><img src="{% static 'images/news.min.jpg' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/news01.min.jpg' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/news02.min.jpg' %}" alt=""></a></li>
+                    <li><a href="#"><img src="{% static 'images/news03.min.jpg' %}" alt=""></a></li>
+                </ul>
+                <span class="arrow left-arrow"><</span>
+                <span class="arrow right-arrow">></span>
+                <div class="page-control-group">
+                    <ul class="page-control">
+                    </ul>
+                </div>
+            </div>
+            <div class="list-outer-group">
+                <ul class="list-tab">
+                    <li class="active"><a href="#">最新潮流</a></li>
+                    <li><a href="#">热卖</a></li>
+                    <li><a href="#">干货分享</a></li>
+                    <li><a href="#">买家说</a></li>
+                    <li><a href="#">其它</a></li>
                 </ul>
             </div>
-        </div>
-        <div class="list-outer-group">
-            <ul class="list-tab">
-                <li class="active"><a href="#">最新潮流</a></li>
-                <li><a href="#">热卖</a></li>
-                <li><a href="#">干货分享</a></li>
-                <li><a href="#">买家说</a></li>
-                <li><a href="#">其它</a></li>
-            </ul>
-        </div>
-        <div class="cloth-group">
-            <ul class="list">
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-                    </div>
-                </a></li>
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-                                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-
-
-                    </div>
-                </a></li>
-                <li><a href="#">
-                    <div class="thumbnail-group"><img
-                            src="https://img.alicdn.com/imgextra/i3/1894897750/O1CN01pQ5ib0277YBI9LoB8_!!0-item_pic.jpg_430x430q90.jpg"
-                            alt="" class="thumbnail"></div>
-                    <div class="cloth-info">
-                        <p class="title">2021新款短袖半袖粉色t恤女装体恤时尚性感洋气上衣网纱夏季纯棉</p>
-                        <button class="cloth-detail">商品详情</button>
-                        <button class="cloth-fitting">加入试衣间</button>
-                        <p class="price-group">
-                            <span class="price">￥:54</span>
-                        </p>
-                    </div>
-                </a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<footer class="footer">
-    <div class="top-group">
-        <div class="inner-group">
-            <div class="detail-group">
-                <div class="line1">
-                    <div class="links-group">
-                        <ul class="links">
-                            <li><a href="#">关于集团</a></li>
-                            <li><a href="#">试衣课堂</a></li>
-                            <li><a href="#">寻求帮助</a></li>
-                            <li><a href="#">买家大礼包</a></li>
-                        </ul>
-                        <div class="about-us">联系我们：</div>
-                    </div>
-
-                </div>
-                <div class="line2">
-                    <div class="address">地址：浙江省杭州市江干区6543号024室</div>
-                    <div class="concat">联系我们：410-778-4850（工作时间：8:00-23:00）</div>
-                </div>
+            <div class="cloth-group">
+                <ul class="list">
+                    {% for cloth in clothes %}
+                        <li data-id="{{ cloth.pk }}"><a href="#">
+                            <div class="thumbnail-group"><img data-name="{{ cloth.thumbnail }}"
+                                                              src="{{ cloth.thumbnail }}" alt="" class="thumbnail">
+                            </div>
+                            <div class="cloth-info">
+                                <span data-name="{{ cloth.title }}" class="cloth-title">{{ cloth.title }}</span>
+                                <div class="shop-group">
+                                    <i class="iconfont icon-shop" style="color: coral"></i>
+                                    <span class="cloth-shop">{{ cloth.shop }}</span>
+                                </div>
+                                <div class="price-group">
+                                    <span class="cloth-price">￥{{ cloth.price }}</span>
+                                </div>
+                                <div class="cloth-more">
+                                    <button data-name="cloth-detail" class="cloth-detail"
+                                            onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' cloth_id=cloth.pk %}'">
+                                        商品详情
+                                    </button>
+                                    <button id="cloth-fitting" class="cloth-fitting add-closet-btn"
+                                            onclick="javascript:window.location.href='{% url 'clothes:closet_room' %}'">
+                                        加入试衣间
+                                    </button>
+                                </div>
+                            </div>
+                        </a></li>
+                    {% endfor %}
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                </ul>
+            </div>
+            <div class="load-more-group">
+                <button class="load-more" id="load-more-btn">查看更多</button>
             </div>
         </div>
     </div>
-    <div class="bottom-group">
-        ©2020-2021 蒂芙集团潮流服饰有限公司版权所有 浙B2-20210191-18 备案管理系统网站
-    </div>
-</footer>
-</body>
-</html>
+{% endblock %}

@@ -1,0 +1,223 @@
+@import "init";
+@import "body";
+@import "variable";
+
+.main-wrapper {
+  .mask-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../images/auth_background01.min.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: alpha(0.9);
+    //background: rgba(255, 255, 255, 0.5);
+    overflow-y: scroll;
+    display: none;
+    z-index: 20;
+
+    .auth-wrapper {
+      margin: 80px auto;
+      width: 400px;
+      //height: 540px;
+      //background: white;
+      //opacity: 0.3;
+
+      .bounce-title {
+        margin-top: 130px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        color: rgb(25, 255, 255);
+        height: 0;
+        font-size: 64px;
+        //font: normal bold 1rem "Product Sans", sans-serif;
+        white-space: nowrap;
+      }
+
+      .letter {
+        margin-bottom: 60px;
+        animation: bounce 0.75s cubic-bezier(0.05, 0, 0.2, 1) infinite alternate;
+        display: inline-block;
+        transform: translate3d(0, 0, 0);
+        text-shadow: rgba(255, 255, 255, 0.4) 0 0 0.05em;
+        font-size: 64px;
+        //font: normal 500 6rem 'Varela Round', sans-serif;
+      }
+
+      .letter:nth-child(1) {
+        animation-delay: 0s;
+      }
+
+      .letter:nth-child(2) {
+        animation-delay: 0.0833333333s;
+      }
+
+      .letter:nth-child(3) {
+        animation-delay: 0.1666666667s;
+      }
+
+      .letter:nth-child(4) {
+        animation-delay: 0.25s;
+      }
+
+      .letter:nth-child(5) {
+        animation-delay: 0.3333333333s;
+      }
+
+      .letter:nth-child(6) {
+        animation-delay: 0.4166666667s;
+      }
+
+      @keyframes bounce {
+        0% {
+          transform: translate3d(0, 0, 0);
+          text-shadow: rgba(25, 255, 255, 0.4) 0 0 0.05em;
+        }
+        100% {
+          transform: translate3d(0, -1em, 0);
+          text-shadow: rgba(25, 255, 255, 0.4) 0 1em 0.35em;
+        }
+      }
+    }
+  }
+
+  .close-group {
+    border: 0.2px solid #cccccc;
+    border-bottom: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 40px;
+    //background: cornflowerblue;
+
+    .close-btn {
+      float: right;
+      line-height: 40px;
+      margin-right: 10px;
+      cursor: pointer;
+      color: #fff;
+    }
+  }
+
+  .auth-inner-group {
+    position: relative;
+    width: 100%;
+    height: $authWrapperHeight;
+    //background: coral;
+    overflow: hidden;
+
+    .scroll-wrapper {
+      width: $authWrapperWidth;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      .auth-group {
+        width: 400px;
+        //height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        background: white;
+
+        .top-group {
+          width: 100%;
+          height: 40px;
+          line-height: 38px;
+          border-bottom: 1px solid #eeeeee;
+
+          .auth-title {
+            float: left;
+            border-bottom: 3px solid blue;
+          }
+
+          .switch {
+            float: right;
+            color: #cccccc;
+            text-decoration: none;
+          }
+        }
+
+        .form-group {
+          margin-top: 20px;
+
+          .input-group {
+            margin-top: 20px;
+            width: 100%;
+            overflow: hidden;
+
+            .form-control {
+              width: 100%;
+              background: #cccccc;
+              border: 1px solid #cccccc;
+              padding: 10px;
+              // padding在内部消化掉
+              box-sizing: border-box;
+              outline: none;
+            }
+
+            .remember-label {
+              font-size: 14px;
+            }
+
+            .submit-btn {
+              width: 100%;
+              height: 40px;
+              background: cornflowerblue;
+              border: none;
+              color: #fff;
+              cursor: pointer;
+              outline: none;
+              margin-bottom: 40px;
+            }
+
+            .short-input-group {
+              float: left;
+              width: 250px;
+            }
+
+            .input-group-addon {
+              float: right;
+              width: 120px;
+              height: 40px;
+
+              .sms-captcha-btn {
+                font-size: 14px;
+                width: 100%;
+                height: 40px;
+                color: #cccccc;
+                //margin-top: 20px;
+                display: inline-block;
+                text-align: center;
+                line-height: 40px;
+                border: 0.1px solid #cccccc;
+                box-sizing: border-box;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+
+      .signin-group {
+        float: left;
+        //margin-bottom: 60px;
+        background-color: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.3);
+        filter: alpha(1);
+        //opacity: 0.5;
+      }
+
+      .signup-group {
+        float: right;
+        //background: firebrick;
+        background-color: rgb(255, 255, 255);
+        background: rgba(255, 255, 255, 0.3);
+        filter: alpha(1);
+      }
+    }
+  }
+}

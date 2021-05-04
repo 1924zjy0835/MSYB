@@ -11,11 +11,12 @@
     margin: 0 auto;
 
     .cloth-wrapper {
-      margin-top: 74px;
+      //margin-top: 74px;
       width: 100%;
       padding: 10px;
       background: #ffffff;
       box-sizing: border-box;
+      position: relative;
 
       .cloth-title {
         margin-bottom: 10px;
@@ -25,12 +26,21 @@
       .cloth-more {
         overflow: hidden;
 
-        .share-more {
+        .shop-group {
           float: left;
+          margin-top: 4px;
           font-size: 14px;
+          color: grey;
 
-          p {
-            color: grey;
+          i {
+            margin-top: 4px;
+            float: left;
+          }
+
+          .shop {
+            float: left;
+            margin-left: 10px;
+            color: coral;
           }
         }
 
@@ -78,8 +88,11 @@
         float: left;
         width: $clothImgWidth;
         height: $clothImgHeight;
-        background: url("../../dist/images/cloth_detail01.min.jpg");
-        background-repeat: no-repeat;
+
+        img{
+          width: 100%;
+          height: 100%;
+        }
       }
 
       .cloth-info {
@@ -168,28 +181,8 @@
         .btn-group {
           margin-top: 20px;
 
-          .shopping-cart-btn {
-            margin-right: 20px;
-            margin-left: 20px;
-            width: 100px;
-            height: 30px;
-            float: right;
-            background: coral;
-            color: #ffffff;
-            // 设置盒子的圆滑度为5px
-            border-radius: 5px;
-            // 作为块对象被呈递为内联对象，但是对象的内容作为块对象呈递，旁边的内联对象会被呈递在同一行，允许空格
-            display: inline-block;
-            // 文字横向居中显示
-            text-align: center;
-            // 设定行高为盒子的高度，则文字会竖向居中显示
-            line-height: 30px;
-            // 去掉a标签的下划线
-            text-decoration: none;
-          }
-
           .fitting-room-btn {
-            margin-left: 20px;
+            margin-right: 20px;
             width: 100px;
             height: 30px;
             float: right;

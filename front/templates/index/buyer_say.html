@@ -1,0 +1,24 @@
+{% extends 'base/front_base.html' %}
+
+{% block title %}
+    买家说
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/buyer_say.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="main-wrapper">
+        <form action="" method="post">
+            <tabel>
+                {{ form.as_table }}
+            <tr>
+                <td></td>
+                <td><input type="submit" value="提交"></td>
+            </tr>
+            </tabel>
+        </form>
+
+    </div>
+{% endblock %}

@@ -1,44 +1,117 @@
-<!--
-  * @Description: fitting_room.html.html
-  * @Author: 孤烟逐云zjy
-  * @Date: 2021/4/12 8:26
-  * @SoftWare: PyCharm
-  * @CSDN: https://blog.csdn.net/zjy123078_zjy
-  * @博客园: https://www.cnblogs.com/guyan-2020/
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>蒂斯芙尼衣吧</title>
-    <link rel="stylesheet" href="../../dist/css/fitting_room.min.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_2xqetz1l455.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_pqmelmp3qd.css">
-    <script src="../../dist/js/jquery-3.3.1.min.js"></script>
-</head>
-<body>
-<header class="header">
-    <div class="main-header">
-        <div class="log-box">
-            <i class="iconfont icon-mote-"></i>
-            <a href="#" style="margin-right: 20px">蒂芙<strong>衣吧</strong></a>
-        </div>
-        <ul class="nav">
-            <li class="active"><a href="#" style="color: blue">首页新品</a></li>
-            <li><a href="#" style="color: red">女装新宠</a></li>
-            <li><a href="#" style="color: deeppink">潮流男装</a></li>
-            <li><a href="#" style="color: blueviolet">搜索</a></li>
-        </ul>
-        <div class="auth-box">
-            <i class="iconfont icon-icon"></i>
-            <a href="#">登录</a> /
-            <a href="#">注册</a>
+{% extends 'base/front_base.html' %}
 
+{% block title %}
+    模型试衣间
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/fitting_room.min.css' %}">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
+    <script src="{% static 'js/fitting_room.min.js' %}"></script>
+    <script src="{% static 'js/closet_room.min.js' %}"></script>>
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="closet-room">
+            <div class="container">
+                <div class="box">
+                    <div class="content">
+                        <div class="front">储衣间</div>
+                        <div class="back">储衣间</div>
+                        <div class="left">储衣间</div>
+                        <div class="right">储衣间</div>
+                    </div>
+                </div>
+            </div>
+            <ul class="clothes-list">
+                {% if clothes %}
+                    {% for cloth in clothes %}
+                        <li data-name="{{ cloth.thumbnail }}">
+                            <img src="{{ cloth.thumbnail }}" alt="">
+                            <div class="clothes-info">
+                                <a href="#" class="title-btn close-info">{{ cloth.title }}</a>
+                                <a href="#" class="choose-this-btn closet-btn">选择这件衣服</a>
+                                <a href="#" class="cloth-model-btn closet-btn">提取衣服模型</a>
+                                <a href="#" class="delete-cloth closet-btn">删除这件服装</a>
+                            <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
+                            </div>
+                        </li>
+                    {% endfor %}
+                {% else %}
+                    <li><img src="{% static 'images/closet_room.min.jpg' %}" alt="">
+                        <div class="clothes-info">
+                            <a href="{% url 'clothes:index' %}" class="choose-this-btn closet-btn">选择服装加入</a>
+                            <a href="#" class="delete-cloth closet-btn">删除这件服装</a>
+                            <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
+                        </div>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+        <div class="model-fitting-room">
+            <div class="fitting-tips">
+                <div class="tips-title">
+                <span class="tip">
+                    平台使用规范，温馨提示
+                </span>
+                </div>
+                <ul class="tips">
+                    <li>（1）应在右边模特间上传个人全身照（注意一定要上传真实照片哦！否者会影响试穿的效果）;</li>
+                    <li>（2）支持jpg/png格式图片;</li>
+                    <li>（3）上传照片之后，保存成功即可提取您的3D人体模型;</li>
+                    <li>（4）即可在左边的储衣间选择想要试穿的衣服，试穿衣服即可看到试衣效果哦^_^;</li>
+                </ul>
+            </div>
+            <div class="model-fitting">
+
+            </div>
+            <div class="model-fitting-btn">
+                <a href="#" class="fitting-btn">进行试衣</a>
+            </div>
+        </div>
+        <div class="model-room">
+            <div class="container">
+                <div class="box">
+                    <div class="content">
+                        <div class="front">模特间</div>
+                        <div class="back">模特间</div>
+                        <div class="left">模特间</div>
+                        <div class="right">模特间</div>
+                    </div>
+                </div>
+            </div>
+            <div class="model-list">
+                <!-- 如果用户上传了个人照片，就会显示用户上传的个人照片，否者的话，就会显示默认的照片-->
+                {% if photos %}
+                    {% for photo in photos %}
+                        <img src="{{ photo.img_url }}" alt="" data-name="{{ photo.img_url }}">
+                        <div class="model-btn-group">
+                    <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
+                    <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden type="file"
+                                                                                                      id="upload-btn"></label>
+                    <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
+                    <a class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</a>
+                    <a href="#" class="save-btn model-btn">保存该模型</a>
+                    <a href="#" class="delete-btn model-btn">删除模型</a>
+                    <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                </div>
+                    {% endfor %}
+                {% else %}
+                    <img src="{% static 'images/addphoto.min.jpg' %}" alt=""
+                         data-name="{% static 'images/addphoto.min.jpg' %}">
+                    <div class="model-btn-group">
+                    <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
+                    <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden type="file"
+                                                                                                      id="upload-btn"></label>
+                    <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
+                    <a class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</a>
+                    <a href="#" class="save-btn model-btn">保存该模型</a>
+                    <a href="#" class="delete-btn model-btn">删除模型</a>
+                    <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                </div>
+                {% endif %}
+            </div>
         </div>
     </div>
-</header>
-<div class="main">
-</div>
-
-</body>
-</html>
+{% endblock %}

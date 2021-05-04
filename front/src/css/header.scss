@@ -3,7 +3,7 @@
 
 .header {
   //background: pink;
-  background: url("../../dist/images/footer_background01.min.gif");
+  background: url("../images/header_background01.min.gif");
   height: $headerHeight;
   width: 100%;
   //里面的盒子都浮动起来了，这样的话，外面的盒子就获取不到里面盒子的大小，
@@ -14,7 +14,7 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 100;
+  z-index: 1;
   box-shadow: 0 10px 5px rgba(0,0,0,0.2);
 
   .main-header {
@@ -79,6 +79,7 @@
       font-size: 20px;
       height: $headerHeight;
       line-height: $headerHeight;
+      position: relative;
 
       i {
         font-size: 30px;
@@ -89,6 +90,42 @@
         color: white;
         font-size: 20px;
         text-decoration: none;
+      }
+
+      .user-more-box {
+        background: #fff;
+        width: 100px;
+        //height: 90px;
+        //position: absolute;
+        // 将其设置为固定定位，指定左右、上下距离
+        position: fixed;
+        box-shadow: 0 3px 4px #cccccc;
+        border-radius: 5px;
+        top: 65px;
+        right: 120px;
+        font-size: 10px;
+        z-index: 5;
+        display: none;
+
+        .triangle {
+          border: solid transparent;
+          border-width: 10px;
+          border-bottom-color: #fff;
+          display: block;
+          width: 0;
+          height: 0;
+          margin-top: -20px;
+          margin-left: 40px;
+          z-index: 5;
+        }
+        a {
+          text-align: center;
+          height: 44px;
+          font-size: 12px;
+          color: #6d85ac!important;
+          display: block;
+          line-height: 44px;
+        }
       }
     }
   }

@@ -1,0 +1,87 @@
+{% extends "cms/base.html" %}
+
+{% block title %}
+    上架服装
+{% endblock %}
+
+{% block head %}
+    <!-- 直接使用静态文件地址 ,同样也可以使用Npm安装：npm install qiniu-js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qiniu-js/3.1.4/qiniu.min.js"></script>
+    <script src="{% static 'js/publish_cloth.min.js' %}"></script>
+{% endblock %}
+
+{% block content-header %}
+    <h1>上新商品</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-success">
+                <form action="" class="form">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="shop-form">店铺名</label>
+                            <select class="form-control" name="shop" id="shop-form">
+                                {% for shop in shops %}
+                                    <option value="{{ shop.pk }}">{{ shop.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="title-form">标题</label>
+                            <input type="text" class="form-control" name="title" id="title-form">
+                        </div>
+                        <div class="form-group">
+                            <label for="category-form" class="category">分类</label>
+                            <select class="form-control" name="category" id="category-form">
+                                {% for category in categories %}
+                                    <option value="{{ category.pk }}">{{ category.name }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="price-form" class="price">价格</label>
+                            <input type="text" class="form-control" name="price" id="price-form">
+                        </div>
+                        <div class="form-group">
+                            <label for="desc-form" class="desc">描述</label>
+                            <input type="text" class="form-control" name="desc" id="desc-form">
+                        </div>
+                        <div class="form-group">
+                            <label for="thumbnail-form">商品主图</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="thumbnail-form" name="thumbnail">
+                                <span class="input-group-btn">
+                                <label class="btn btn-success btn-file">上传图片<input hidden type="file" id="thumbnail-btn"></label>
+                            </span>
+                            </div>
+                        </div>
+                     <!-- 默认情况下，进度条为隐藏的-->
+                        <div id="progress-group" class="form-group"  style="display: none">
+                            <div class="progress">
+                                <!--真正展示进度条的是process-bar-->
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="content-form">属性</label>
+                            <!-- 想要生成一个ueditor编辑器，只需要指定一个script的标签，并且设置一个id，就可以通过js代码调用JS中的sdk中的一些方法去自动生生成这样的富文本编辑器-->
+                            <script id="ueditor" type="text/plain"></script>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                    <span class="submit">
+                        <button id="submit-btn" class="btn btn-success pull-right">
+                            发布商品
+                        </button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

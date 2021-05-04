@@ -1,0 +1,48 @@
+
+{% extends "base/front_base.html" %}
+
+{% block title %}
+    加购订单
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/cloth_order.min.css' %}">
+
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+    <div class="wrapper">
+        <table class="table">
+            <thead>
+            <tr>
+                <th>商品名称</th>
+                <th>单价（元）</th>
+                <th>小计（元）</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td align="left">
+                    <a href="#"><img src="{% static 'images/clothes01.min.jpg' %}" alt="">
+                    <span class="title">滴滴是怎么样炼成的！</span></a>
+                </td>
+                <td>159</td>
+                <td>159</td>
+            </tr>
+            </tbody>
+        </table>
+        <form action="" method="post" id="pay-form">
+            <div class="pay-way">
+                <label for="istype-wx">
+                    <input id="istype-wx" type="radio" name="istype" value="2">
+                    <span class="wx-btn">
+                        <img src="{% static 'images/clothes01.min.jpg' %}" alt="">
+                    </span>
+                </label>
+            </div>
+        </form>
+    </div>
+    </div>
+
+{% endblock %}

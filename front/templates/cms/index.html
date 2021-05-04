@@ -1,0 +1,21 @@
+<!-- 在继承同一文件夹下的base.html时，需要指定是cms文件中的base.html,因为查找的时候依旧会从templates中进行查找 -->
+{% extends "cms/base.html" %}
+
+{% block title %}
+   后台管理系统
+{% endblock %}
+
+{% block content-header %}
+   <h1>欢迎登录秒试衣吧后台管理系统</h1>
+    <div class="row">
+    <div class="col-md-12">
+        <div class="box box-success" style="top: 10px;">
+
+        </div>
+    </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+
+{% endblock %}

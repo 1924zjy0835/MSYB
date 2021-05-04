@@ -1,0 +1,50 @@
+{% extends 'cms/base.html' %}
+
+
+{% block title %}
+    服装分类
+{% endblock %}
+
+{% block head %}
+        <script src="{% static 'js/add_category_cloth.min.js' %}"></script>
+{% endblock %}
+
+{% block content-header %}
+    <h1>服装分类</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-success">
+                <div class="box-header">
+                    <button id="add-category-btn" class="btn btn-success pull-right">添加分类</button>
+                </div>
+                <div class="box-body">
+                    <!-- 在Django中使用bootstrap中自定义的表格就需要给table指定一个类为table，如果想要使用有边框的表格的话就需要再指定一个类为table-bordered -->
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>分类名称</th>
+                            <th>服装数量</th>
+                            <th>操作</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        {% for category in categories %}
+                             <tr data-id="{{ category.pk }}" data-name="{{ category.name }}">
+                            <td>{{ category.name }}</td>
+                            <td>23</td>
+                            <td>
+                                <button class="btn btn-success btn-xs edit-btn">编辑</button>
+                                <button class="btn btn-danger btn-xs delete-btn">删除</button>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
