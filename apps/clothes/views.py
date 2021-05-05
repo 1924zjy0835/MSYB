@@ -5,10 +5,9 @@ from django.http import HttpResponse
 import os
 from django.conf import settings
 from .models import PersonalPhotoModel, closet
-from apps.cms.models import Clothes, clothCategory, Shop
+from apps.cms.models import Clothes, clothCategory, Shop, ClothesOrder
 from utils import Restful
 from apps.msybauth.decorators import msyb_login_required
-from apps.cms.serializers import ClothesSerializer,ClothCategorySerializer
 from django.db.models import Q
 
 
@@ -196,12 +195,17 @@ def drop_personal_photo(request):
 
 # 购买服装
 @msyb_login_required
-def cloth_order(request):
-    # cloth = Clothes.objects.get(pk=cloth_id)
-    # context = {
-    #     "cloth": cloth
-    # }
-    return render(request, 'clothes/cloth_order.html')
+def cloth_order(request, cloth_id):
+    clothcategorys = clothCategory.objects.all()
+    cloth = Clothes.objects.get(pk=cloth_id)
+    order = ClothesOrder.objects.create(payinfo=cloth, buyer=request.user, status=1, amount=cloth.price)
+    # 注意这里不是使用filter，而是使用get()一步到位。
+    context = {
+        "clothcategorys": clothcategorys,
+        "cloth": cloth,
+        "order": order
+    }
+    return render(request, 'clothes/cloth_order.html', context=context)
 
 
 

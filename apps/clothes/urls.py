@@ -17,6 +17,6 @@ urlpatterns = [
     path('model/room/', views.fitting_room, name='fitting_room'),
     path('upload/person/photo/', views.upload_personal_photo, name='upload_person_photo'),
     path('drop/personal/photo/', views.drop_personal_photo, name='drop_personal_photo'),
-    path('cloth/order/', views.cloth_order, name='cloth_order'),
+    path('cloth/order/<int:cloth_id>/', views.cloth_order, name='cloth_order'),
 ]
 

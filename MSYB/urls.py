@@ -20,6 +20,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('', include("apps.clothes.urls")),
+    path('payinfo/', include("apps.payinfo.urls")),
     path('search/', include("haystack.urls")),
     path('cms/', include("apps.cms.urls")),
     path('ueditor/', include("apps.ueditor.urls")),
