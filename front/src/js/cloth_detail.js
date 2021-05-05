@@ -9,9 +9,6 @@ ClothDetail.prototype.listenClothDetailClickEvent = function () {
 
     clothDetailBtn.click(function () {
         var pk = $(this).parent().parent().parent().parent().attr('data-id');
-        console.log("====================");
-        console.log(pk);
-        console.log("====================");
         msybajax.post({
             'url': '/detail/',
             'data': {

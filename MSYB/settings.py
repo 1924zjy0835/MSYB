@@ -40,12 +40,14 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'rest_framework',
     'haystack',
     'apps.errors',
     'apps.msybauth',
     'apps.clothes',
     'apps.cms',
     'apps.ueditor',
+    'apps.clothes.templatetags',
 ]
 
 MIDDLEWARE = [
@@ -182,7 +184,15 @@ UEDITOR_CONFIG_PATH = os.path.join(BASE_DIR, 'front', 'dist', 'ueditor', 'config
 HAYSTACK_CONNECTIONS = {
     'default': {
         'ENGINE': 'haystack.backends.whoosh_backend.WhooshEngine',
+        # 索引文件夹的路径
         'PATH': os.path.join(BASE_DIR, 'whoosh_index'),
     }
 }
+
+# 增删改后自动创建索引
+HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
+
+
+# 一次加载的服装个数
+ONE_PAGE_CLOTHES_COUNT = 5
 

@@ -24,7 +24,4 @@ urlpatterns = [
     path('cms/', include("apps.cms.urls")),
     path('ueditor/', include("apps.ueditor.urls")),
     path('account/', include("apps.msybauth.urls")),
-    path('best/', include("apps.best_sellers.urls")),
-    path('men/', include("apps.men_newclothes.urls")),
-    path('women/', include("apps.women_newclothes.urls")),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

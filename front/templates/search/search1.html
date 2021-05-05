@@ -1,0 +1,95 @@
+{% extends 'base/front_base.html' %}
+{% load clothes_filters %}
+
+{% block title %}
+    搜索
+{% endblock %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/search.min.css' %}">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
+{% endblock %}
+
+{% block main %}
+    <header class="header">
+        <div class="main-header">
+            <div class="log-box">
+                <i class="iconfont icon-mote-"></i>
+                <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
+            </div>
+            <ul class="nav">
+                {% for clothcategory in clothcategorys %}
+                    <li><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}"
+                           style="color: deeppink">{{ clothcategory.name }}</a>
+                    </li>
+                {% endfor %}
+                <li><a href="/search/" style="color: blueviolet">搜索</a></li>
+            </ul>
+            <div class="auth-box">
+                <i class="iconfont icon-icon"></i>
+                <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
+                <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
+                {% if user.is_authenticated %}
+                    <!-- 如果用户没有登录，user就是一个匿名的用户 -->
+                    <a href="#" class="authenticated-box">{{ user.username }}</a>
+                    <div class="user-more-box">
+                        <i class="triangle"></i>
+                        {% if user.is_staff %}
+                            <a href="{% url 'cms:index' %}">管理系统</a>
+                        {% endif %}
+                        <a href="{% url 'msybauth:logout' %}">退出登录</a>
+                    </div>
+                {% else %}
+                    <a href="#" class="Signin-btn">登录</a> /
+                    <a href="#" class="Signup-btn">注册</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrapper">
+            <div class="main-content-wrapper">
+                <div class="search-group">
+                    <form action="" method="get">
+                        <!-- q就代表查询关键字的意思，在点击搜索的时候就将关键字q对应的输入值发送给action，action为空就代表是当前的url -->
+                        <input type="text" name="q" class="search-input" placeholder="请输入关键字" value="{{ query }}">
+                        <input type="submit" class="search-btn" value="搜索">
+                    </form>
+                </div>
+                <div class="recommend-group">
+                    <p class="recommend-title">热门推荐</p>
+                    <ul class="recommend-list">
+                        {% for hot_cloth in hot_clothes %}
+                            <li data-id="{{ hot_cloth.id }}">
+                                <div class="thumbnail-group">
+                                    <a href="#">
+                                        <img src="{{ hot_cloth.thumbnail }}" alt="">
+                                    </a>
+                                </div>
+                                <div class="clothes-group">
+                                    <p class="title">
+                                        <a href="#">{{ hot_cloth.title }}</a>
+                                    </p>
+                                    <p class="desc">
+                                        {{ hot_cloth.desc }}
+                                    </p>
+                                    <div class="more">
+                                        <div class="shop-group">
+                                        <i class="iconfont icon-shop"></i>
+                                        <span class="shop">{{ hot_cloth.shop }}</span>
+                                        </div>
+                                        <span class="pub-time">{{ hot_cloth.pub_time|time_since }}</span>
+                                        <span class="price">￥{{ hot_cloth.price }}</span>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-wrapper">
+            </div>
+        </div>
+    </div>
+{% endblock %}

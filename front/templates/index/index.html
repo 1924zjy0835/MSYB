@@ -23,7 +23,7 @@
                 <li><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}" style="color: deeppink">{{ clothcategory.name }}</a>
             </li>
             {% endfor %}
-            <li><a href="#" style="color: blueviolet">搜索</a></li>
+            <li><a href="{% url 'clothes:search' %}" style="color: blueviolet">搜索</a></li>
         </ul>
         <div class="auth-box">
             <i class="iconfont icon-icon"></i>
@@ -100,14 +100,7 @@
                             </div>
                         </a></li>
                     {% endfor %}
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
                 </ul>
-            </div>
-            <div class="load-more-group">
-                <button class="load-more" id="load-more-btn">查看更多</button>
             </div>
         </div>
     </div>

@@ -6222,7 +6222,7 @@ wysihtml5.dom.parse = function(elementOrHtml_current, config_current) {
             if (definition.attrs.hasOwnProperty(a)) {
                 attr = wysihtml5.dom.getAttribute(oldNode, a);
                 if (typeof(attr) === "string") {
-                    if (attr.search(definition.attrs[a]) > -1) {
+                    if (attr.search1(definition.attrs[a]) > -1) {
                         return true;
                     }
                 }

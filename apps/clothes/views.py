@@ -8,12 +8,16 @@ from .models import PersonalPhotoModel, closet
 from apps.cms.models import Clothes, clothCategory, Shop
 from utils import Restful
 from apps.msybauth.decorators import msyb_login_required
+from apps.cms.serializers import ClothesSerializer,ClothCategorySerializer
+from django.db.models import Q
 
 
 # index
 def index(request):
     clothcategorys = clothCategory.objects.all()
     shops = Shop.objects.all()
+    # 默认情况下，会查询所有的服装信息进行展示
+    # [0: count]: 对经过排序的服装进行切片处理，这样，在首页起初展示的就是制定的count数量的服装数
     clothes = Clothes.objects.all()
     context = {
         'clothcategorys': clothcategorys,
@@ -35,8 +39,44 @@ def index_new_products(request, category_id):
 
 
 # index==============>search
-def Search(request):
-    return render(request, 'index/search.html')
+# 访问该视图函数时，可能会没有传递q，所以就需要进行一层判断，如果没有传递参数的话就默认返回最近发布的几件服装信息
+# 在做查找的时候，要做或操作，可以利用Q表达式
+def Search1(request):
+    q = request.GET.get('q')
+    clothcategorys = clothCategory.objects.all()
+    if q:
+        hot_clothes = Clothes.objects.filter(Q(title__icontains=q) | Q(content__icontains=q))
+        context = {
+            'hot_clothes': hot_clothes,
+            'clothcategorys': clothcategorys
+            }
+        return render(request, 'search/search1.html', context=context)
+    else:
+        hot_clothes = Clothes.objects.order_by("-pub_time")[0:6]
+        context = {
+            'hot_clothes': hot_clothes,
+            'clothcategorys':clothcategorys
+        }
+    return render(request, 'search/search1.html', context=context)
+
+
+def search(request):
+    q = request.GET.get('q')
+    clothcategorys = clothCategory.objects.all()
+    if q:
+        hot_clothes = Clothes.objects.filter(Q(title__icontains=q) | Q(content__icontains=q))
+        context = {
+            'hot_clothes': hot_clothes,
+            'clothcategorys': clothcategorys
+            }
+        return render(request, 'search/search1.html', context=context)
+    else:
+        hot_clothes = Clothes.objects.order_by("-pub_time")[0:6]
+        context = {
+            'hot_clothes': hot_clothes,
+            'clothcategorys':clothcategorys
+        }
+    return render(request, 'search/search1.html', context=context)
 
 
 # index===============>buyer say
@@ -101,7 +141,7 @@ def closet_room(request):
         return render(request, 'clothes/fitting_room.html', context=context)
 
 
-#  fitting room ============ closet room ===========>delete clothes
+#  fitting room ============ closet room ===========>delete cms
 def drop_closet_cloth(request):
     img_url = request.POST.get("img_url")
     closetcloth = closet.objects.filter(thumbnail=img_url)

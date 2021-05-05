@@ -1,18 +1,78 @@
-<!--
-  * @Description: search.html
-  * @Author: 孤烟逐云zjy
-  * @Date: 2021/5/2 19:56
-  * @SoftWare: PyCharm
-  * @CSDN: https://blog.csdn.net/zjy123078_zjy
-  * @博客园: https://www.cnblogs.com/guyan-2020/
--->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'base/front_base.html' %}
+{% load clothes_filters %}
 
-</body>
-</html>
+{% block title %}
+    搜索
+{% endblock %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/search.min.css' %}">
+        <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
+{% endblock %}
+
+{% block main %}
+    <header class="header">
+        <div class="main-header">
+            <div class="log-box">
+                <i class="iconfont icon-mote-"></i>
+                <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
+            </div>
+            <ul class="nav">
+                {% for clothcategory in clothcategorys %}
+                    <li><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}"
+                           style="color: deeppink">{{ clothcategory.name }}</a>
+                    </li>
+                {% endfor %}
+                <li><a href="/search/" style="color: blueviolet">搜索</a></li>
+            </ul>
+            <div class="auth-box">
+                <i class="iconfont icon-icon"></i>
+                <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
+                <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
+                {% if user.is_authenticated %}
+                    <!-- 如果用户没有登录，user就是一个匿名的用户 -->
+                    <a href="#" class="authenticated-box">{{ user.username }}</a>
+                    <div class="user-more-box">
+                        <i class="triangle"></i>
+                        {% if user.is_staff %}
+                            <a href="{% url 'cms:index' %}">管理系统</a>
+                        {% endif %}
+                        <a href="{% url 'msybauth:logout' %}">退出登录</a>
+                    </div>
+                {% else %}
+                    <a href="#" class="Signin-btn">登录</a> /
+                    <a href="#" class="Signup-btn">注册</a>
+                {% endif %}
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <div class="wrapper">
+            <div class="main-content-wrapper">
+                <div class="search-group">
+                    <form action="" method="get">
+                        <!-- q就代表查询关键字的意思，在点击搜索的时候就将关键字q对应的输入值发送给action，action为空就代表是当前的url -->
+                        <input type="text" name="q" class="search-input" placeholder="请输入关键字" value="{{ query }}">
+                        <input type="submit" class="search-btn" value="搜索">
+                    </form>
+                </div>
+                <div class="recommend-group">
+                    <p class="recommend-title">热门推荐</p>
+                    <ul class="recommend-list">
+                    <!-- haystack查找所返回的数据都绑定在page.object_list上，可以遍历-->
+                        {% for result in page.object_list %}
+                            <!-- 在html中定义变量可以使用with-->
+                            {% with result.object as clothes %}
+
+                            {% endwith %}
+                        {% endfor %}
+
+                    </ul>
+                </div>
+            </div>
+            <div class="sidebar-wrapper">
+            </div>
+        </div>
+    </div>
+{% endblock %}

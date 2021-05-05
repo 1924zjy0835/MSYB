@@ -129,7 +129,10 @@ Clothes.prototype.listenPublishCloth = function(event) {
        var price = $("input[name='price']").val();
        var desc = $("input[name='desc']").val();
        var thumbnail = $("input[name='thumbnail']").val();
+       // 这样后端得到的值会发生改变
        var content = window.ue.getContent();
+       //  var clothContent = window.ue.getContent();
+        // var content = base.encode(clothContent);
 
        msybajax.post({
            'url': '/cms/publish/cloth/',

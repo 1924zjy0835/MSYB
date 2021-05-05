@@ -6000,7 +6000,7 @@ $.widget( "ui.autocomplete", {
 			return this.close( event );
 		}
 
-		if ( this._trigger( "search", event ) === false ) {
+		if ( this._trigger( "search1.html", event ) === false ) {
 			return;
 		}
 

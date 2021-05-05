@@ -29,7 +29,7 @@
                 <li data-id="{{ clothcategory.pk }}"><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}" style="color: deeppink">{{ clothcategory.name }}</a>
             </li>
             {% endfor %}
-            <li><a href="#" style="color: blueviolet">搜索</a></li>
+            <li><a href="/search/" style="color: blueviolet">搜索</a></li>
         </ul>
         <div class="auth-box">
             <i class="iconfont icon-icon"></i>

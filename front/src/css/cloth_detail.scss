@@ -99,6 +99,7 @@
         float: right;
         margin-left: 10px;
         width: $clothInfoWidth;
+        overflow: hidden;
 
         .attributes-group {
           width: 100%;
@@ -131,27 +132,25 @@
 
         .attributes-list {
           margin-top: 10px;
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: row;
-          align-content: flex-start;
-          justify-content: space-between;
+          //display: flex;
+          //flex-wrap: wrap;
+          //flex-direction: row;
+          //align-content: flex-start;
+          //justify-content: space-around;
+          //justify-content: space-between;
 
           li {
-            margin-top: 8px;
+            margin-top: 12px;
             float: left;
-            margin-right: 20px;
+            margin-right: 40px;
             list-style: none;
+            color: $payCorlor;
 
-            a {
-              color: $payCorlor;
-              text-decoration: none;
-            }
           }
         }
 
         .performance-pledge {
-          margin-top: 20px;
+          margin-top: 200px;
           overflow: hidden;
 
           .service {
@@ -179,7 +178,7 @@
         }
 
         .btn-group {
-          margin-top: 20px;
+          margin-bottom: 400px;
 
           .fitting-room-btn {
             margin-right: 20px;

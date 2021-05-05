@@ -6,7 +6,160 @@
 
 
 .main {
-  .main-wrapper {
+  width: $mainWrapperWidth;
+  margin: 84px auto;
+  //position: absolute;
+  //top: 75px;
+  //left: 5%;
+  .wrapper {
+    //background: deeppink;
+    overflow: hidden;
 
+    .main-content-wrapper {
+      background: url("../images/room-scenery-run01.min.gif");
+      //background: url("../images/room-run02.min.gif");
+      //background-repeat: repeat-x;
+      //background-size: cover;
+      float: left;
+      width: $mainWrapperWidth;
+      //background: #fff;
+      box-sizing: border-box;
+      margin-bottom: 120px;
+
+      .search-group {
+        width: 732px;
+        height: 44px;
+        margin: 0 auto;
+        margin-top: 40px;
+        background: #fff;
+        filter: alpha(0.8);
+        border: 1px solid #eeeeee;
+
+        .search-input {
+          display: block;
+          float: left;
+          width: 612px;
+          height: 44px;
+          box-sizing: border-box;
+          padding: 10px 20px;
+          font-size: 14px;
+          outline: none;
+          border: none;
+        }
+
+        .search-btn {
+          float: left;
+          width: 120px;
+          height: 44px;
+          display: block;
+          background: #6495ed;
+          color: #fff;
+          font-size: 16px;
+          border: none;
+          cursor: pointer;
+        }
+      }
+
+      .recommend-group {
+        .recommend-title {
+          margin-top: 40px;
+          margin-left: 20px;
+          font-size: 24px;
+          color: #ff00de;
+        }
+
+        .recommend-list {
+          overflow: hidden;
+
+          li {
+            float: left;
+            margin-left: 10px;
+            width: $mainWrapperWidth/2 - 20px;
+            padding: 10px;
+            box-sizing: border-box;
+            border-bottom: 1px solid #eee;
+            overflow: hidden;
+
+            .thumbnail-group {
+              margin-right: 10px;
+              float: left;
+              height: 220px;
+              width: 200px;
+
+              img {
+                width: 100%;
+                height: 100%;
+              }
+            }
+
+            .clothes-group {
+              float: right;
+              width: 390px;
+              height: 220px;
+              position: relative;
+
+              .title {
+                font-size: 22px;
+
+                a {
+                  color: coral;
+                  text-decoration: none;
+
+                  &:hover {
+                    color: #ff00de;
+                  }
+                }
+              }
+
+              .desc {
+                color: #6495ed;
+                font-size: 14px;
+                margin-top: 10px;
+              }
+
+              .more {
+                overflow: hidden;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 10px;
+                font-size: 14px;
+                color: #878787;
+
+                .shop-group {
+                  float: left;
+                  color: #ff00de;
+
+                  .icon-shop {
+                    float: left;
+                    font-size: 20px;
+                    color: #ff00de;
+                  }
+
+                  .shop {
+                    margin-left: 4px;
+                    color: #ff00de;
+                    font-size: 16px;
+                  }
+                }
+
+
+                .pub-time {
+                  float: right;
+                  margin-left: 20px;
+                  color: cornflowerblue;
+                }
+
+                .price {
+                  font-size: 18px;
+                  color: #ff0000;
+                  float: right;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
   }
 }
