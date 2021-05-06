@@ -10,6 +10,7 @@ djangorestframework==3.12.4
 idna==2.10
 importlib-metadata==4.0.1
 jieba==0.42.1
+mysqlclient==2.0.3
 Markdown==3.3.4
 memcache==0.4.0
 Pillow==8.2.0
