@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -12,30 +10,7 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MSYB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSYB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django配置工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django配置工作.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/fitting_room.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/cloth_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_detail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/MAIN_fqqpl0ddblbcrbdp.seg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -222,7 +197,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="238">
+                <state relative-caret-position="346">
                   <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
                 </state>
               </provider>
@@ -360,11 +335,11 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="822" />
-    <option name="y" value="112" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="423" />
+    <option name="y" value="113" />
     <option name="width" value="1505" />
-    <option name="height" value="930" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -576,12 +551,12 @@
       <workItem from="1620124578916" duration="12163000" />
       <workItem from="1620177831023" duration="20970000" />
       <workItem from="1620204181508" duration="12140000" />
-      <workItem from="1620262964189" duration="7850000" />
+      <workItem from="1620262964189" duration="9687000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="504622000" />
+    <option name="totallyTimeSpent" value="506459000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -593,9 +568,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="658" y="90" width="1204" height="744" extended-state="0" />
+    <frame x="339" y="91" width="1204" height="732" extended-state="1" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14659686" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14659686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -608,11 +583,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50469166" side_tool="true" weight="0.25070822" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" visible="true" weight="0.30882353" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" visible="true" weight="0.315" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32026145" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32656828" />
       <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" weight="0.39869282" />
-      <window_info active="true" anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32833335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -923,7 +898,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
+        <state relative-caret-position="346">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
