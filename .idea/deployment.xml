@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="msyb02">
+    <serverData>
+      <paths name="msyb02">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/guyan/msyb" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+          <excludedPaths>
+            <excludedPath local="true" path="$PROJECT_DIR$/front/node_modules" />
+            <excludedPath local="true" path="$PROJECT_DIR$/whoosh_index" />
+            <excludedPath local="true" path="$PROJECT_DIR$/front/src" />
+          </excludedPaths>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

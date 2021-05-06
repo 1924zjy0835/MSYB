@@ -197,12 +197,19 @@ def drop_personal_photo(request):
 @msyb_login_required
 def cloth_order(request, cloth_id):
     clothcategorys = clothCategory.objects.all()
-    cloth = Clothes.objects.get(pk=cloth_id)
-    order = ClothesOrder.objects.create(payinfo=cloth, buyer=request.user, status=1, amount=cloth.price)
+    cloth = Clothes.objects.get(pk=12)
+    order = ClothesOrder.objects.create(cloth=cloth, buyer=request.user, status=1, amount=cloth.price)
     # 注意这里不是使用filter，而是使用get()一步到位。
     context = {
+        "goods": {
+            'thumbnail': cloth.thumbnail,
+            'shop': cloth.shop,
+            'title': cloth.title,
+            'desc': cloth.desc,
+            'price': cloth.price,
+        },
         "clothcategorys": clothcategorys,
-        "cloth": cloth,
+        # "cloth": cloth,
         "order": order
     }
     return render(request, 'clothes/cloth_order.html', context=context)

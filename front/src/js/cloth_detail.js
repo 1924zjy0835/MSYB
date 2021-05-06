@@ -27,6 +27,9 @@ ClothDetail.prototype.listenClothDetailClickEvent = function () {
     });
 };
 
+
+
+
 ClothDetail.prototype.run = function () {
     var self = this;
     self.listenClothDetailClickEvent();

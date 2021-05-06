@@ -6,6 +6,7 @@
 
 {% block head %}
     <link rel="stylesheet" href="{% static 'css/cloth_order.min.css' %}">
+    <script src="{% static 'js/cloth_order.min.js' %}"></script>
 
 {% endblock %}
 
@@ -24,23 +25,23 @@
                 <tbody>
                 <tr>
                     <td align="left">
-                        <a href="#"><img src="{{ cloth.thumbnail }}" alt="">
-                            <span class="title" style="color: #ff00de">{{ cloth.title }}</span></a>
+                        <a href="#"><img src="{{ goods.thumbnail }}" alt="">
+                            <span class="title" style="color: #ff00de">{{ goods.title }}</span></a>
                     </td>
-                    <td style="color: #ff00de">{{ cloth.shop }}</td>
-                    <td style="color: #ff00de">{{ cloth.desc }}</td>
-                    <td style="color: red; font-size: 24px">{{ cloth.price }}</td>
+                    <td style="color: #ff00de">{{ goods.shop }}</td>
+                    <td style="color: #ff00de">{{ goods.desc }}</td>
+                    <td style="color: red; font-size: 24px">{{ goods.price }}</td>
                 </tr>
                 </tbody>
             </table>
             <form action="https://pay.bearsoftware.net.cn/" method="post" id="pay-form">
                 <input type="hidden" name="uid"  value="7225b2942ecc238ffdaf705a">
-                <input type="hidden" name="price" value="{{ cloth.price }}">
+                <input type="hidden" name="price" value="{{ goods.price }}">
                 <input type="hidden" name="notify_url" value="">
                 <input type="hidden" name="return_url" value="">
                 <input type="hidden" name="orderid" value="{{ order.pk }}">
                 <input type="hidden" name="orderuid" value="{{ request.user.pk }}">
-                <input type="hidden" name="goodsname" value="{{ cloth.title }}">
+                <input type="hidden" name="goodsname" value="{{ goods.title }}">
                 <div class="pay-way">
                     <label for="istype-wx">
                         <input id="istype-wx" type="radio" name="istype" value="2">

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/cms/migrations/0003_clothesorder.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/payinfo/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/payinfo/templatetags/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/payinfo/templatetags/payinfo_filters.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/payinfo/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/js/cloth_order.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -16,25 +12,30 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MSYB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSYB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django配置工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django配置工作.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/cloth_order.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/cloth_order.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/publish_cloth.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/publish_cloth.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_order.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_order.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/QQ.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/QQ_logo.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/mmmmk.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/mmmmk2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/wechat.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/wechat_logo.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/fitting_room.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/js/cloth_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_detail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/MAIN_fqqpl0ddblbcrbdp.seg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" beforeDir="false" afterPath="$PROJECT_DIR$/whoosh_index/_MAIN_1.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -82,14 +83,14 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5694444">
+    <splitter split-orientation="horizontal" split-proportion="0.55879056">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/clothes/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="355">
-                  <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+                <state relative-caret-position="133">
+                  <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -100,12 +101,17 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="188">
-                  <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-                  <folding>
-                    <element signature="e#698#718#0#HTML" expanded="true" />
-                    <element signature="e#768#792#0#HTML" expanded="true" />
-                  </folding>
+                <state relative-caret-position="171">
+                  <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="133">
+                  <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
                 </state>
               </provider>
             </entry>
@@ -113,8 +119,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/templates/index/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="91" column="116" selection-start-line="91" selection-start-column="116" selection-end-line="91" selection-end-column="133" />
+                <state relative-caret-position="262">
+                  <caret line="91" column="86" lean-forward="true" selection-start-line="91" selection-start-column="86" selection-end-line="91" selection-end-column="136" />
                 </state>
               </provider>
             </entry>
@@ -122,26 +128,11 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_order.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
-                  <caret line="38" selection-start-line="38" selection-end-line="38" />
+                <state relative-caret-position="170">
+                  <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
                   <folding>
-                    <element signature="e#729#751#0#HTML" expanded="true" />
-                    <element signature="e#808#830#0#HTML" expanded="true" />
-                    <element signature="e#877#899#0#HTML" expanded="true" />
-                    <element signature="e#969#1004#0#HTML" expanded="true" />
-                    <element signature="e#1495#2087#0#HTML" />
-                    <element signature="e#2041#2061#0#HTML" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/apps/clothes/models.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
+                    <element signature="e#801#823#0#HTML" expanded="true" />
+                    <element signature="e#2353#2373#0#HTML" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -150,8 +141,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="113">
-                  <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+                <state relative-caret-position="56">
+                  <caret line="36" column="9" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="9" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -162,17 +153,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/css/cloth_order.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
+                <state relative-caret-position="1881">
                   <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="228">
-                  <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
                 </state>
               </provider>
             </entry>
@@ -180,23 +162,20 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+                <state relative-caret-position="272">
+                  <caret line="203" column="18" lean-forward="true" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
-                    <element signature="e#562#940#0" />
-                    <element signature="e#1014#1275#0" />
-                    <element signature="e#1417#2040#0" />
-                    <element signature="e#2068#2691#0" />
-                    <element signature="e#2757#3386#0" />
-                    <element signature="e#3421#3661#0" />
-                    <element signature="e#3743#4114#0" />
-                    <element signature="e#4199#4715#0" />
-                    <element signature="e#4818#5078#0" />
-                    <element signature="e#5162#5477#0" />
-                    <element signature="e#5589#6139#0" />
-                    <element signature="e#6249#6543#0" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/js/cloth_detail.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="114">
+                  <caret line="35" selection-start-line="35" selection-end-line="35" />
                 </state>
               </provider>
             </entry>
@@ -209,15 +188,12 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/css/cloth_order.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="101">
+                <state relative-caret-position="247">
                   <caret line="13" column="18" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-                  <folding>
-                    <element signature="e#1451#1792#0" />
-                  </folding>
                 </state>
               </provider>
             </entry>
@@ -225,19 +201,49 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/css/search.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="164">
+                <state relative-caret-position="342">
                   <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="62" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/apps/payinfo/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
-                  <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+                <state relative-caret-position="189">
+                  <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/payinfo/urls.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="57">
+                  <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/payinfo/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="741">
+                  <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#0#35#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -259,8 +265,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>scroll-wrapp</find>
-      <find>inlin</find>
       <find>dist</find>
       <find>fitting-btn</find>
       <find>antajax</find>
@@ -289,6 +293,8 @@
       <find>StemmingAnalyzer</find>
       <find>Stemm</find>
       <find>Chin</find>
+      <find>cloth_de</find>
+      <find>cloth_pk</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -319,7 +325,6 @@
         <option value="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" />
         <option value="$PROJECT_DIR$/front/src/js/closet_room.js" />
         <option value="$PROJECT_DIR$/apps/cms/serializers.py" />
-        <option value="$PROJECT_DIR$/front/src/js/cloth_detail.js" />
         <option value="$PROJECT_DIR$/front/src/js/publish_cloth.js" />
         <option value="$PROJECT_DIR$/front/src/css/cloth_detail.scss" />
         <option value="$PROJECT_DIR$/apps/clothes/templatetags/clothes_filters.py" />
@@ -344,21 +349,22 @@
         <option value="$PROJECT_DIR$/MSYB/urls.py" />
         <option value="$PROJECT_DIR$/MSYB/settings.py" />
         <option value="$PROJECT_DIR$/front/src/js/cloth_order.js" />
-        <option value="$PROJECT_DIR$/apps/clothes/urls.py" />
-        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" />
         <option value="$PROJECT_DIR$/front/src/css/cloth_order.scss" />
         <option value="$PROJECT_DIR$/apps/payinfo/models.py" />
         <option value="$PROJECT_DIR$/apps/cms/models.py" />
+        <option value="$PROJECT_DIR$/apps/clothes/urls.py" />
+        <option value="$PROJECT_DIR$/front/src/js/cloth_detail.js" />
+        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" />
         <option value="$PROJECT_DIR$/apps/clothes/views.py" />
         <option value="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="352" />
-    <option name="y" value="157" />
+    <option name="x" value="822" />
+    <option name="y" value="112" />
     <option name="width" value="1505" />
-    <option name="height" value="929" />
+    <option name="height" value="930" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -388,19 +394,26 @@
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="cms" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="payinfo" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="dist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
@@ -418,13 +431,6 @@
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -438,7 +444,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/dist" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/front/node_modules" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -569,12 +575,13 @@
       <workItem from="1620088453539" duration="19344000" />
       <workItem from="1620124578916" duration="12163000" />
       <workItem from="1620177831023" duration="20970000" />
-      <workItem from="1620204181508" duration="9902000" />
+      <workItem from="1620204181508" duration="12140000" />
+      <workItem from="1620262964189" duration="7850000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="494534000" />
+    <option name="totallyTimeSpent" value="504622000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -586,14 +593,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="282" y="126" width="1204" height="743" extended-state="0" />
+    <frame x="658" y="90" width="1204" height="744" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12041885" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14659686" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" weight="0.0883797" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" weight="0.3970588" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -601,10 +608,11 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50469166" side_tool="true" weight="0.25070822" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" weight="0.29623568" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32131147" />
+      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" visible="true" weight="0.30882353" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32026145" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32656828" />
-      <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" visible="true" weight="0.39934534" />
+      <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" weight="0.39869282" />
+      <window_info active="true" anchor="bottom" id="File Transfer" order="14" visible="true" weight="0.3289689" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -650,12 +658,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/dist/images/mmmmk.min.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/dist/images/mmmmk2.min.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/dist/images/news.min.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -799,13 +801,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Django配置工作.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="663">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="874">
@@ -822,30 +817,6 @@
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/payinfo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="46" selection-start-line="23" selection-start-column="46" selection-end-line="23" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/payinfo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -870,68 +841,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="35" selection-start-line="12" selection-start-column="35" selection-end-line="12" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/css/search.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="164">
-          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/clothes/fitting_room.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/clothes/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="91" column="116" selection-start-line="91" selection-start-column="116" selection-end-line="91" selection-end-column="133" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-          <folding>
-            <element signature="e#698#718#0#HTML" expanded="true" />
-            <element signature="e#768#792#0#HTML" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/css/cloth_order.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/payinfo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/clothes/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -941,49 +850,132 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
+    <entry file="file://$PROJECT_DIR$/front/templates/clothes/fitting_room.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/cloth_order.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+        <state relative-caret-position="1881">
+          <caret line="99" column="1" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/css/search.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Django配置工作.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/payinfo/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/payinfo/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="741">
+          <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/payinfo/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="19" column="14" lean-forward="true" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/clothes/tests.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="91" column="86" lean-forward="true" selection-start-line="91" selection-start-column="86" selection-end-line="91" selection-end-column="136" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="36" column="9" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/clothes/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/cloth_detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="32" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="33" column="43" lean-forward="true" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="205" column="22" lean-forward="true" selection-start-line="205" selection-start-column="22" selection-end-line="205" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="203" column="18" lean-forward="true" selection-start-line="203" selection-start-column="18" selection-end-line="203" selection-end-column="18" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
-            <element signature="e#562#940#0" />
-            <element signature="e#1014#1275#0" />
-            <element signature="e#1417#2040#0" />
-            <element signature="e#2068#2691#0" />
-            <element signature="e#2757#3386#0" />
-            <element signature="e#3421#3661#0" />
-            <element signature="e#3743#4114#0" />
-            <element signature="e#4199#4715#0" />
-            <element signature="e#4818#5078#0" />
-            <element signature="e#5162#5477#0" />
-            <element signature="e#5589#6139#0" />
-            <element signature="e#6249#6543#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="38" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="170">
+          <caret line="33" column="21" lean-forward="true" selection-start-line="33" selection-start-column="21" selection-end-line="33" selection-end-column="21" />
           <folding>
-            <element signature="e#729#751#0#HTML" expanded="true" />
-            <element signature="e#808#830#0#HTML" expanded="true" />
-            <element signature="e#877#899#0#HTML" expanded="true" />
-            <element signature="e#969#1004#0#HTML" expanded="true" />
-            <element signature="e#1495#2087#0#HTML" />
-            <element signature="e#2041#2061#0#HTML" expanded="true" />
+            <element signature="e#801#823#0#HTML" expanded="true" />
+            <element signature="e#2353#2373#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
