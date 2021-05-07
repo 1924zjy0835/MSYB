@@ -10,7 +10,24 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MSYB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSYB.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django配置工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django配置工作.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/css/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/index.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/gulpfile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/body.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/fitting_room.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -116,8 +133,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="176">
-                  <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+                <state relative-caret-position="328">
+                  <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
                   <folding>
                     <element signature="e#304#313#0" expanded="true" />
                   </folding>
@@ -204,7 +221,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="108">
+                <state relative-caret-position="257">
                   <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
                 </state>
               </provider>
@@ -342,9 +359,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="307" />
-    <option name="y" value="110" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="207" />
+    <option name="y" value="103" />
     <option name="width" value="1505" />
     <option name="height" value="915" />
   </component>
@@ -559,12 +576,12 @@
       <workItem from="1620177831023" duration="20970000" />
       <workItem from="1620204181508" duration="12140000" />
       <workItem from="1620262964189" duration="10462000" />
-      <workItem from="1620361129255" duration="333000" />
+      <workItem from="1620361129255" duration="1314000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="507567000" />
+    <option name="totallyTimeSpent" value="508548000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -576,15 +593,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="422" y="83" width="1204" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="166" y="83" width="1204" height="732" extended-state="1" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.39666668" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.26333332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -949,15 +965,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="257">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="109" column="29" selection-start-line="109" selection-start-column="29" selection-end-line="109" selection-end-column="29" />
+        <state relative-caret-position="328">
+          <caret line="108" column="23" lean-forward="true" selection-start-line="108" selection-start-column="23" selection-end-line="108" selection-end-column="23" />
           <folding>
             <element signature="e#304#313#0" expanded="true" />
           </folding>
