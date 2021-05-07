@@ -10,7 +10,7 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/msybauth/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/msybauth/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -62,27 +62,6 @@
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/apps/clothes/urls.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="19" column="35" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#0#28#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_detail.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="627">
-                  <caret line="33" column="43" selection-start-line="33" selection-start-column="43" selection-end-line="33" selection-end-column="43" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="133">
@@ -113,13 +92,34 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="214">
                   <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
                   <folding>
                     <element signature="e#304#313#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/apps/ueditor/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="76">
+                  <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/apps/msybauth/models.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+                  <folding>
+                    <element signature="e#0#90#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -204,7 +204,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="257">
+                <state relative-caret-position="107">
                   <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
                 </state>
               </provider>
@@ -288,7 +288,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/apps/cms/views.py" />
         <option value="$PROJECT_DIR$/apps/clothes/models.py" />
         <option value="$PROJECT_DIR$/apps/clothes/forms.py" />
         <option value="$PROJECT_DIR$/apps/msybauth/serializers.py" />
@@ -339,10 +338,11 @@
         <option value="$PROJECT_DIR$/apps/clothes/views.py" />
         <option value="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" />
         <option value="$PROJECT_DIR$/MSYB/settings.py" />
+        <option value="$PROJECT_DIR$/apps/msybauth/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="x" value="296" />
     <option name="y" value="157" />
     <option name="width" value="1505" />
@@ -361,6 +361,23 @@
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="msybauth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="ueditor" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
@@ -511,12 +528,12 @@
       <workItem from="1620177831023" duration="20970000" />
       <workItem from="1620204181508" duration="12140000" />
       <workItem from="1620262964189" duration="10462000" />
-      <workItem from="1620361129255" duration="7099000" />
+      <workItem from="1620361129255" duration="8686000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="514333000" />
+    <option name="totallyTimeSpent" value="515920000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -531,12 +548,12 @@
     <frame x="237" y="126" width="1204" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.26333332" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" weight="0.26333332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -545,9 +562,9 @@
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50469166" side_tool="true" weight="0.25070822" />
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" weight="0.315" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32026145" />
+      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32656828" />
-      <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" weight="0.39869282" />
+      <window_info active="true" anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" visible="true" weight="0.39833334" />
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32833335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -594,12 +611,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/front/dist/images/news.min.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/dist/images/news01.min.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/dist/images/news02.min.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -901,7 +912,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
+        <state relative-caret-position="107">
           <caret line="24" column="17" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
         </state>
       </provider>
@@ -912,6 +923,23 @@
           <caret line="27" column="12" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
           <folding>
             <element signature="e#304#313#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/ueditor/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="23" column="12" lean-forward="true" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/msybauth/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
           </folding>
         </state>
       </provider>
