@@ -12,6 +12,7 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Django配置工作.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Django配置工作.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -117,8 +118,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="271">
-                  <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+                <state relative-caret-position="138">
+                  <caret line="161" column="49" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
                   <folding>
                     <element signature="e#304#313#0" expanded="true" />
                   </folding>
@@ -343,9 +344,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="207" />
-    <option name="y" value="103" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="860" />
+    <option name="y" value="90" />
     <option name="width" value="1505" />
     <option name="height" value="915" />
   </component>
@@ -560,12 +561,12 @@
       <workItem from="1620177831023" duration="20970000" />
       <workItem from="1620204181508" duration="12140000" />
       <workItem from="1620262964189" duration="10462000" />
-      <workItem from="1620361129255" duration="3302000" />
+      <workItem from="1620361129255" duration="3972000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="510536000" />
+    <option name="totallyTimeSpent" value="511206000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,7 +578,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="166" y="83" width="1204" height="732" extended-state="0" />
+    <frame x="688" y="72" width="1204" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
@@ -957,8 +958,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="271">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+        <state relative-caret-position="138">
+          <caret line="161" column="49" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
           <folding>
             <element signature="e#304#313#0" expanded="true" />
           </folding>
