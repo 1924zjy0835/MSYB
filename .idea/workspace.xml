@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/supervisor.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -14,7 +13,6 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/modules.xml" beforeDir="false" />
@@ -62,7 +60,7 @@
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.1444569">
+    <splitter split-orientation="horizontal" split-proportion="0.3769575">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -217,8 +215,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/supervisor.conf">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="426">
-                  <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+                <state relative-caret-position="198">
+                  <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
                 </state>
               </provider>
             </entry>
@@ -356,9 +354,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="746" />
-    <option name="y" value="103" />
-    <option name="width" value="1228" />
+    <option name="x" value="1177" />
+    <option name="y" value="100" />
+    <option name="width" value="1229" />
     <option name="height" value="915" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -524,7 +522,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="519282000" />
+    <option name="totallyTimeSpent" value="519881000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -536,10 +534,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="597" y="83" width="982" height="732" extended-state="0" />
-    <editor active="true" />
+    <frame x="560" y="88" width="982" height="732" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.032467533" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25974026" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -934,8 +931,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/supervisor.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="198">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
