@@ -158,6 +158,9 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'front', 'dist')
 ]
 
+# 配置一个静态文件的存储路径，以便后期ngix去寻找
+STATIC_ROOT = os.path.join(BASE_DIR, 'static_dist')
+
 # 配置上传文件的文件夹
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

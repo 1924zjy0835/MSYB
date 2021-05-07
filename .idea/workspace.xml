@@ -118,8 +118,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="161" column="49" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
+                <state relative-caret-position="157">
+                  <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
                   <folding>
                     <element signature="e#304#313#0" expanded="true" />
                   </folding>
@@ -344,9 +344,9 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="860" />
-    <option name="y" value="90" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="322" />
+    <option name="y" value="110" />
     <option name="width" value="1505" />
     <option name="height" value="915" />
   </component>
@@ -362,59 +362,6 @@
           <expand>
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="apps" type="462c0819:PsiDirectoryNode" />
-              <item name="clothes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="dist" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="clothes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -561,12 +508,12 @@
       <workItem from="1620177831023" duration="20970000" />
       <workItem from="1620204181508" duration="12140000" />
       <workItem from="1620262964189" duration="10462000" />
-      <workItem from="1620361129255" duration="3972000" />
+      <workItem from="1620361129255" duration="4934000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511206000" />
+    <option name="totallyTimeSpent" value="512168000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -578,15 +525,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="688" y="72" width="1204" height="732" extended-state="0" />
+    <frame x="258" y="88" width="1204" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14921466" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.26333332" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.26333332" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -958,8 +905,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MSYB/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="161" column="49" selection-start-line="161" selection-start-column="49" selection-end-line="161" selection-end-column="49" />
+        <state relative-caret-position="157">
+          <caret line="162" lean-forward="true" selection-start-line="162" selection-end-line="162" />
           <folding>
             <element signature="e#304#313#0" expanded="true" />
           </folding>
