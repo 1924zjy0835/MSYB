@@ -22,7 +22,8 @@ class UserManager(BaseUserManager):
 
     # 这个方法是用来创建普通用户的
     def create_user(self, telephone, username, password, **kwargs):
-        kwargs['is_superuser'] = False
+        kwargs['is_superuser'] = True
+        kwargs['is_staff'] = True
         return self._create_user(telephone, username, password, **kwargs)
 
     # 创建超级用户
