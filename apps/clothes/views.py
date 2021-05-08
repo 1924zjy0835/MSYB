@@ -198,7 +198,7 @@ def drop_personal_photo(request):
 @msyb_login_required
 def cloth_order(request, cloth_id):
     clothcategorys = clothCategory.objects.all()
-    cloth = Clothes.objects.get(pk=18)
+    cloth = Clothes.objects.get(pk=20)
     order = ClothesOrder.objects.create(cloth=cloth, buyer=request.user, status=1, amount=cloth.price)
     # 注意这里不是使用filter，而是使用get()一步到位。
     context = {
