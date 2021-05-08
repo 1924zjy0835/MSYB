@@ -10,6 +10,7 @@ from utils import Restful
 from apps.msybauth.decorators import msyb_login_required
 from django.db.models import Q
 from hashlib import md5
+from django.views.decorators.csrf import csrf_exempt
 
 
 # index
@@ -236,6 +237,7 @@ def cloth_order_key(request):
     return Restful.result(data={"key": key})
 
 
+@csrf_exempt
 def notify_url(request):
     orderid = request.POST.get('orderid')
     ClothesOrder.objects.filter(pk=orderid).update(status=2)
