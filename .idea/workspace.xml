@@ -14,6 +14,8 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whoosh_index/_MAIN_2.toc" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -68,8 +70,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_order.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-152">
-                  <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+                <state relative-caret-position="76">
+                  <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
                   <folding>
                     <element signature="e#794#816#0#HTML" expanded="true" />
                     <element signature="e#896#918#0#HTML" expanded="true" />
@@ -134,8 +136,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="168">
-                  <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+                <state relative-caret-position="187">
+                  <caret line="200" column="37" selection-start-line="200" selection-start-column="37" selection-end-line="200" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
                   </folding>
@@ -338,15 +340,15 @@
         <option value="$PROJECT_DIR$/apps/msybauth/models.py" />
         <option value="$PROJECT_DIR$/supervisor.conf" />
         <option value="$PROJECT_DIR$/apps/clothes/urls.py" />
-        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" />
         <option value="$PROJECT_DIR$/front/src/js/cloth_order.js" />
+        <option value="$PROJECT_DIR$/front/templates/clothes/cloth_order.html" />
         <option value="$PROJECT_DIR$/apps/clothes/views.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="317" />
-    <option name="y" value="197" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="257" />
+    <option name="y" value="225" />
     <option name="width" value="1603" />
     <option name="height" value="734" />
   </component>
@@ -378,6 +380,12 @@
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="cms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -385,13 +393,6 @@
               <item name="MSYB" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MSYB" type="462c0819:PsiDirectoryNode" />
-              <item name="front" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MSYB" type="b2602c69:ProjectViewProjectNode" />
@@ -569,7 +570,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="521561000" />
+    <option name="totallyTimeSpent" value="522316000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -581,7 +582,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="254" y="158" width="1282" height="587" extended-state="1" />
+    <frame x="66" y="181" width="1282" height="587" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17810458" />
@@ -965,8 +966,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/clothes/cloth_order.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-152">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        <state relative-caret-position="76">
+          <caret line="37" column="61" selection-start-line="37" selection-start-column="61" selection-end-line="37" selection-end-column="61" />
           <folding>
             <element signature="e#794#816#0#HTML" expanded="true" />
             <element signature="e#896#918#0#HTML" expanded="true" />
@@ -978,8 +979,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="241" column="19" selection-start-line="241" selection-start-column="19" selection-end-line="241" selection-end-column="19" />
+        <state relative-caret-position="187">
+          <caret line="200" column="37" selection-start-line="200" selection-start-column="37" selection-end-line="200" selection-end-column="37" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
