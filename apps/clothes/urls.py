@@ -18,5 +18,7 @@ urlpatterns = [
     path('upload/person/photo/', views.upload_personal_photo, name='upload_person_photo'),
     path('drop/personal/photo/', views.drop_personal_photo, name='drop_personal_photo'),
     path('cloth/order/<int:cloth_id>/', views.cloth_order, name='order'),
+    path("cloth/order/key/", views.cloth_order_key, name="cloth_order_key"),
+    path("notify/url/", views.notify_url, name="notify_url"),
 ]
 

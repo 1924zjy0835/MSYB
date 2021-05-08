@@ -9,6 +9,7 @@ from apps.cms.models import Clothes, clothCategory, Shop, ClothesOrder
 from utils import Restful
 from apps.msybauth.decorators import msyb_login_required
 from django.db.models import Q
+from hashlib import md5
 
 
 # index
@@ -210,10 +211,35 @@ def cloth_order(request, cloth_id):
         },
         "clothcategorys": clothcategorys,
         # "cloth": cloth,
-        "order": order
+        "order": order,
+        "notify_url": request.build_absolute_uri(reverse("clothes:notify_url")),
+        "return_url": request.build_absolute_uri(reverse("clothes:cloth_detail", kwargs={"cloth_id": cloth.pk}))
     }
     return render(request, 'clothes/cloth_order.html', context=context)
 
+
+@msyb_login_required
+def cloth_order_key(request):
+    goodsname = request.POST.get("goodsname")
+    istype = request.POST.get("istype")
+    notify_url = request.POST.get("notify_url")
+    orderid = request.POST.get("orderid")
+    price = request.POST.get("price")
+    return_url = request.POST.get("return_url")
+
+    token = '81564749e8d14a486497f4f1dcb275f0'
+    uid = '7225b2942ecc238ffdaf705a'
+    orderuid = str(request.user.pk)
+
+    key = md5((goodsname + istype + notify_url + orderid + orderuid + price + return_url + token + uid).encode(
+        "utf-8")).hexdigest()
+    return Restful.result(data={"key": key})
+
+
+def notify_url(request):
+    orderid = request.POST.get('orderid')
+    ClothesOrder.objects.filter(pk=orderid).update(status=2)
+    return Restful.ok()
 
 
 

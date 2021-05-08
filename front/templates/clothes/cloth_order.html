@@ -37,11 +37,12 @@
             <form action="https://pay.bearsoftware.net.cn/" method="post" id="pay-form">
                 <input type="hidden" name="uid"  value="7225b2942ecc238ffdaf705a">
                 <input type="hidden" name="price" value="{{ goods.price }}">
-                <input type="hidden" name="notify_url" value="">
-                <input type="hidden" name="return_url" value="">
+                <input type="hidden" name="notify_url" value="{{ notify_url }}">
+                <input type="hidden" name="return_url" value="{{ return_url }}">
                 <input type="hidden" name="orderid" value="{{ order.pk }}">
                 <input type="hidden" name="orderuid" value="{{ request.user.pk }}">
                 <input type="hidden" name="goodsname" value="{{ goods.title }}">
+                <input type="hidden" name="key" value="">
                 <div class="pay-way">
                     <label for="istype-wx">
                         <input id="istype-wx" type="radio" name="istype" value="2">
