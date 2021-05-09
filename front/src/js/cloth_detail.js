@@ -4,12 +4,11 @@ function ClothDetail() {
 }
 
 ClothDetail.prototype.listenClothDetailClickEvent = function () {
-    var self = this;
     var clothDetailBtn = $(".cloth-detail");
 
     clothDetailBtn.click(function () {
         msybajax.post({
-            'url': '/cloth/detail/',
+            'url': '/detail/',
             'success': function (result) {
                 if (result['code'] === 200) {
 

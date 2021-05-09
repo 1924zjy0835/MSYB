@@ -100,6 +100,16 @@ class Buy_say_view(View):
             return HttpResponse("留言失败！")
 
 
+#  商品详情页
+def detail(request):
+    pk = request.POST.get("pk")
+    cloth = Clothes.objects.filter(pk=pk)
+    if not cloth:
+        return Restful.paramserror(message="sorry~没有找到该商品的详情")
+    else:
+        return render(redirect(reverse('clothes:cloth_detail', kwargs={'cloth_id': pk})))
+
+
 # index=================>cloth detail
 def cloth_detail(request, cloth_id):
     clothcategorys = clothCategory.objects.all()
