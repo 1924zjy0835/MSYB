@@ -1,6 +1,6 @@
 $(function () {
-    var submitBtn = $("#submit-btn");
-    submitBtn.click(function (event) {
+    var buyBtn = $("#buy-btn");
+    buyBtn.click(function (event) {
         event.preventDefault();
         var goodsname = $("input[name='goodsname']").val();
         var istype = $("input[name='istype']:checked").val();
@@ -8,6 +8,15 @@ $(function () {
         var orderid = $("input[name='orderid']").val();
         var price = $("input[name='price']").val();
         var return_url = $("input[name='return_url']").val();
+
+        console.log("=============");
+        console.log(goodsname);
+        console.log(istype);
+        console.log(notify_url);
+        console.log(orderid);
+        console.log(price);
+        console.log(return_url);
+
         msybajax.post({
             'url': '/cloth/order/key/',
             'data': {

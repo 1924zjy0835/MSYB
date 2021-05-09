@@ -1,0 +1,198 @@
+@import "init";
+@import "header";
+@import "body";
+@import "variable";
+@import "footer";
+
+
+.main {
+  .wrapper {
+    overflow: hidden;
+    margin-top: 84px;
+    .sidebar-wrapper {
+      margin-left: 120px;
+      float: left;
+      width: $sidebarWidth;
+      background: #555e67;
+      z-index: 0;
+      margin-bottom: 120px;
+
+      .title-group {
+        padding: 20px;
+        margin-bottom: 10px;
+
+        .title {
+          float: left;
+          font-size: 20px;
+          color: #ff2c6d;
+        }
+
+        .more {
+          float: right;
+          font-size: 14px;
+          color: #00b3ee;
+          cursor: pointer;
+        }
+      }
+
+      .labels-group {
+        float: left;
+        margin: 20px 20px;
+
+        .labels {
+
+          li {
+            margin: 5px 0 0 0;
+            list-style: none;
+
+            a {;
+              background: #ff2c6d;
+              color: #fff;
+              padding: 7px 10px 7px 10px;
+              width: 190px;
+              // 数字居中
+              display: block;
+              text-decoration: none;
+              -webkit-transition: all 0.3s ease-out;
+              -moz-transition: all 0.3s ease-out;
+              -o-transition: all 0.3s ease-out;
+              -webkit-box-shadow: 2px 2px 4px #ff2c6d;
+              -moz-box-shadow: 2px 2px 4px #ff2c6d;
+              -o-box-shadow: 2px 2px 4px #ff2c6d;
+            }
+
+            &:hover {
+              color: #67a5cd;
+              padding: 7px 15px 7px 30px;
+            }
+          }
+        }
+      }
+
+      .business {
+        //margin: 20px 0;
+        img {
+          width: $sidebarWidth;
+          //height: $bannerHeight;
+        }
+      }
+
+      .hot-news-group {
+
+        .hot-list-group {
+          overflow: hidden;
+          //height: 200px;
+
+          li {
+            //margin-left: 20px;
+            list-style: none;
+            padding: 0 20px 20px;
+            overflow: hidden;
+            border-bottom: 1px solid #eee;
+            //box-sizing: border-box;
+            margin-top: 20px;
+
+            &:first-of-type {
+              margin-top: 0;
+            }
+
+            &:last-of-type {
+              border-bottom: none;
+            }
+
+            .left-group {
+              float: left;
+              width: 100px;
+              height: 100px;
+              overflow: hidden;
+              position: relative;
+
+              a {
+                font-size: 12px;
+                text-decoration: none;
+                color: #ffff;
+
+                &:hover {
+                  color: #ff00de;
+                }
+              }
+
+              .more-group {
+                font-size: 10px;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+
+                .more {
+                  float: left;
+                  color: #00b3ee;
+                }
+
+                .pub-time {
+                  float: right;
+                  color: #fff;
+                }
+              }
+            }
+
+            .right-group {
+              float: right;
+              width: 100px;
+              height: 100px;
+              margin-left: 20px;
+
+              img {
+                width: 100px;
+                height: 100px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .main-content-wrapper {
+      margin-right: 120px;
+      float: right;
+      width: $mainContentWrapperWidth;
+      background: #00b3ee;
+
+      .table {
+        width: 100%;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: #eaeaea;
+        text-align: center;
+        border-spacing: 10px;
+
+        thead {
+          tr {
+            font-size: 16px;
+          }
+        }
+
+        tbody {
+          font-size: 14px;
+          a {
+          //margin-top: 200px;
+          text-decoration: none;
+
+          img {
+            width: 80px;
+            height: 100px;
+            float: left;
+          }
+
+          .title {
+            margin-left: 10px;
+          }
+        }
+        }
+
+
+      }
+    }
+  }
+}
+

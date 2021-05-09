@@ -1,0 +1,104 @@
+{% extends 'base/front_base.html' %}
+
+
+{% block title %}
+    个人中心
+{% endblock %}
+
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/profile.min.css' %}">
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="wrapper">
+            <div class="sidebar-wrapper">
+                <div class="title-group">
+                    <span class="title">订单页</span>
+                </div>
+                <div class="labels-group">
+                    <ul class="labels">
+                        <li><a href="#" style="text-align: center; ">订单</a></li>
+                        <li><a href="#" style="text-align: center; ">创业课堂</a></li>
+                        <li><a href="#" style="text-align: center; ">服务大厅</a></li>
+                        <li><a href="#" style="text-align: center; ">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="business">
+                    <img src="{% static "images/closet_room.min.jpg" %}" alt="">
+                </div>
+                <div class="hot-news-group">
+                    <div class="title-group">
+                        <span class="title">热门推荐</span>
+                    </div>
+                    <div class="hot-list-group">
+                        <ul class="hot-list">
+                            <li>
+                                <div class="left-group">
+                                    <a href="#">
+                                        唐狮潮流冬季短款轻薄羽绒服...</a>
+                                    <div class="more-group">
+                                        <span class="more">深度报道</span>
+                                        <span class="pub-time">2小时前</span>
+                                    </div>
+                                </div>
+
+                                <div class="right-group">
+                                    <img src="{% static 'images/news/news.min.jpg' %}" alt="">
+                                </div>
+                            </li>
+                            <li>
+                                <div class="left-group">
+                                    <a href="#">
+                                        唐狮潮流冬季短款轻薄羽绒服...</a>
+                                    <div class="more-group">
+                                        <span class="more">深度报道</span>
+                                        <span class="pub-time">2小时前</span>
+                                    </div>
+                                </div>
+
+                                <div class="right-group">
+                                    <img src="{% static 'images/news/news.min.jpg' %}" alt="">
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="right-group"></div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="main-content-wrapper">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th>订单号</th>
+                        <th>商品名称</th>
+                        <th>店铺名称</th>
+                        <th>买家说</th>
+                        <th>金额（元）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    {% for order in orders %}
+                        {% for cloth in clothes %}
+                            <tr>
+                                <td align="left">
+                                    <a href="#"><img src="{{ cloth.thumbnail }}" alt="">
+                                        <span class="title" style="color: #ff2c6d">订单：{{ order.pk }}</span></a>
+                                </td>
+                                <td style="color: #ff2c6d">{{ cloth.title }}</td>
+                                <td style="color: #ff2c6d">{{ cloth.shop }}</td>
+                                <td style="color: #ff2c6d;">{{ cloth.desc }}</td>
+                                <td style="color: blue">{{ order.amount }}</td>
+                            </tr>
+                        {% endfor %}
+                    {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
+

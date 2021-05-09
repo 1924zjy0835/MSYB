@@ -17,7 +17,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
@@ -29,6 +28,7 @@ DEBUG = True
 # DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1', '10.1.128.200']
 
+SameSite = None
 
 # Application definition
 
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    'corsheaders',
     'rest_framework',
     'haystack',
     'apps.errors',
@@ -55,6 +56,7 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -62,7 +64,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-X_FRAME_OPTIONS = 'SAMEORIGIN'
+X_FRAME_OPTIONS = 'ALLOWALL'
 
 ROOT_URLCONF = 'MSYB.urls'
 
@@ -99,7 +101,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'MSYB.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
@@ -113,7 +114,6 @@ DATABASES = {
         "PASSWORD": "guyan",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
@@ -135,7 +135,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 AUTH_USER_MODEL = 'msybauth.User'
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
 
@@ -148,7 +147,6 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
@@ -197,7 +195,50 @@ HAYSTACK_CONNECTIONS = {
 # 增删改后自动创建索引
 HAYSTACK_SIGNAL_PROCESSOR = 'haystack.signals.RealtimeSignalProcessor'
 
-
 # 一次加载的服装个数
 ONE_PAGE_CLOTHES_COUNT = 5
 
+# 设置允许跨域请求
+CORS_ALLOW_CREDENTIALS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
+
+CORS_ORIGIN_WHITELIST = ()
+
+CORS_ALLOW_METHODS = (
+
+    'DELETE',
+
+    'GET',
+
+    'OPTIONS',
+
+    'PATCH',
+
+    'POST',
+
+    'PUT',
+
+    'VIEW',
+
+)
+
+CORS_ALLOW_HEADERS = (
+
+    'accept',
+
+    'accept-encoding',
+
+    'authorization',
+
+    'content-type',
+
+    'dnt',
+
+    'origin',
+
+    'user-agent',
+    'x-csrftoken',
+    'x-requested-with',
+
+)

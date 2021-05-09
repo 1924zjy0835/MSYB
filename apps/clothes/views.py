@@ -214,12 +214,15 @@ def cloth_order(request, cloth_id):
         # "cloth": cloth,
         "order": order,
         "notify_url": request.build_absolute_uri(reverse("clothes:notify_url")),
-        "return_url": request.build_absolute_uri(reverse("clothes:cloth_detail", kwargs={"cloth_id": cloth.pk}))
+        "return_url": request.build_absolute_uri(reverse("clothes:return_url"))
     }
+    print(request.build_absolute_uri(reverse("clothes:notify_url")))
+    print(request.build_absolute_uri(reverse("clothes:return_url")))
     return render(request, 'clothes/cloth_order.html', context=context)
 
 
 @msyb_login_required
+@csrf_exempt
 def cloth_order_key(request):
     goodsname = request.POST.get("goodsname")
     istype = request.POST.get("istype")
@@ -240,8 +243,29 @@ def cloth_order_key(request):
 @csrf_exempt
 def notify_url(request):
     orderid = request.POST.get('orderid')
+    istype = request.POST.get('istype')
+    print("========================")
+    print(istype)
+    print(orderid)
+    print("========================")
     ClothesOrder.objects.filter(pk=orderid).update(status=2)
     return Restful.ok()
+
+
+# return_url
+@csrf_exempt
+def profile(request):
+    clothcategorys = clothCategory.objects.all()
+    orders = ClothesOrder.objects.filter(buyer=request.user).all()
+    for order in orders:
+        clothes = Clothes.objects.filter(pk=order.cloth_id).all()
+        context = {
+            'clothcategorys': clothcategorys,
+            'orders': orders,
+            'clothes': clothes
+        }
+        return render(request, 'clothes/profile.html', context=context)
+    return render(request, 'clothes/profile.html')
 
 
 
