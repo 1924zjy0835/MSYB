@@ -87,9 +87,9 @@
                                 <div class="price-group">
                                     <span class="cloth-price">￥{{ cloth.price }}</span>
                                 </div>
-                                <div class="cloth-more">
+                                <div class="cloth-more" data-id="{{ cloth.pk }}">
                                     <button data-name="cloth-detail" class="cloth-detail"
-                                            onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' cloth_id=cloth.pk %}'">
+                                            onclick="javascript:window.location.href='{% url 'clothes:cloth_detail' cloth_id=cloth.pk%}'">
                                         商品详情
                                     </button>
                                     <button id="cloth-fitting" class="cloth-fitting add-closet-btn"

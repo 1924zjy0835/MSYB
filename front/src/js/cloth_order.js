@@ -36,5 +36,13 @@ $(function () {
                 }
             }
         });
+
+        msybajax.post({
+            'url': '/notify/url/',
+            'data': {
+                'istype': istype,
+                'orderid': orderid
+            },
+        });
     });
 });

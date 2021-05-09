@@ -8,12 +8,8 @@ ClothDetail.prototype.listenClothDetailClickEvent = function () {
     var clothDetailBtn = $(".cloth-detail");
 
     clothDetailBtn.click(function () {
-        var pk = $(this).parent().parent().parent().parent().attr('data-id');
         msybajax.post({
-            'url': '/detail/',
-            'data': {
-                'pk': pk,
-            },
+            'url': '/cloth/detail/',
             'success': function (result) {
                 if (result['code'] === 200) {
 

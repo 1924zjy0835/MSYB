@@ -100,16 +100,6 @@ class Buy_say_view(View):
             return HttpResponse("留言失败！")
 
 
-# 商品详情
-def detail(request):
-    pk = request.POST.get("pk")
-    cloth = Clothes.objects.filter(pk=pk)
-    if not cloth:
-        return Restful.paramserror(message='不好意思没有找到该商品的详情')
-    else:
-        return redirect(reverse('clothes:cloth_detail', kwargs={'cloth_id': pk}))
-
-
 # index=================>cloth detail
 def cloth_detail(request, cloth_id):
     clothcategorys = clothCategory.objects.all()
@@ -216,8 +206,6 @@ def cloth_order(request, cloth_id):
         "notify_url": request.build_absolute_uri(reverse("clothes:notify_url")),
         "return_url": request.build_absolute_uri(reverse("clothes:return_url"))
     }
-    print(request.build_absolute_uri(reverse("clothes:notify_url")))
-    print(request.build_absolute_uri(reverse("clothes:return_url")))
     return render(request, 'clothes/cloth_order.html', context=context)
 
 
@@ -244,11 +232,15 @@ def cloth_order_key(request):
 def notify_url(request):
     orderid = request.POST.get('orderid')
     istype = request.POST.get('istype')
-    print("========================")
-    print(istype)
-    print(orderid)
-    print("========================")
-    ClothesOrder.objects.filter(pk=orderid).update(status=2)
+    # print("========================")
+    # print(istype)
+    # print(orderid)
+    # print("========================")
+    # if (istype != 1 and (istype != 2):
+    #     return Restful.paramserror(message="sorry~")
+    # else:
+    ClothesOrder.objects.update(status=2, istype=istype)
+    print("ok啦")
     return Restful.ok()
 
 
