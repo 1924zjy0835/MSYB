@@ -4,7 +4,7 @@ $(function () {
         event.preventDefault();
         var goodsname = $("input[name='goodsname']").val();
         var istype = $("input[name='istype']:checked").val();
-        var notify_url = $("input[name='notify_url']").val();
+        var notify = $("input[name='notify_url']").val();
         var orderid = $("input[name='orderid']").val();
         var price = $("input[name='price']").val();
         var return_url = $("input[name='return_url']").val();
@@ -12,7 +12,7 @@ $(function () {
         console.log("=============");
         console.log(goodsname);
         console.log(istype);
-        console.log(notify_url);
+        console.log(notify);
         console.log(orderid);
         console.log(price);
         console.log(return_url);
@@ -22,7 +22,7 @@ $(function () {
             'data': {
                 'goodsname': goodsname,
                 'istype': istype,
-                'notify_url': notify_url,
+                'notify_url': notify,
                 'orderid': orderid,
                 'price': price,
                 'return_url': return_url

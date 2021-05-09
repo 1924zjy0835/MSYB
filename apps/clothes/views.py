@@ -214,7 +214,7 @@ def cloth_order(request, cloth_id):
 def cloth_order_key(request):
     goodsname = request.POST.get("goodsname")
     istype = request.POST.get("istype")
-    notify_url = request.POST.get("notify_url")
+    notify = request.POST.get("notify_url")
     orderid = request.POST.get("orderid")
     price = request.POST.get("price")
     return_url = request.POST.get("return_url")
@@ -223,7 +223,7 @@ def cloth_order_key(request):
     uid = '7225b2942ecc238ffdaf705a'
     orderuid = str(request.user.pk)
 
-    key = md5((goodsname + istype + notify_url + orderid + orderuid + price + return_url + token + uid).encode(
+    key = md5((goodsname + istype + notify + orderid + orderuid + price + return_url + token + uid).encode(
         "utf-8")).hexdigest()
     return Restful.result(data={"key": key})
 
@@ -232,6 +232,7 @@ def cloth_order_key(request):
 def notify_url(request):
     orderid = request.POST.get('orderid')
     istype = request.POST.get('istype')
+    notify = request.POST.get("notify")
     # print("========================")
     # print(istype)
     # print(orderid)
@@ -239,8 +240,7 @@ def notify_url(request):
     # if (istype != 1 and (istype != 2):
     #     return Restful.paramserror(message="sorry~")
     # else:
-    ClothesOrder.objects.update(status=2, istype=istype)
-    print("ok啦")
+    ClothesOrder.objects.filter(pk=orderid).update(status=2, istype=istype)
     return Restful.ok()
 
 
