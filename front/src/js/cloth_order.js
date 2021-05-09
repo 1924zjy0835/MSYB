@@ -43,6 +43,26 @@ $(function () {
                 'istype': istype,
                 'orderid': orderid
             },
+            'success': function (result) {
+                if (result['code'] === 200) {
+                    setTimeout(function () {
+                        msybalert.alertSuccess("支付成功~");
+                    },10000);
+
+                    setTimeout(function () {
+                        window.location.href="/clothes/profile.html";
+                    },12000)
+                }
+                else {
+                    setTimeout(function () {
+                        msybalert.alertSuccess("支付成功~");
+                    },10000);
+
+                    setTimeout(function () {
+                        window.location.href="/clothes/profile.html";
+                    },12000)
+                }
+            }
         });
     });
 });

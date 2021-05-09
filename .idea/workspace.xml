@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/cms/migrations/0004_auto_20210509_1728.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -14,14 +15,11 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/migrations/0003_clothesorder.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/migrations/0003_clothesorder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_order.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_order.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/cloth_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/js/cloth_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -85,8 +83,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="175">
-                  <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+                <state relative-caret-position="173">
+                  <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
                   <folding>
                     <element signature="e#0#28#0" expanded="true" />
                   </folding>
@@ -183,11 +181,20 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="170">
-                  <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+                <state relative-caret-position="209">
+                  <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/front/src/js/fitting_room.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="190">
+                  <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
                 </state>
               </provider>
             </entry>
@@ -248,11 +255,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="243" column="23" lean-forward="true" selection-start-line="243" selection-start-column="23" selection-end-line="243" selection-end-column="23" />
+                <state relative-caret-position="816">
+                  <caret line="240" column="49" lean-forward="true" selection-start-line="240" selection-start-column="49" selection-end-line="240" selection-end-column="49" />
                   <folding>
                     <element signature="e#0#53#0" expanded="true" />
                   </folding>
@@ -374,17 +381,17 @@
         <option value="$PROJECT_DIR$/front/src/js/cloth_detail.js" />
         <option value="$PROJECT_DIR$/front/templates/index/index.html" />
         <option value="$PROJECT_DIR$/MSYB/settings.py" />
+        <option value="$PROJECT_DIR$/front/src/js/cloth_order.js" />
         <option value="$PROJECT_DIR$/apps/cms/models.py" />
         <option value="$PROJECT_DIR$/apps/clothes/views.py" />
-        <option value="$PROJECT_DIR$/front/src/js/cloth_order.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="453" />
-    <option name="y" value="117" />
+    <option name="x" value="378" />
+    <option name="y" value="141" />
     <option name="width" value="1500" />
-    <option name="height" value="868" />
+    <option name="height" value="919" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -651,7 +658,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="549076000" />
+    <option name="totallyTimeSpent" value="551268000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -663,15 +670,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="340" y="147" width="1200" height="735" extended-state="0" />
+    <frame x="303" y="113" width="1200" height="735" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13922942" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13922942" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32459018" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.44610283" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4953083" visible="true" weight="0.22885571" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -682,7 +689,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49494097" weight="0.31316727" />
       <window_info anchor="bottom" id="Python Console" order="11" weight="0.32" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32656828" />
-      <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" weight="0.40343347" />
+      <window_info anchor="bottom" id="manage.py@MSYB" order="13" sideWeight="0.4974705" weight="0.40298507" />
       <window_info anchor="bottom" id="File Transfer" order="14" weight="0.32833335" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -730,16 +737,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/apps/cms/search_indexes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/search/search1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
@@ -837,13 +834,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/migrations/0002_auto_20210505_1236.py">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/cms/migrations/0003_clothesorder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/views.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -1085,10 +1075,31 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apps/cms/migrations/0003_clothesorder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="22" column="14" lean-forward="true" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/fitting_room.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="49" column="42" lean-forward="true" selection-start-line="49" selection-start-column="42" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="53" column="28" lean-forward="true" selection-start-line="53" selection-start-column="28" selection-end-line="53" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/cms/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="41" column="47" selection-start-line="41" selection-start-column="47" selection-end-line="41" selection-end-column="47" />
+        <state relative-caret-position="173">
+          <caret line="40" column="19" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1097,18 +1108,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/clothes/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="243" column="23" lean-forward="true" selection-start-line="243" selection-start-column="23" selection-end-line="243" selection-end-column="23" />
+        <state relative-caret-position="816">
+          <caret line="240" column="49" lean-forward="true" selection-start-line="240" selection-start-column="49" selection-end-line="240" selection-end-column="49" />
           <folding>
             <element signature="e#0#53#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front/src/js/cloth_order.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
         </state>
       </provider>
     </entry>
