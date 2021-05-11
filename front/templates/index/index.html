@@ -12,40 +12,6 @@
 {% endblock %}
 
 {% block main %}
-    <header class="header">
-    <div class="main-header">
-        <div class="log-box">
-            <i class="iconfont icon-mote-"></i>
-            <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
-        </div>
-        <ul class="nav">
-            {% for clothcategory in clothcategorys %}
-                <li><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}" style="color: deeppink">{{ clothcategory.name }}</a>
-            </li>
-            {% endfor %}
-            <li><a href="{% url 'clothes:search' %}" style="color: blueviolet">搜索</a></li>
-        </ul>
-        <div class="auth-box">
-            <i class="iconfont icon-icon"></i>
-        <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
-        <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
-            {% if user.is_authenticated %}
-                <!-- 如果用户没有登录，user就是一个匿名的用户 -->
-                <a href="#" class="authenticated-box">{{ user.username }}</a>
-                <div class="user-more-box">
-                    <i class="triangle"></i>
-                    {% if user.is_staff %}
-                        <a href="{% url 'cms:index' %}">管理系统</a>
-                    {% endif %}
-                    <a href="{% url 'msybauth:logout' %}">退出登录</a>
-                </div>
-            {% else %}
-                <a href="#" class="Signin-btn">登录</a> /
-                <a href="#" class="Signup-btn">注册</a>
-            {% endif %}
-        </div>
-    </div>
-</header>
     <div class="main">
         <div class="main-wrapper">
             <div class="carousel-map" id="banner-group">

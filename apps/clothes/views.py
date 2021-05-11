@@ -232,17 +232,14 @@ def cloth_order_key(request):
     token = '81564749e8d14a486497f4f1dcb275f0'
     uid = '7225b2942ecc238ffdaf705a'
     orderuid = str(request.user.pk)
-    print("========================")
-    print(notify)
-    print(istype)
-    print(return_url)
-    print(orderid)
-    print("========================")
 
     key = md5((goodsname + istype + notify + orderid + orderuid + price + return_url + token + uid).encode(
         "utf-8")).hexdigest()
     return Restful.result(data={"key": key})
 
+
+# return_url作用：支付宝处理完成后，浏览器当前页面自动跳转回商户网站中指定页面的http路径，同时返回订单信息。
+# notify_url作用：支付宝服务器主动通知商户网站里指定页面路径，返回订单信息。
 
 @csrf_exempt
 def notify_url(request):
@@ -256,16 +253,33 @@ def notify_url(request):
 @csrf_exempt
 def profile(request):
     clothcategorys = clothCategory.objects.all()
+    clothes = Clothes.objects.order_by("-pub_time")[0:3]
     orders = ClothesOrder.objects.filter(buyer=request.user).all()
     for order in orders:
-        clothes = Clothes.objects.filter(pk=order.cloth_id).all()
+        cloths = Clothes.objects.filter(pk=order.cloth_id).all()
         context = {
             'clothcategorys': clothcategorys,
             'orders': orders,
+            'cloths': cloths,
             'clothes': clothes
         }
         return render(request, 'clothes/profile.html', context=context)
     return render(request, 'clothes/profile.html')
+
+
+@msyb_login_required
+def profile_view(request):
+    buyer = request.POST.get('buyer')
+    user = request.user.pk
+    status = request.POST.get('status')
+    print(buyer)
+    print(user)
+    print(status)
+    if status == 2 and buyer == user:
+        return render(request, 'clothes/profile.html')
+    else:
+        return Restful.paramserror(message="不好意思~亲，您无法查看当前页面哦")
+
 
 
 

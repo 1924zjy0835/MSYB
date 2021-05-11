@@ -43,6 +43,7 @@
                     {% if user.is_staff %}
                         <a href="{% url 'cms:index' %}">管理系统</a>
                     {% endif %}
+                    <a href="{% url 'clothes:return_url' %}">个人中心</a>
                     <a href="{% url 'msybauth:logout' %}">退出登录</a>
                 </div>
             {% else %}

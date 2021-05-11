@@ -21,5 +21,6 @@ urlpatterns = [
     path("cloth/order/key/", views.cloth_order_key, name="cloth_order_key"),
     path("notify/url/", views.notify_url, name="notify_url"),
     path("profile/", views.profile, name="return_url"),
+    path("profile/view/", views.profile_view, name="profile_view"),
 ]
 

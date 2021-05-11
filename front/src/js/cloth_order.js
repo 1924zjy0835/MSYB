@@ -1,4 +1,9 @@
-$(function () {
+// 商品详情
+function ClothOrder() {
+
+}
+
+ClothOrder.prototype.listenZFEvent = function () {
     var buyBtn = $("#buy-btn");
     buyBtn.click(function (event) {
         event.preventDefault();
@@ -8,14 +13,6 @@ $(function () {
         var orderid = $("input[name='orderid']").val();
         var price = $("input[name='price']").val();
         var return_url = $("input[name='return_url']").val();
-
-        console.log("=============");
-        console.log(goodsname);
-        console.log(istype);
-        console.log(notify);
-        console.log(orderid);
-        console.log(price);
-        console.log(return_url);
 
         msybajax.post({
             'url': '/cloth/order/key/',
@@ -45,4 +42,47 @@ $(function () {
             },
         });
     });
+};
+
+ClothOrder.prototype.listenIsNotBuyEvent = function () {
+    var self = this;
+    var buyBtn = $("#buy-btn");
+
+    buyBtn.click(function () {
+        var div = $(this).parent();
+        var buyer = div.attr("data-auth");
+        var status = div.attr("data-id");
+
+        setTimeout(function () {
+            window.location.reload();
+        }, 8000);
+
+        setTimeout(function () {
+            msybajax.post({
+                'url': '/profile/view/',
+                'data': {
+                    'buyer': buyer,
+                    'status': status
+                },
+                'success': function (result) {
+                    if (result['code'] === 200) {
+                        window.messageBox.showSuccess("恭喜您支付成功啦~");
+                    }
+                }
+            });
+        }, 10000);
+
+    })
+};
+
+
+ClothOrder.prototype.run = function () {
+    var self = this;
+    self.listenZFEvent();
+    // self.listenIsNotBuyEvent();
+};
+
+$(function () {
+    var clothorder = new ClothOrder();
+    clothorder.run();
 });

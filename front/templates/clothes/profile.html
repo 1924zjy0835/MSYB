@@ -15,12 +15,12 @@
         <div class="wrapper">
             <div class="sidebar-wrapper">
                 <div class="title-group">
-                    <span class="title">订单页</span>
+                    <span class="title">在线</span>
                 </div>
                 <div class="labels-group">
                     <ul class="labels">
                         <li><a href="#" style="text-align: center; ">订单</a></li>
-                        <li><a href="#" style="text-align: center; ">创业课堂</a></li>
+                        <li><a href="#" style="text-align: center; ">关于我们</a></li>
                         <li><a href="#" style="text-align: center; ">服务大厅</a></li>
                         <li><a href="#" style="text-align: center; ">联系我们</a></li>
                     </ul>
@@ -34,34 +34,22 @@
                     </div>
                     <div class="hot-list-group">
                         <ul class="hot-list">
-                            <li>
+                            {% for clothe in clothes %}
+                                <li>
                                 <div class="left-group">
-                                    <a href="#">
-                                        唐狮潮流冬季短款轻薄羽绒服...</a>
+                                    <a href="{% url 'clothes:cloth_detail' cloth_id=clothe.pk %}">
+                                        {{ clothe.desc }}</a>
                                     <div class="more-group">
-                                        <span class="more">深度报道</span>
-                                        <span class="pub-time">2小时前</span>
+                                        <span class="more">{{ clothe.shop }}</span>
+                                        <span class="pub-time">{{ clothe.price }}</span>
                                     </div>
                                 </div>
 
                                 <div class="right-group">
-                                    <img src="{% static 'images/news/news.min.jpg' %}" alt="">
+                                    <img src="{{ clothe.thumbnail }}" alt="">
                                 </div>
                             </li>
-                            <li>
-                                <div class="left-group">
-                                    <a href="#">
-                                        唐狮潮流冬季短款轻薄羽绒服...</a>
-                                    <div class="more-group">
-                                        <span class="more">深度报道</span>
-                                        <span class="pub-time">2小时前</span>
-                                    </div>
-                                </div>
-
-                                <div class="right-group">
-                                    <img src="{% static 'images/news/news.min.jpg' %}" alt="">
-                                </div>
-                            </li>
+                            {% endfor %}
                         </ul>
                         <div class="right-group"></div>
                     </div>
@@ -81,11 +69,11 @@
                     </thead>
                     <tbody>
                     {% for order in orders %}
-                        {% for cloth in clothes %}
+                        {% for cloth in cloths %}
                             <tr>
                                 <td align="left">
                                     <a href="#"><img src="{{ cloth.thumbnail }}" alt="">
-                                        <span class="title" style="color: #ff2c6d">订单：{{ order.pk }}</span></a>
+                                        <span class="title" style="color: #ff2c6d; ">订单：{{ order.pk }}</span></a>
                                 </td>
                                 <td style="color: #ff2c6d">{{ cloth.title }}</td>
                                 <td style="color: #ff2c6d">{{ cloth.shop }}</td>

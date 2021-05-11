@@ -57,7 +57,7 @@
                     </label>
                     <div style="clear: both;"></div>
                 </div>
-                <div class="submit-group">
+                <div data-auth="{{ order.buyer_id }}" data-id="{{ order.status }}" class="submit-group">
                     <input type="submit" value="去支付" id="buy-btn" class="submit-btn">
                 </div>
         </form>
