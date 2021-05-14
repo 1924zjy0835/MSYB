@@ -281,6 +281,3 @@ def profile_view(request):
         return Restful.paramserror(message="不好意思~亲，您无法查看当前页面哦")
 
 
-
-
-
