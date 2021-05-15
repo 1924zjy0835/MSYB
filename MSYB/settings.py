@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     'apps.clothes',
     'apps.cms',
     'apps.ueditor',
-    'apps.payinfo',
     # 'apps.clothes.templatetags',
     # 'apps.payinfo.templatetags',
 ]

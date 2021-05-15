@@ -326,6 +326,7 @@ from datetime import datetime
 
 
 # 对服装进行前景的提取
+@msyb_login_required
 def grabCut(request):
     url = request.POST.get('thumbnail')
     img = io.imread(url)
@@ -365,7 +366,7 @@ def grabCut(request):
     # strftime函数生成格式化的日期：这样就可以创建一个名为20210523.jpg的文件
     filename = datetime.now().date().strftime('%Y%m%d') + ".jpg"
     #  将画图保存为图片
-    cv.imwrite(os.path.join(path,filename), img)
+    cv.imwrite(os.path.join(path, filename), img)
     plt.show()
 
 

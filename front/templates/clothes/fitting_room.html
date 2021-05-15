@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
     <script src="{% static 'js/fitting_room.min.js' %}"></script>
     <script src="{% static 'js/closet_room.min.js' %}"></script>>
+    <script src="{% static 'js/rotate_model.min.js' %}"></script>
 {% endblock %}
 
 {% block main %}
@@ -32,7 +33,7 @@
                             <div class="clothes-info">
                                 <a class="title-btn close-info">{{ cloth.title }}</a>
                                 <a class="choose-this-btn closet-btn">选择这件衣服</a>
-                                <a class="cloth-model-btn closet-btn">提取衣服模型</a>
+                                <a data-name="{{ cloth.thumbnail }}" class="cloth-model-btn closet-btn">提取衣服模型</a>
                                 <a class="delete-cloth closet-btn">删除这件服装</a>
                                 <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
                             </div>
@@ -62,15 +63,15 @@
                 </ul>
             </div>
             <div class="model-fitting">
-            <ul class="model-list">
-            {% if user.is_authenticated %}
-                {% for model in models %}
-                    <li><a href="#"><img src="{{ model.thumbnail }}" alt=""></a></li>
-                {% endfor %}
-                {% else %}
-                <li><a href="#"><img src="{% static 'images/fitting_room.min.jpg' %}" alt=""></a></li>
-            {% endif %}
-            </ul>
+                <ul class="model-list" id="model-ul">
+                    {% if user.is_authenticated %}
+                        {% for model in models %}
+                            <li><a><img id="fitting-model" src="{{ model.thumbnail }}" alt=""></a></li>
+                        {% endfor %}
+                    {% else %}
+                        <li><a><img src="{% static 'images/fitting_room.min.jpg' %}" alt=""></a></li>
+                    {% endif %}
+                </ul>
             </div>
             <div class="model-fitting-btn">
                 <a href="#" class="fitting-btn">进行试衣</a>
@@ -102,10 +103,11 @@
                                                                                                               type="file"
                                                                                                               id="upload-btn"></label>
                             <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
-                            <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</label>
-                            <a href="#" class="save-btn model-btn">保存该模型</a>
-                            <a href="#" data-name="{{ model.thumbnail }}"  class="delete-btn model-btn">删除模型</a>
-                            <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                            <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn"
+                                   style="cursor: pointer">提取人体3D模型</label>
+                            <a class="save-btn model-btn">保存该模型</a>
+                            <a data-name="{{ model.thumbnail }}" class="delete-btn model-btn">删除模型</a>
+                            <a class="use-model-btn model-btn">使用该模型</a>
                         </div>
                     {% endfor %}
                 {% else %}
@@ -117,9 +119,9 @@
                             <input hidden type="file" id="upload-btn"></label>
                         <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
                         <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</label>
-                        <a href="#" class="save-btn model-btn">保存该模型</a>
+                        <a class="save-btn model-btn">保存该模型</a>
                         <a data-name="{{ model.thumbnail }}" href="#" class="delete-btn model-btn">删除模型</a>
-                        <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                        <a class="use-model-btn model-btn">使用该模型</a>
                     </div>
                 {% endif %}
             </div>

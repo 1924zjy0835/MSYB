@@ -37,8 +37,21 @@ ClosetClothes.prototype.listenClosetClothEvent = function () {
 // 监听提取衣服模型
 ClosetClothes.prototype.listenGrabCutEvent = function() {
     var self = this;
-
-
+    var clothModelBtn = $(".cloth-model-btn");
+    clothModelBtn.click(function () {
+        var thumbnail = $(this).attr("data-name");
+        msybajax.post({
+            'url': 'grabCut',
+            'data': {
+                'thumbnail': thumbnail
+            },
+            'success': function (result) {
+                if (result['code'] === 200) {
+                    window.messageBox.showInfo("恭喜您~模型提取成功了哦~");
+                }
+            }
+        });
+    });
 };
 
 // 监听删除这件衣服

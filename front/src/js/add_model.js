@@ -33,7 +33,7 @@ AddModel.prototype.listenUploadFileEvent = function() {
     });
 };
 
-
+// 监听发布模型事件
 AddModel.prototype.listenPublishModel = function(event) {
     var self = this;
     var submitBtn = $("#submit-btn");
@@ -56,7 +56,6 @@ AddModel.prototype.listenPublishModel = function(event) {
        });
     });
 };
-
 
 AddModel.prototype.run = function () {
     var self = this;

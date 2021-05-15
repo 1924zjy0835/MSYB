@@ -25,17 +25,20 @@
             <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
         </div>
         <ul class="nav">
+            <li><a href="{% url 'clothes:index' %}" style="color: #ff2222">首页</a></li>
             {% for clothcategory in clothcategorys %}
-                <li data-id="{{ clothcategory.pk }}"><a href="{% url 'clothes:new_products' category_id=clothcategory.pk %}" style="color: deeppink">{{ clothcategory.name }}</a>
-            </li>
+                <li data-id="{{ clothcategory.pk }}"><a
+                        href="{% url 'clothes:new_products' category_id=clothcategory.pk %}"
+                        style="color: deeppink">{{ clothcategory.name }}</a>
+                </li>
             {% endfor %}
             <li><a href="/search/" style="color: blueviolet">搜索</a></li>
             <li><a href="{% url 'clothes:fitting_room' %}" style="color: blue">模型试衣间</a></li>
         </ul>
         <div class="auth-box">
             <i class="iconfont icon-icon"></i>
-        <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
-        <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
+            <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
+            <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
             {% if user.is_authenticated %}
                 <!-- 如果用户没有登录，user就是一个匿名的用户 -->
                 <a href="#" class="authenticated-box">{{ user.username }}</a>
@@ -85,74 +88,75 @@
 </footer>
 <div class="main-wrapper">
     <div class="mask-wrapper">
-    <div class="auth-wrapper">
-        <div class="bounce-title">
-            <span class="letter">秒</span>
-            <span class="letter">试</span>
-            <span class="letter">衣</span>
-            <span class="letter">吧</span>
-        </div>
-        <div class="close-group">
-            <i class="close-btn icon-close iconfont"></i>
-        </div>
-        <div class="auth-inner-group">
-            <div class="scroll-wrapper">
-                <div class="signin-group auth-group">
-                    <div class="top-group">
-                        <span class="auth-title">请登录</span>
-                        <a href="javascript: void(0)" class="switch01-btn switch">请注册>></a>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group"><input type="text" class="form-control" name="telephone"
-                                                        placeholder="请输入手机号"></div>
-                        <div class="input-group"><input type="password" class="form-control" name="password"
-                                                        placeholder="请输入密码"></div>
-                        <div class="input-group">
-                            <label class="remember-label"><input type="checkbox" name="remember"
-                                                                 value="1">记住我</label>
+        <div class="auth-wrapper">
+            <div class="bounce-title">
+                <span class="letter">秒</span>
+                <span class="letter">试</span>
+                <span class="letter">衣</span>
+                <span class="letter">吧</span>
+            </div>
+            <div class="close-group">
+                <i class="close-btn icon-close iconfont"></i>
+            </div>
+            <div class="auth-inner-group">
+                <div class="scroll-wrapper">
+                    <div class="signin-group auth-group">
+                        <div class="top-group">
+                            <span class="auth-title">请登录</span>
+                            <a href="javascript: void(0)" class="switch01-btn switch">请注册>></a>
                         </div>
-                        <div class="input-group"><input type="submit" class="submit-btn" value="立即登录"></div>
+                        <div class="form-group">
+                            <div class="input-group"><input type="text" class="form-control" name="telephone"
+                                                            placeholder="请输入手机号"></div>
+                            <div class="input-group"><input type="password" class="form-control" name="password"
+                                                            placeholder="请输入密码"></div>
+                            <div class="input-group">
+                                <label class="remember-label"><input type="checkbox" name="remember"
+                                                                     value="1">记住我</label>
+                            </div>
+                            <div class="input-group"><input type="submit" class="submit-btn" value="立即登录"></div>
 
-                    </div>
-                </div>
-                <div class="signup-group auth-group">
-                    <div class="top-group">
-                        <span class="auth-title">请注册</span>
-                        <a href="javascript: void(0)" class="switch02-btn switch">请登录>></a>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group"><input type="text" class="form-control" name="telephone"
-                                                        placeholder="请输入手机号"></div>
-                        <div class="input-group"><input type="text" class="form-control" name="username"
-                                                        placeholder="请输入用户名"></div>
-                        <div class="input-group"><input type="password" class="form-control" name="password1"
-                                                        placeholder="请输入密码"></div>
-                        <div class="input-group"><input type="password" class="form-control" name="password2"
-                                                        placeholder="确认密码"></div>
-                        <div class="input-group">
-                            <div class="short-input-group">
-                                <input type="text" class="form-control" name="img_captcha" placeholder="图形验证码">
-                            </div>
-                            <div class="input-group-addon">
-                                <img src="{% url 'msybauth:img_captcha' %}" alt="" class="img_captcha" style="cursor: pointer">
-                            </div>
                         </div>
-                        <!-- <div class="input-group">
-                            <div class="short-input-group">
-                                <input type="text" class="form-control" name="sms_captcha" placeholder="短信验证码">
-                            </div>
-                            <div class="input-group-addon">
-                                <span class="sms-captcha-btn">获取验证码</span>
-                            </div>
+                    </div>
+                    <div class="signup-group auth-group">
+                        <div class="top-group">
+                            <span class="auth-title">请注册</span>
+                            <a href="javascript: void(0)" class="switch02-btn switch">请登录>></a>
                         </div>
-                        -->
-                        <div class="input-group"><input type="submit" class="submit-btn" value="立即注册"></div>
+                        <div class="form-group">
+                            <div class="input-group"><input type="text" class="form-control" name="telephone"
+                                                            placeholder="请输入手机号"></div>
+                            <div class="input-group"><input type="text" class="form-control" name="username"
+                                                            placeholder="请输入用户名"></div>
+                            <div class="input-group"><input type="password" class="form-control" name="password1"
+                                                            placeholder="请输入密码"></div>
+                            <div class="input-group"><input type="password" class="form-control" name="password2"
+                                                            placeholder="确认密码"></div>
+                            <div class="input-group">
+                                <div class="short-input-group">
+                                    <input type="text" class="form-control" name="img_captcha" placeholder="图形验证码">
+                                </div>
+                                <div class="input-group-addon">
+                                    <img src="{% url 'msybauth:img_captcha' %}" alt="" class="img_captcha"
+                                         style="cursor: pointer">
+                                </div>
+                            </div>
+                            <!-- <div class="input-group">
+                                <div class="short-input-group">
+                                    <input type="text" class="form-control" name="sms_captcha" placeholder="短信验证码">
+                                </div>
+                                <div class="input-group-addon">
+                                    <span class="sms-captcha-btn">获取验证码</span>
+                                </div>
+                            </div>
+                            -->
+                            <div class="input-group"><input type="submit" class="submit-btn" value="立即注册"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
 </div>
 </body>
 </html>

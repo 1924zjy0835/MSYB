@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/clothes/migrations/0002_peoplemodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/cms/migrations/0005_addmodel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/src/js/add_model.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/front/templates/cms/add_model.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/front/src/js/rotate_model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -16,40 +13,42 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSYB/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/msybauth/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/msybauth/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/msybauth/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/msybauth/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/best_sellers.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/best_sellers.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/buyer_say.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/buyer_say.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/templatetags/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/templatetags/payinfo_filters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/payinfo/views.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/css/cloth_detail.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/cloth_detail.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/cloth_order.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/cloth_order.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/css/fitting_room.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/fitting_room.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/footer.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/footer.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/index_new_products.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/index_new_products.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/men_clothes.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/men_clothes.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/payinfo.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/payinfo.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/profile.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/profile.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/search.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/search.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/women_clothes.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/women_clothes.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/images/closet_room.min.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/js/add_model.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/add_model.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/js/closet_room.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/closet_room.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_order.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_order.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/cloth_detail.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/dist/js/fitting_room.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/fitting_room.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/css/fitting_room.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/index_new_products.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/men_clothes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/payinfo.scss" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/images/closet_room.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/images/closet_room.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/css/women_clothes.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/js/add_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/add_model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/js/closet_room.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/closet_room.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/src/js/cloth_detail.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_detail.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/src/js/fitting_room.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/fitting_room.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/base/front_base.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/base/front_base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/cms/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/cms/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -314,7 +313,7 @@
       <workItem from="1620894926737" duration="21979000" />
       <workItem from="1620952973702" duration="18330000" />
       <workItem from="1620976638024" duration="26397000" />
-      <workItem from="1621041301786" duration="3974000" />
+      <workItem from="1621041301786" duration="23662000" />
     </task>
     <servers />
   </component>
@@ -347,22 +346,22 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="232" y="197" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1620981917948" />
-    <state width="1329" height="126" key="GridCell.Tab.0.bottom" timestamp="1621042815956">
+    <state width="1329" height="126" key="GridCell.Tab.0.bottom" timestamp="1621088537341">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1329" height="126" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1621042815956" />
-    <state width="1329" height="126" key="GridCell.Tab.0.center" timestamp="1621042815955">
+    <state width="1329" height="126" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1621088537341" />
+    <state width="1329" height="126" key="GridCell.Tab.0.center" timestamp="1621088537341">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1329" height="126" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1621042815955" />
-    <state width="1329" height="126" key="GridCell.Tab.0.left" timestamp="1621042815954">
+    <state width="1329" height="126" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1621088537341" />
+    <state width="1329" height="126" key="GridCell.Tab.0.left" timestamp="1621088537341">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1329" height="126" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1621042815954" />
-    <state width="1329" height="126" key="GridCell.Tab.0.right" timestamp="1621042815955">
+    <state width="1329" height="126" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1621088537341" />
+    <state width="1329" height="126" key="GridCell.Tab.0.right" timestamp="1621088537341">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1329" height="126" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1621042815955" />
+    <state width="1329" height="126" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1621088537341" />
     <state x="436" y="93" width="996" height="707" key="SettingsEditor" timestamp="1620983344281">
       <screen x="0" y="40" width="1536" height="824" />
     </state>

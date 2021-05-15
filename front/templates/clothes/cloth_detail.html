@@ -26,7 +26,8 @@
                         </div>
                         <div class="price-group">
                             <span class="price">￥{{ cloth.price }}</span>
-                            <a href="{% url 'clothes:order' cloth_id=cloth.pk %}" data-id="{{ cloth.pk }}" class="buy-btn">立即购买</a>
+                            <a href="{% url 'clothes:order' cloth_id=cloth.pk %}" data-id="{{ cloth.pk }}"
+                               class="buy-btn">立即购买</a>
                         </div>
                     </div>
                 </div>
@@ -56,8 +57,8 @@
                                     <li><a href="#">七天无理由退款</a></li>
                                 </ul>
                             </div>
-                            <div class="btn-group">
-                                <a href="#" class="fitting-room-btn">加入试衣间</a>
+                            <div class="btn-group" data-name="{{ cloth.thumbnail }}">
+                                <a data-name="{{ cloth.title }}" href="{% url 'clothes:closet_room' %}" class="add-closet">加入试衣间</a>
                             </div>
                         </div>
 

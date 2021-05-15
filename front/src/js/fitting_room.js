@@ -130,6 +130,6 @@ Photoes.prototype.run = function () {
 };
 
 $(function () {
-    var photoes = new Photoes();
-    photoes.run();
+    var photos = new Photoes();
+    photos.run();
 });
