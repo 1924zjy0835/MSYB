@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.contrib.admin.views.decorators import staff_member_required
 from django.views.decorators.http import require_POST, require_GET
-from .models import clothCategory, Shop, Clothes
+from .models import clothCategory, Shop, Clothes, AddModel
 from apps.msybauth.models import User
 from utils import Restful
 from .forms import EditClothCategory, AddShop, PublishClothesForm, EditShop
@@ -174,3 +174,13 @@ def qntoken(request):
     q = qiniu.Auth(access_key, secret_key)
     token = q.upload_token(bucket)
     return Restful.result(data={"token": token})
+
+
+#  添加模特
+def add_model(request):
+    thumbnail = request.POST.get('thumbnail')
+    if thumbnail:
+        AddModel.objects.create(thumbnail=thumbnail)
+        return Restful.ok()
+    else:
+        return render(request, 'cms/add_model.html')

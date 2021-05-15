@@ -30,20 +30,18 @@
                         <li data-name="{{ cloth.thumbnail }}">
                             <img src="{{ cloth.thumbnail }}" alt="">
                             <div class="clothes-info">
-                                <a href="#" class="title-btn close-info">{{ cloth.title }}</a>
-                                <a href="#" class="choose-this-btn closet-btn">选择这件衣服</a>
-                                <a href="#" class="cloth-model-btn closet-btn">提取衣服模型</a>
-                                <a href="#" class="delete-cloth closet-btn">删除这件服装</a>
-                            <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
+                                <a class="title-btn close-info">{{ cloth.title }}</a>
+                                <a class="choose-this-btn closet-btn">选择这件衣服</a>
+                                <a class="cloth-model-btn closet-btn">提取衣服模型</a>
+                                <a class="delete-cloth closet-btn">删除这件服装</a>
+                                <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
                             </div>
                         </li>
                     {% endfor %}
                 {% else %}
                     <li><img src="{% static 'images/closet_room.min.jpg' %}" alt="">
                         <div class="clothes-info">
-                            <a href="{% url 'clothes:index' %}" class="choose-this-btn closet-btn">选择服装加入</a>
-                            <a href="#" class="delete-cloth closet-btn">删除这件服装</a>
-                            <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
+                            <a href="{% url 'clothes:index' %}" class="choose-btn closet-btn">选择服装加入</a>
                         </div>
                     </li>
                 {% endif %}
@@ -64,7 +62,15 @@
                 </ul>
             </div>
             <div class="model-fitting">
-
+            <ul class="model-list">
+            {% if user.is_authenticated %}
+                {% for model in models %}
+                    <li><a href="#"><img src="{{ model.thumbnail }}" alt=""></a></li>
+                {% endfor %}
+                {% else %}
+                <li><a href="#"><img src="{% static 'images/fitting_room.min.jpg' %}" alt=""></a></li>
+            {% endif %}
+            </ul>
             </div>
             <div class="model-fitting-btn">
                 <a href="#" class="fitting-btn">进行试衣</a>
@@ -85,31 +91,36 @@
                 <!-- 如果用户上传了个人照片，就会显示用户上传的个人照片，否者的话，就会显示默认的照片-->
                 {% if photos %}
                     {% for photo in photos %}
-                        <img src="{{ photo.img_url }}" alt="" data-name="{{ photo.img_url }}">
+                        {% if first_model %}
+                            <img id="img_url" src="{{ first_model.thumbnail }}" alt="">
+                        {% else %}
+                            <img id="img_url" src="{{ photo.img_url }}" alt="" data-name="{{ photo.img_url }}">
+                        {% endif %}
                         <div class="model-btn-group">
-                    <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
-                    <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden type="file"
-                                                                                                      id="upload-btn"></label>
-                    <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
-                    <a class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</a>
-                    <a href="#" class="save-btn model-btn">保存该模型</a>
-                    <a href="#" class="delete-btn model-btn">删除模型</a>
-                    <a href="#" class="use-model-btn model-btn">使用该模型</a>
-                </div>
+                            <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
+                            <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden
+                                                                                                              type="file"
+                                                                                                              id="upload-btn"></label>
+                            <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
+                            <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</label>
+                            <a href="#" class="save-btn model-btn">保存该模型</a>
+                            <a href="#" data-name="{{ model.thumbnail }}"  class="delete-btn model-btn">删除模型</a>
+                            <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                        </div>
                     {% endfor %}
                 {% else %}
                     <img src="{% static 'images/addphoto.min.jpg' %}" alt=""
                          data-name="{% static 'images/addphoto.min.jpg' %}">
                     <div class="model-btn-group">
-                    <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
-                    <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden type="file"
-                                                                                                      id="upload-btn"></label>
-                    <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
-                    <a class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</a>
-                    <a href="#" class="save-btn model-btn">保存该模型</a>
-                    <a href="#" class="delete-btn model-btn">删除模型</a>
-                    <a href="#" class="use-model-btn model-btn">使用该模型</a>
-                </div>
+                        <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
+                        <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片
+                            <input hidden type="file" id="upload-btn"></label>
+                        <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
+                        <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</label>
+                        <a href="#" class="save-btn model-btn">保存该模型</a>
+                        <a data-name="{{ model.thumbnail }}" href="#" class="delete-btn model-btn">删除模型</a>
+                        <a href="#" class="use-model-btn model-btn">使用该模型</a>
+                    </div>
                 {% endif %}
             </div>
         </div>

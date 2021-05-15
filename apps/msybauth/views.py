@@ -87,14 +87,14 @@ def img_captcha(request):
 
     #  将图形验证码存放在memcached缓存中
     # cache.set(key, value, 过期时间)
-    cache.set(text, text, 5*60)
+    # cache.set(text, text, 5*60)
     return response
 
 
 # 测试memcached是否可以存储数据
-def memcache_test(request):
-    cache.set('username', 'ant', 60)
-    result = cache.get("username")
-    print(result)
-    return HttpResponse("success")
+# def memcache_test(request):
+#     cache.set('username', 'ant', 60)
+#     result = cache.get("username")
+#     print(result)
+#     return HttpResponse("success")
 

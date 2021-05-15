@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'corsheaders',
     'rest_framework',
     'haystack',
     'apps.errors',
@@ -54,7 +53,6 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -62,19 +60,9 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-X_FRAME_OPTIONS = 'ALLOWALL'
+# X_FRAME_OPTIONS = 'ALLOWALL'
 
 ROOT_URLCONF = 'MSYB.urls'
-
-# 图形验证码，短信验证码使用memcachedCache
-# 缓存配置，请确保memcached已经开启了，在任务管理器的服务中将memcached开启
-CACHES = {
-    'default': {
-        "BACKEND": "django.core.cache.backends.memcached.MemcachedCache",
-        "LOCATION": "127.0.0.1:11211"
-        # 使用ip加端口连接memcached
-    }
-}
 
 TEMPLATES = [
     {
@@ -132,6 +120,16 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 AUTH_USER_MODEL = 'msybauth.User'
+
+# 图形验证码，短信验证码使用memcachedCache
+# 缓存配置，请确保memcached已经开启了，在任务管理器的服务中将memcached开启
+CACHES = {
+    'default': {
+        "BACKEND": "django.core.cache.backends.memcached.MemcachedCache",
+        "LOCATION": "127.0.0.1:11211"
+        # 使用ip加端口连接memcached
+    }
+}
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/

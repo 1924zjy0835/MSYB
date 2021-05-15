@@ -23,7 +23,7 @@ ClosetClothes.prototype.listenClosetClothEvent = function () {
                     setTimeout(function () {
                         window.messageBox.showSuccess("恭喜您~加入储衣间成功啦~");
                         window.location.reload();
-                    },1000);
+                    },500);
                 }
             }
         });
@@ -33,7 +33,13 @@ ClosetClothes.prototype.listenClosetClothEvent = function () {
 
 // 监听选择这件衣服的事件
 
+
 // 监听提取衣服模型
+ClosetClothes.prototype.listenGrabCutEvent = function() {
+    var self = this;
+
+
+};
 
 // 监听删除这件衣服
 ClosetClothes.prototype.listenDropClosetClothEvent = function () {
@@ -64,6 +70,7 @@ ClosetClothes.prototype.run =  function() {
     var self = this;
     self.listenClosetClothEvent();
     self.listenDropClosetClothEvent();
+    self.listenGrabCutEvent();
 };
 
 $(function () {

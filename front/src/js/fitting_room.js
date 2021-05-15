@@ -57,10 +57,65 @@ Photoes.prototype.listenDropPersonalPhotoEvent = function() {
 
 
 // 监听提取人体3D模型的事件
+Photoes.prototype.listenExtractModelEvent = function() {
+    var self = this;
+    var extractBtn = $(".extract-btn");
+    extractBtn.click(function () {
+        var thumbnail = $(this).attr("data-name");
+        // var srcInput = extractBtn.parent().siblings().attr("src");
+        // 将当前上传的人物照片的位置更改为人体的三维模型照片
+        $('#img_url').attr('src', thumbnail);
+        // document.getElementById('img_url').src = "thumbnail";
+        console.log(thumbnail);
+    });
+};
 
-// 监听保存模型的事件
+// 监听保存模型的事件，单击保存模型的时候，监听其点击事件，将其保存到数据库中
+Photoes.prototype.listenSaveModelEvent = function() {
+    var self = this;
+    var thumbnail = $(".extract-btn").attr("data-name");
 
+    var saveModelBtn = $(".save-btn");
+    saveModelBtn.click(function () {
+        msybajax.post({
+        "url": "/people/model/",
+        "data": {
+            "thumbnail": thumbnail,
+        },
+        'success': function (result) {
+            if (result['code'] === 200) {
+                console.log(thumbnail);
+                window.messageBox.showSuccess("哇哦~已经成功保存人体模型了哦~")
+            }
+        }
+    });
+    });
+};
 // 监听删除模型的事件
+Photoes.prototype.listenDeleteModelEvent = function() {
+    var self =this;
+    var deleteModelBtn = $(".delete-btn");
+    deleteModelBtn.click(function () {
+        var thumbnail = $(this).attr("data-name");
+        console.log(thumbnail);
+        msybajax.post({
+            'url': '/delete/model/',
+            'data': {
+                'thumbnail':thumbnail,
+            },
+            'success': function (result) {
+                if (result['code'] === 200) {
+                    window.messageBox.showSuccess("恭喜您~人体模型删除成功了哦~")
+                    setTimeout(function () {
+                        window.location.reload();
+                    }, 3000);
+                }else{
+                    window.messageBox.showError("不好意思~人体模型没有删除成功哦~")
+                }
+            }
+        });
+    });
+};
 
 
 // 监听使用该模型的事件
@@ -69,6 +124,9 @@ Photoes.prototype.run = function () {
     var self = this;
     self.listenUploadPhotoesEvent();
     self.listenDropPersonalPhotoEvent();
+    self.listenExtractModelEvent();
+    self.listenSaveModelEvent();
+    self.listenDeleteModelEvent();
 };
 
 $(function () {

@@ -45,3 +45,11 @@ class ClothesOrder(models.Model):
 
     class Meta:
         db_table = "clothesorder"
+
+
+# 定义模特模型
+class AddModel(models.Model):
+    thumbnail = models.URLField()
+
+    class Meta:
+        db_table = "models"

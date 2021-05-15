@@ -22,5 +22,7 @@ urlpatterns = [
     path("notify/url/", views.notify_url, name="notify_url"),
     path("profile/", views.profile, name="return_url"),
     path("profile/view/", views.profile_view, name="profile_view"),
+    path("people/model/", views.people_model, name="people_model"),
+    path("delete/model/", views.delete_model, name="delete_model"),
 ]
 

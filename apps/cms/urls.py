@@ -16,4 +16,5 @@ urlpatterns = [
     path("edit/category/cloth/", views.edit_category_cloth, name="edit_category"),
     path("delete/category/cloth/", views.delete_category_cloth, name="delete_category"),
     path("qntoken/", views.qntoken, name='qntoken'),
+    path("add/model/", views.add_model, name="add_model"),
 ]

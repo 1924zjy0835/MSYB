@@ -1,0 +1,53 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}
+    添加模特
+{% endblock %}
+
+{% block head %}
+    <script src="{% static 'js/add_model.min.js' %}"></script>
+
+{% endblock %}
+
+{% block content-header %}
+    <h1>添加模特</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-success">
+                <form action="" class="form">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="thumbnail-form">添加模特</label>
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="model-thumbnail-form" name="thumbnail">
+                                <span class="input-group-btn">
+                                <label class="btn btn-success btn-file">上传图片<input hidden type="file" id="model-thumbnail-btn"></label>
+                            </span>
+                            </div>
+                        </div>
+                     <!-- 默认情况下，进度条为隐藏的-->
+                        <div id="progress-group" class="form-group"  style="display: none">
+                            <div class="progress">
+                                <!--真正展示进度条的是process-bar-->
+                                <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar"
+                                     aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 0">
+                                    0%
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                    <span class="submit">
+                        <button id="submit-btn" class="btn btn-success pull-right">
+                            添加模特
+                        </button>
+                    </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
