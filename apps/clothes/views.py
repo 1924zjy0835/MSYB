@@ -146,13 +146,15 @@ def closet_room(request):
         clothcategorys = clothCategory.objects.all()
         clothes = closet.objects.all()
         models = AddModel.objects.all()
+        model = AddModel.objects.first()
         first_model = PeopleModel.objects.first()
         context = {
             "photos": photos,
             "clothes": clothes,
             "clothcategorys": clothcategorys,
             "models": models,
-            'first_model': first_model
+            "model": model,
+            "first_model": first_model
         }
         return render(request, 'clothes/fitting_room.html', context=context)
 

@@ -99,12 +99,11 @@
                         {% endif %}
                         <div class="model-btn-group">
                             <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
-                            <label class="upload-btn btn-file model-btn" style="cursor: pointer">上传个人照片<input hidden
+                            <label class="upload-btn btn-file model-btn">上传个人照片<input hidden
                                                                                                               type="file"
                                                                                                               id="upload-btn"></label>
-                            <label class="drop-btn model-btn" style="cursor: pointer">删除照片</label>
-                            <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn"
-                                   style="cursor: pointer">提取人体3D模型</label>
+                            <label class="drop-btn model-btn">删除照片</label>
+                            <a data-name="{{ model.thumbnail }}" class="extract-btn model-btn">提取人体3D模型</a>
                             <a class="save-btn model-btn">保存该模型</a>
                             <a data-name="{{ model.thumbnail }}" class="delete-btn model-btn">删除模型</a>
                             <a class="use-model-btn model-btn">使用该模型</a>
