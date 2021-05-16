@@ -11,8 +11,11 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/media/modelPerson.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front/templates/search/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/modelPerson.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/modelPerson.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -303,7 +306,7 @@
       <workItem from="1620976638024" duration="26397000" />
       <workItem from="1621041301786" duration="25873000" />
       <workItem from="1621127092735" duration="10174000" />
-      <workItem from="1621140048472" duration="6690000" />
+      <workItem from="1621140048472" duration="7129000" />
     </task>
     <servers />
   </component>
