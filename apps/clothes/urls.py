@@ -24,6 +24,6 @@ urlpatterns = [
     path("profile/view/", views.profile_view, name="profile_view"),
     path("people/model/", views.people_model, name="people_model"),
     path("delete/model/", views.delete_model, name="delete_model"),
-    path("grabCut/", views.grabCut, name="grabCut"),
+    path("model/fitting/", views.model_fitting,name="model_fitting"),
 ]
 

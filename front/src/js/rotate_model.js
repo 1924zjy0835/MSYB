@@ -12,14 +12,6 @@ function RotateModel() {
 RotateModel.prototype.animate = function() {
     var self = this;
     self.modelUl.css({"left": -self.modelWidth * self.index});
-    // var index = self.index;
-    // if(index === 0){
-    //     index = self.modelCount - 1;
-    // }else if(index === self.modelCount){
-    //     index = 0;
-    // }else {
-    //     index = self.index - 1;
-    // }
 };
 
 // 人体模型的运动
@@ -51,23 +43,6 @@ RotateModel.prototype.initModel = function () {
 };
 
 // 监听模型旋转事件
-// RotateModel.prototype.listenRotateModelEvent = function() {
-//     var self = this;
-//     var fittingModel = $("#fitting-model");
-//
-//     fittingModel.click(function () {
-//         if (self.index === self.modelCount + 1) {
-//             self.modelUl.css({"left": -self.modelWidth});
-//             self.index = 2;
-//         } else {
-//             self.index++;
-//         }
-//         self.animate();
-//         console.log("running..............");
-//         console.log(self.modelCount);
-//     });
-// };
-
 RotateModel.prototype.listenRun = function () {
     var self = this;
     // 设置一个定时器
@@ -84,12 +59,40 @@ RotateModel.prototype.listenRun = function () {
     }, 1000);
 };
 
+// 监听试衣的事件
+RotateModel.prototype.listenModelFitClothesEvent = function () {
+   var self = this;
+   var fittingBtn = $(".fitting-btn");
+   fittingBtn.click(function () {
+       var modelThumbnail = $(this).parent().attr("data-id");
+       var clothThumbnail = $(this).attr("data-id");
+
+       console.log(modelThumbnail);
+       console.log(clothThumbnail);
+       console.log("running..........");
+
+       msybajax.post({
+           'url': '/model/fitting/',
+           'data':{
+               'modelThumbnail': modelThumbnail,
+               'clothThumbnail': clothThumbnail
+           },
+           'success': function (result) {
+                if (result['code'] === 200) {
+                    window.messageBox.showSuccess("~模型试衣结果出来了哦")
+                    window.location.reload();
+                }
+           }
+       });
+   });
+};
+
 RotateModel.prototype.run = function () {
     var self = this;
     self.loop();
     self.initModel();
     self.listenRun();
-    // self.listenRotateModelEvent();
+    self.listenModelFitClothesEvent();
 };
 
 // 在网页加载完毕之后，人体模型图就可以运动起来了

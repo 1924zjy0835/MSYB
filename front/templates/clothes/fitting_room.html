@@ -33,7 +33,6 @@
                             <div class="clothes-info">
                                 <a class="title-btn close-info">{{ cloth.title }}</a>
                                 <a class="choose-this-btn closet-btn">选择这件衣服</a>
-                                <a data-name="{{ cloth.thumbnail }}" class="cloth-model-btn closet-btn">提取衣服模型</a>
                                 <a class="delete-cloth closet-btn">删除这件服装</a>
                                 <a href="{% url 'clothes:index' %}" class="select-cloth closet-btn">重新选择服装</a>
                             </div>
@@ -64,7 +63,12 @@
             </div>
             <div class="model-group">
                 <div class="fitting-cloth-room">
-                    <img src="{% static 'images/fitting_room.min.jpg' %}" alt="">
+                    {% if model_cloth %}
+                        <img src="{{ model_cloth.model_url }}" alt="">
+                    {% else %}
+                        <img src="{% static 'images/fitting_room.min.jpg' %}" alt="">
+                    {% endif %}
+
                 </div>
                 <div class="model-fitting">
                     <ul class="model-list" id="model-ul">
@@ -74,10 +78,14 @@
                     </ul>
                 </div>
             </div>
-
-            <div class="model-fitting-btn">
-                <a href="#" class="fitting-btn">进行试衣</a>
-            </div>
+            <!--在按钮上绑定人体模型的url，在a标签上绑定服装的url-->
+            {% if first_model %}
+                <div class="model-fitting-btn" data-id="{{ first_model.thumbnail }}">
+                    {% for cloth in clothes %}
+                        <a data-id="{{ cloth.thumbnail }}" class="fitting-btn">进行试衣</a>
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
         <div class="model-room">
             <div class="container">
@@ -108,7 +116,6 @@
                             <a data-name="{{ model.thumbnail }}" class="extract-btn model-btn">提取人体3D模型</a>
                             <a class="save-btn model-btn">保存该模型</a>
                             <a data-name="{{ model.thumbnail }}" class="delete-btn model-btn">删除模型</a>
-                            <a class="use-model-btn model-btn">使用该模型</a>
                         </div>
                     {% endfor %}
                 {% else %}
@@ -122,7 +129,6 @@
                         <label data-name="{{ model.thumbnail }}" class="extract-btn model-btn" style="cursor: pointer">提取人体3D模型</label>
                         <a class="save-btn model-btn">保存该模型</a>
                         <a data-name="{{ model.thumbnail }}" href="#" class="delete-btn model-btn">删除模型</a>
-                        <a class="use-model-btn model-btn">使用该模型</a>
                     </div>
                 {% endif %}
             </div>

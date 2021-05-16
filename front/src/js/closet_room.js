@@ -23,31 +23,7 @@ ClosetClothes.prototype.listenClosetClothEvent = function () {
                     setTimeout(function () {
                         window.messageBox.showSuccess("恭喜您~加入储衣间成功啦~");
                         window.location.reload();
-                    },500);
-                }
-            }
-        });
-    });
-};
-
-
-// 监听选择这件衣服的事件
-
-
-// 监听提取衣服模型
-ClosetClothes.prototype.listenGrabCutEvent = function() {
-    var self = this;
-    var clothModelBtn = $(".cloth-model-btn");
-    clothModelBtn.click(function () {
-        var thumbnail = $(this).attr("data-name");
-        msybajax.post({
-            'url': 'grabCut',
-            'data': {
-                'thumbnail': thumbnail
-            },
-            'success': function (result) {
-                if (result['code'] === 200) {
-                    window.messageBox.showInfo("恭喜您~模型提取成功了哦~");
+                    },100);
                 }
             }
         });
@@ -83,7 +59,6 @@ ClosetClothes.prototype.run =  function() {
     var self = this;
     self.listenClosetClothEvent();
     self.listenDropClosetClothEvent();
-    self.listenGrabCutEvent();
 };
 
 $(function () {

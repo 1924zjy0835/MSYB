@@ -118,8 +118,6 @@ Photoes.prototype.listenDeleteModelEvent = function() {
 };
 
 
-// 监听使用该模型的事件
-
 Photoes.prototype.run = function () {
     var self = this;
     self.listenUploadPhotoesEvent();

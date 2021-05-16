@@ -158,6 +158,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static_dist')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
+# 配置上传模特试衣的文件夹
+MODEL_URL = '/cloth_models/'
+MODEL_ROOT = os.path.join(BASE_DIR, 'cloth_models')
+
 # Qiniu配置
 QINIU_ACCESS_KEY = "F7sdmsL4STraJPyDSest5iQyvFZsDm57wY5HTMCA"
 QINIU_SECRET_KEY = "4f09O2YiJmY3Rdj8teUeQr3ruX_ilE51HPDRjEV_"

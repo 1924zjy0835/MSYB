@@ -4,7 +4,7 @@ from .forms import BuyerSayForm, PersonalPhotoForm, ClosetForm
 from django.http import HttpResponse
 import os
 from django.conf import settings
-from .models import PersonalPhotoModel, closet, PeopleModel
+from .models import PersonalPhotoModel, closet, PeopleModel, ModelCloth
 from apps.cms.models import Clothes, clothCategory, Shop, ClothesOrder
 from utils import Restful
 from apps.msybauth.decorators import msyb_login_required
@@ -17,7 +17,7 @@ import os
 import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
-import urllib
+import urllib.request as urllib
 from io import BytesIO
 from skimage import io
 
@@ -148,13 +148,15 @@ def closet_room(request):
         models = AddModel.objects.all()
         model = AddModel.objects.first()
         first_model = PeopleModel.objects.first()
+        model_cloth = ModelCloth.objects.first()
         context = {
             "photos": photos,
             "clothes": clothes,
             "clothcategorys": clothcategorys,
             "models": models,
             "model": model,
-            "first_model": first_model
+            "first_model": first_model,
+            "model_cloth": model_cloth
         }
         return render(request, 'clothes/fitting_room.html', context=context)
 
@@ -178,13 +180,15 @@ def fitting_room(request):
     models = AddModel.objects.all()
     model = AddModel.objects.first()
     first_model = PeopleModel.objects.first()
+    model_cloth = ModelCloth.objects.first()
     context = {
         "photos": photos,
         "clothes": clothes,
         "clothcategorys": clothcategorys,
         "models": models,
         "model": model,
-        "first_model": first_model
+        "first_model": first_model,
+        "model_cloth": model_cloth
     }
     return render(request, 'clothes/fitting_room.html', context=context)
 
@@ -295,9 +299,6 @@ def profile_view(request):
     buyer = request.POST.get('buyer')
     user = request.user.pk
     status = request.POST.get('status')
-    print(buyer)
-    print(user)
-    print(status)
     if status == 2 and buyer == user:
         return render(request, 'clothes/profile.html')
     else:
@@ -324,52 +325,43 @@ def delete_model(request):
         return Restful.paramserror(message="亲~您删除的这个模型不存在哦~")
 
 
-from datetime import datetime
+ # 可用
+# 对两张图片进行逻辑的与操作
+def model_and_cloth(image1, image2):
+    model_image = cv.bitwise_and(image1, image2)
+    ROOT = settings.MEDIA_ROOT
+    cv.imwrite(os.path.join(ROOT, 'modelPerson.jpg'), model_image)
 
 
-# 对服装进行前景的提取
-@msyb_login_required
-def grabCut(request):
-    url = request.POST.get('thumbnail')
-    img = io.imread(url)
-    mask = np.zeros(img.shape[:2], np.uint8)
+def model_fitting(request):
+    model_url = urllib.urlopen(request.POST.get('modelThumbnail'))
+    cloth_url = urllib.urlopen(request.POST.get('clothThumbnail'))
 
-    bgdModel = np.zeros((1, 65), np.float64)
-    fgbModel = np.zeros((1, 65), np.float64)
+    # bytearray将数据转换（返回）一个新的字节数组
+    # asarray()复制数据，将结构化数据转换为ndarray
+    image1 = np.asanyarray(bytearray(model_url.read()), dtype="uint8")
+    image2 = np.asanyarray(bytearray(cloth_url.read()), dtype="uint8")
 
-    # rect 定义包含前景的矩形，格式为：（x,y,w,h）
-    # x，y:代表的是在x,y轴上从哪里开始确定是前景的区域
-    # 而w，h则是确定这个包含前景趋于的矩形的大小
-    rect = (20, 20, 700, 800)
+    # cv.imdecode()函数将数据解码为Opencv图像格式
+    model_src1 = cv.imdecode(image1, cv.IMREAD_COLOR)
+    cloth_src2 = cv.imdecode(image2, cv.IMREAD_COLOR)
 
-    # 函数返回值是更新的mask, bgdmodel, fgbmodel
-    # cv2.grabCut(img, mask, rect, bdgModel, fgbModel, interCount, mode)
-    # img: 代表的是输入的图像；
-    # mask： 代表的是掩模图像，用来确定哪些区域为背景，前景，或者是可能是前景或背景等。
-    # rect: 确定包含前景的矩形的位置与大小；
-    # bgdModel, fgbModel: 算法内部使用的数组，你只需要创建两个大小为（1， 65），数据类型为np.float64的数组
-    # interCount: 算法的迭代次数；
-    # mode: 可以设置为矩形模式：cv2.GC_INIT_WITH_RECT或者是cv2.GC_INIT_WITH_MASK也可以联合使用，这是用来确定我们进行修改的方式，矩形模式或者是掩模模式
-    cv.grabCut(img, mask, rect, bgdModel, fgbModel, 5, cv.GC_INIT_WITH_RECT)
+    # 对图片进行高斯模糊
+    model_blur = cv.GaussianBlur(model_src1, (5, 5), 0)
+    cloth_blur = cv.GaussianBlur(cloth_src2, (5, 5), 0)
 
-    mask2 = np.where((mask == 2) | (mask == 0), 0, 1).astype('uint8')
-    img = img*mask2[:, :, np.newaxis]
+    # 对图片进行双边滤波处理，能够在保持边界清晰的情况下，有效的去除噪音
+    size = (279, 496)
+    model = cv.resize(model_blur, size)
+    cloth = cv.resize(cloth_blur, size)
 
-    plt.imshow(img)
-    # plt.colorbar()
-    # 以下三行代码要放在plt.show()之前，plt.imshow()函数之后
-    # 去掉x坐标的刻度
-    plt.xticks([])
-    # 去掉Y坐标轴的刻度
-    plt.yticks([])
-    # 去掉坐标轴
-    plt.axis('off')
-    path = "D:/Git02/Git01/DSFN/MSYB/cloth_models"
-    # strftime函数生成格式化的日期：这样就可以创建一个名为20210523.jpg的文件
-    filename = datetime.now().date().strftime('%Y%m%d') + ".jpg"
-    #  将画图保存为图片
-    cv.imwrite(os.path.join(path, filename), img)
-    plt.show()
+    #  调用模型试衣的函数
+    model_and_cloth(model, cloth)
+    url = request.build_absolute_uri(settings.MEDIA_URL + 'modelPerson.jpg')
+    ModelCloth.objects.create(model_url=url, user=request.user)
+    return Restful.ok()
+
+
 
 
 

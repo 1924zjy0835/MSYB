@@ -34,4 +34,13 @@ class PeopleModel(models.Model):
         db_table = "peopleModel"
 
 
+# 人体试衣模型
+class ModelCloth(models.Model):
+    model_url = models.URLField()
+    user = models.ForeignKey("msybauth.User", on_delete=models.DO_NOTHING, null=True)
+    pub_time = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        db_table = "modelcloth"
+
 
