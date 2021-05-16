@@ -11,46 +11,6 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_2410003_88ixgp6kyao.css">
 {% endblock %}
 
-
-<header class="header">
-    <div class="main-header">
-        <div class="log-box">
-            <i class="iconfont icon-mote-"></i>
-            <a href="#" style="margin-right: 20px">秒试<strong>衣吧</strong></a>
-        </div>
-        <ul class="nav">
-            <li><a href="{% url 'clothes:index' %}" style="color: #ff2222">首页</a></li>
-            {% for clothcategory in clothcategorys %}
-                <li data-id="{{ clothcategory.pk }}"><a
-                        href="{% url 'clothes:new_products' category_id=clothcategory.pk %}"
-                        style="color: deeppink">{{ clothcategory.name }}</a>
-                </li>
-            {% endfor %}
-            <li><a href="/search/" style="color: blueviolet">搜索</a></li>
-            <li><a href="{% url 'clothes:fitting_room' %}" style="color: blue">模型试衣间</a></li>
-        </ul>
-        <div class="auth-box">
-            <i class="iconfont icon-icon"></i>
-            <!-- setting.py中OPTIONS中auth的上下文处理器，会为django模板添加变量user -->
-            <!-- 判断用户是否登录成功，可以通过获取user的属性is_authenticated,为True即为登录成功，为False即为没有登录 -->
-            {% if user.is_authenticated %}
-                <!-- 如果用户没有登录，user就是一个匿名的用户 -->
-                <a href="#" class="authenticated-box">{{ user.username }}</a>
-                <div class="user-more-box">
-                    <i class="triangle"></i>
-                    {% if user.is_staff %}
-                        <a href="{% url 'cms:index' %}">管理系统</a>
-                    {% endif %}
-                    <a href="{% url 'clothes:return_url' %}">个人中心</a>
-                    <a href="{% url 'msybauth:logout' %}">退出登录</a>
-                </div>
-            {% else %}
-                <a href="#" class="Signin-btn">登录</a> /
-                <a href="#" class="Signup-btn">注册</a>
-            {% endif %}
-        </div>
-    </div>
-</header>
 {% block main %}
     <div class="main">
         <div class="wrapper">

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2c3d2505-2e79-47c7-ae7c-6fa7306e58c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/apps/clothes/migrations/0003_modelcloth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/front/gulpfile.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN/流程" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/gulpfile.js" afterDir="false" />
@@ -12,19 +11,8 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/Opencv.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/Opencv.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cloth_models/2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/closet_room.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/closet_room.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/fitting_room.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/fitting_room.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/js/rotate_model.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/js/rotate_model.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/closet_room.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/closet_room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/fitting_room.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/fitting_room.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/rotate_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/rotate_model.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/media/modelPerson.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -315,7 +303,7 @@
       <workItem from="1620976638024" duration="26397000" />
       <workItem from="1621041301786" duration="25873000" />
       <workItem from="1621127092735" duration="10174000" />
-      <workItem from="1621140048472" duration="5338000" />
+      <workItem from="1621140048472" duration="6690000" />
     </task>
     <servers />
   </component>
