@@ -82,10 +82,16 @@
             {% if first_model %}
                 <div class="model-fitting-btn" data-id="{{ first_model.thumbnail }}">
                     {% for cloth in clothes %}
-                        <a data-id="{{ cloth.thumbnail }}" class="fitting-btn">进行试衣</a>
+                        <a data-id="{{ cloth.thumbnail }}" class="fitting-btn" style="cursor: pointer">进行试衣</a>
                     {% endfor %}
+
+                </div>
+            {% else %}
+                <div class="model-fitting-btn" data-id="{{ first_model.thumbnail }}">
+                    <a data-id="{{ cloth.thumbnail }}" class="fitting-btn"style="cursor: pointer">进行试衣</a>
                 </div>
             {% endif %}
+
         </div>
         <div class="model-room">
             <div class="container">

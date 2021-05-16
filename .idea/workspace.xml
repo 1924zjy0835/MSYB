@@ -11,10 +11,7 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/search/search.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/search/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/media/modelPerson.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/media/modelPerson.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
@@ -306,7 +303,7 @@
       <workItem from="1620976638024" duration="26397000" />
       <workItem from="1621041301786" duration="25873000" />
       <workItem from="1621127092735" duration="10174000" />
-      <workItem from="1621140048472" duration="7129000" />
+      <workItem from="1621140048472" duration="8394000" />
     </task>
     <servers />
   </component>
@@ -339,22 +336,22 @@
       <screen x="0" y="40" width="1536" height="824" />
     </state>
     <state x="232" y="197" key="FileChooserDialogImpl/0.40.1536.824@0.40.1536.824" timestamp="1621139889394" />
-    <state width="1330" height="265" key="GridCell.Tab.0.bottom" timestamp="1621144285005">
+    <state width="1330" height="265" key="GridCell.Tab.0.bottom" timestamp="1621157197571">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1330" height="265" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1621144285005" />
-    <state width="1330" height="265" key="GridCell.Tab.0.center" timestamp="1621144285005">
+    <state width="1330" height="265" key="GridCell.Tab.0.bottom/0.40.1536.824@0.40.1536.824" timestamp="1621157197571" />
+    <state width="1330" height="265" key="GridCell.Tab.0.center" timestamp="1621157197570">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1330" height="265" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1621144285005" />
-    <state width="1330" height="265" key="GridCell.Tab.0.left" timestamp="1621144285004">
+    <state width="1330" height="265" key="GridCell.Tab.0.center/0.40.1536.824@0.40.1536.824" timestamp="1621157197570" />
+    <state width="1330" height="265" key="GridCell.Tab.0.left" timestamp="1621157197570">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1330" height="265" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1621144285004" />
-    <state width="1330" height="265" key="GridCell.Tab.0.right" timestamp="1621144285005">
+    <state width="1330" height="265" key="GridCell.Tab.0.left/0.40.1536.824@0.40.1536.824" timestamp="1621157197570" />
+    <state width="1330" height="265" key="GridCell.Tab.0.right" timestamp="1621157197570">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
-    <state width="1330" height="265" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1621144285005" />
+    <state width="1330" height="265" key="GridCell.Tab.0.right/0.40.1536.824@0.40.1536.824" timestamp="1621157197570" />
     <state x="436" y="93" width="996" height="707" key="SettingsEditor" timestamp="1620983344281">
       <screen x="0" y="40" width="1536" height="824" />
     </state>
