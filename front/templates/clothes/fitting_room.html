@@ -62,17 +62,19 @@
                     <li>（4）即可在左边的储衣间选择想要试穿的衣服，试穿衣服即可看到试衣效果哦^_^;</li>
                 </ul>
             </div>
-            <div class="model-fitting">
-                <ul class="model-list" id="model-ul">
-                    {% if user.is_authenticated %}
+            <div class="model-group">
+                <div class="fitting-cloth-room">
+                    <img src="{% static 'images/fitting_room.min.jpg' %}" alt="">
+                </div>
+                <div class="model-fitting">
+                    <ul class="model-list" id="model-ul">
                         {% for model in models %}
                             <li><a><img id="fitting-model" src="{{ model.thumbnail }}" alt=""></a></li>
                         {% endfor %}
-                    {% else %}
-                        <li><a><img src="{% static 'images/fitting_room.min.jpg' %}" alt=""></a></li>
-                    {% endif %}
-                </ul>
+                    </ul>
+                </div>
             </div>
+
             <div class="model-fitting-btn">
                 <a href="#" class="fitting-btn">进行试衣</a>
             </div>
@@ -100,8 +102,8 @@
                         <div class="model-btn-group">
                             <!-- 为以下几个按钮添加统一的类，方便设置样式 -->
                             <label class="upload-btn btn-file model-btn">上传个人照片<input hidden
-                                                                                                              type="file"
-                                                                                                              id="upload-btn"></label>
+                                                                                      type="file"
+                                                                                      id="upload-btn"></label>
                             <label class="drop-btn model-btn">删除照片</label>
                             <a data-name="{{ model.thumbnail }}" class="extract-btn model-btn">提取人体3D模型</a>
                             <a class="save-btn model-btn">保存该模型</a>

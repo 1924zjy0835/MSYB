@@ -18,7 +18,6 @@
   overflow: hidden;
   overflow-y: scroll;
 
-
   .closet-room {
     float: left;
     margin: 10px 10px;
@@ -209,33 +208,54 @@
       }
     }
 
-    .model-fitting {
-      width: $modelWidth;
-      height: $modelHeight;
-      margin: 0 auto;
+    .model-group {
       overflow: hidden;
-      position: relative;
+      width: $modelWidth*2;
+      height: $modelHeight;
+      background: #fff;
+      margin: 0 auto;
 
-      .model-list {
-        width: $modelTotalWidth;
+      .fitting-cloth-room {
+        float: left;
+        width: $modelWidth;
         height: $modelHeight;
-        margin: 0 auto;
-        position: absolute;
-        left: 0;
+        background: #0d6aad;
 
-        li {
-          float: left;
-          list-style: none;
-          width: $modelWidth;
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .model-fitting {
+        float: right;
+        width: $modelWidth;
+        height: $modelHeight;
+        //margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+
+        .model-list {
+          width: $modelTotalWidth;
           height: $modelHeight;
+          margin: 0 auto;
+          position: absolute;
+          left: 0;
 
-          a {
-            text-decoration: none;
+          li {
+            float: left;
+            list-style: none;
+            width: $modelWidth;
+            height: $modelHeight;
 
-            img {
-              width: 100%;
-              height: 100%;
+            a {
+              text-decoration: none;
 
+              img {
+                width: 100%;
+                height: 100%;
+
+              }
             }
           }
         }
