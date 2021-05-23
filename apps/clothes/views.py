@@ -272,7 +272,7 @@ def cloth_order_key(request):
 def notify_url(request):
     orderid = request.POST.get('orderid')
     istype = request.POST.get('istype')
-    ClothesOrder.objects.filter(pk=orderid).update(status=2, istype=istype)
+    ClothesOrder.objects.filter(pk=orderid).update(istype=istype)
     return Restful.ok()
 
 
@@ -291,7 +291,12 @@ def profile(request):
             'clothes': clothes
         }
         return render(request, 'clothes/profile.html', context=context)
-    return render(request, 'clothes/profile.html')
+
+    context = {
+        'clothcategorys': clothcategorys,
+        'clothes': clothes,
+    }
+    return render(request, 'clothes/profile.html', context=context)
 
 
 @msyb_login_required

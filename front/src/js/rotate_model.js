@@ -67,10 +67,6 @@ RotateModel.prototype.listenModelFitClothesEvent = function () {
        var modelThumbnail = $(this).parent().attr("data-id");
        var clothThumbnail = $(this).attr("data-id");
 
-       console.log(modelThumbnail);
-       console.log(clothThumbnail);
-       console.log("running..........");
-
        msybajax.post({
            'url': '/model/fitting/',
            'data':{
@@ -79,8 +75,8 @@ RotateModel.prototype.listenModelFitClothesEvent = function () {
            },
            'success': function (result) {
                 if (result['code'] === 200) {
-                    window.messageBox.showSuccess("~模型试衣结果出来了哦")
                     window.location.reload();
+                    window.messageBox.showSuccess("~模型试衣结果出来了哦")
                 }
            }
        });

@@ -73,7 +73,7 @@
                                 </div>
                                 <div class="clothes-group">
                                     <p class="title">
-                                        <a href="#">{{ hot_cloth.title }}</a>
+                                        <a href="{% url 'clothes:cloth_detail' cloth_id=hot_cloth.pk %}">{{ hot_cloth.title }}</a>
                                     </p>
                                     <p class="desc">
                                         {{ hot_cloth.desc }}

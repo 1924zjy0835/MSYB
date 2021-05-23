@@ -38,7 +38,8 @@ ClothOrder.prototype.listenZFEvent = function () {
             'url': '/notify/url/',
             'data': {
                 'istype': istype,
-                'orderid': orderid
+                'orderid': orderid,
+
             },
         });
     });

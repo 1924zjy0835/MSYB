@@ -10,6 +10,7 @@ from django.conf import settings
 import qiniu
 import getpass
 from django.views.generic import View
+from django.db.models import Count
 
 
 # 只有公司的员工才能够来到该页面,普通用户在访问该页面的时候会重定向至首页
@@ -97,16 +98,26 @@ class Publish_cloth(View):
         else:
             return Restful.paramserror(message=form.get_errors())
 
+from itertools import groupby
 
 # 服装分类
 @require_GET
 def category_cloth(request):
     # 因为服装的分类不多，所以此时就可以全部取出进行返回
     categories = clothCategory.objects.all()
+    # 使用annotate()函数对clothCategory按id进行分组，然后统计不同分组的服装数量
+    clothNumbers = clothCategory.objects.annotate(numbers=Count("clothes__price"))
+    # for clothNumber in clothNumbers:
+    #     print("=============================")
+    #     print("服装分类名称：",clothNumber.name)
+    #     print(clothNumber.numbers)
+    #     print("=============================")
     context = {
-        'categories': categories,
+        "categories": categories,
+            # 'clothNumbers': clothNumber.numbers
     }
     return render(request, 'cms/category_cloth.html', context=context)
+    # return Restful.ok()
 
 
 # 添加服装分类

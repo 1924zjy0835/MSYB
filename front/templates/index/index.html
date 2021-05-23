@@ -41,12 +41,12 @@
             <div class="cloth-group">
                 <ul class="list">
                     {% for cloth in clothes %}
-                        <li data-id="{{ cloth.pk }}"><a href="#">
+                        <li data-id="{{ cloth.pk }}"><a href="{% url 'clothes:cloth_detail' cloth_id=cloth.pk %}">
                             <div class="thumbnail-group"><img data-name="{{ cloth.thumbnail }}"
                                                               src="{{ cloth.thumbnail }}" alt="" class="thumbnail">
                             </div>
                             <div class="cloth-info">
-                                <span data-name="{{ cloth.title }}" class="cloth-title">{{ cloth.title }}</span>
+                                <span data-name="{{ cloth.title }}"  href="{% url 'clothes:cloth_detail' cloth_id=cloth.pk %}" class="cloth-title">{{ cloth.title }}</span>
                                 <div class="shop-group">
                                     <i class="iconfont icon-shop" style="color: coral"></i>
                                     <span class="cloth-shop">{{ cloth.shop }}</span>

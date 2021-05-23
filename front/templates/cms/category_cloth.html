@@ -6,7 +6,7 @@
 {% endblock %}
 
 {% block head %}
-        <script src="{% static 'js/add_category_cloth.min.js' %}"></script>
+    <script src="{% static 'js/add_category_cloth.min.js' %}"></script>
 {% endblock %}
 
 {% block content-header %}
@@ -32,14 +32,16 @@
                         </thead>
                         <tbody>
                         {% for category in categories %}
-                             <tr data-id="{{ category.pk }}" data-name="{{ category.name }}">
-                            <td>{{ category.name }}</td>
-                            <td>23</td>
-                            <td>
-                                <button class="btn btn-success btn-xs edit-btn">编辑</button>
-                                <button class="btn btn-danger btn-xs delete-btn">删除</button>
-                            </td>
-                        </tr>
+
+                            <tr data-id="{{ category.pk }}" data-name="{{ category.name }}">
+                                <td>{{ category.name }}</td>
+                                    <td>8</td>
+                                <td>
+                                    <button class="btn btn-success btn-xs edit-btn">编辑</button>
+                                    <button class="btn btn-danger btn-xs delete-btn">删除</button>
+                                </td>
+                            </tr>
+
                         {% endfor %}
                         </tbody>
                     </table>
