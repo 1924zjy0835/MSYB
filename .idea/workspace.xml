@@ -10,31 +10,8 @@
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/css/variable.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/src/js/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../DSFN01/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MSYB.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MSYB.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MSYB/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/MSYB/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/apps/clothes/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/clothes/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/cms/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/cms/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/dist/css/index.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/front/dist/css/index.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/gulpfile.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/gulpfile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/body.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/body.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/cloth_detail.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/cloth_fitting.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/fitting_room.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/fitting_room.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/footer.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/header.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/css/variable.scss" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/css/variable.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/cloth_order.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/cloth_order.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/src/js/rotate_model.js" beforeDir="false" afterPath="$PROJECT_DIR$/front/src/js/rotate_model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/cloth_detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/cloth_fitting.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/clothes/fitting_room.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/cms/category_cloth.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/cms/category_cloth.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/index/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/index/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/front/templates/search/search1.html" beforeDir="false" afterPath="$PROJECT_DIR$/front/templates/search/search1.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Git02" beforeDir="false" afterPath="$PROJECT_DIR$/../../Git02" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../MSYB/msyb" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Test_demo/url_name_demo01/.idea/misc.xml" beforeDir="false" />
@@ -329,7 +306,7 @@
       <workItem from="1621512382646" duration="4385000" />
       <workItem from="1621586096770" duration="6210000" />
       <workItem from="1621638888001" duration="20812000" />
-      <workItem from="1621780066439" duration="1331000" />
+      <workItem from="1621780066439" duration="3016000" />
     </task>
     <servers />
   </component>

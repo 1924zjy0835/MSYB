@@ -366,7 +366,3 @@ def model_fitting(request):
     ModelCloth.objects.create(model_url=url, user=request.user)
     return Restful.ok()
 
-
-
-
-
