@@ -44,7 +44,7 @@
                 <a href="#" class="authenticated-box">{{ user.username }}</a>
                 <div class="user-more-box">
                     <i class="triangle"></i>
-                    {% if user.is_staff %}
+                    {% if user.is_superuser %}
                         <a href="{% url 'cms:index' %}">管理系统</a>
                     {% endif %}
                     <a href="{% url 'clothes:return_url' %}">个人中心</a>
