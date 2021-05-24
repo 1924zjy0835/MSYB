@@ -41,7 +41,7 @@
             <div class="cloth-group">
                 <ul class="list">
                     {% for cloth in clothes %}
-                        <li data-id="{{ cloth.pk }}"><a href="{% url 'clothes:cloth_detail' cloth_id=cloth.pk %}">
+                        <li data-id="{{ cloth.pk }}"><a>
                             <div class="thumbnail-group"><img data-name="{{ cloth.thumbnail }}"
                                                               src="{{ cloth.thumbnail }}" alt="" class="thumbnail">
                             </div>
