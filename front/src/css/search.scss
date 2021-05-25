@@ -16,13 +16,13 @@
     overflow: hidden;
 
     .main-content-wrapper {
-      background: url("../images/room-scenery-run01.min.gif");
+      //background: url("../images/room-scenery-run01.min.gif");
       //background: url("../images/room-run02.min.gif");
       //background-repeat: repeat-x;
       //background-size: cover;
       float: left;
       width: $mainWrapperWidth;
-      //background: #fff;
+      background: #fff;
       box-sizing: border-box;
       margin-bottom: 120px;
 
@@ -33,7 +33,7 @@
         margin-top: 40px;
         background: #fff;
         filter: alpha(0.8);
-        border: 1px solid #eeeeee;
+        border: 1px solid #9e9e9e;
 
         .search-input {
           display: block;

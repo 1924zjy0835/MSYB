@@ -162,6 +162,7 @@ def closet_room(request):
 
 
 #  fitting room ============ closet room ===========>delete cms
+@msyb_login_required
 def drop_closet_cloth(request):
     img_url = request.POST.get("img_url")
     closetcloth = closet.objects.filter(thumbnail=img_url)
@@ -194,6 +195,7 @@ def fitting_room(request):
 
 
 # fitting room ========= model room ========> upload personal photos
+@msyb_login_required
 def upload_personal_photo(request):
     # 生成上传的个人照的url并且保存找数据库中
     file = request.FILES.get("file")
@@ -211,6 +213,7 @@ def upload_personal_photo(request):
 
 
 # fitting room ========= model room ==========> drop personal photos
+@msyb_login_required
 def drop_personal_photo(request):
     img_url = request.POST.get("img_url")
     personalphoto = PersonalPhotoModel.objects.filter(img_url=img_url)
@@ -278,6 +281,7 @@ def notify_url(request):
 
 # return_url
 @csrf_exempt
+@msyb_login_required
 def profile(request):
     clothcategorys = clothCategory.objects.all()
     clothes = Clothes.objects.order_by("-pub_time")[0:3]
@@ -311,7 +315,6 @@ def profile_view(request):
 
 
 # 保存人体模型
-@msyb_login_required
 def people_model(request):
     user = request.user
     thumbnail = request.POST.get("thumbnail")
